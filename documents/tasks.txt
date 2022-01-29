@@ -1,0 +1,19 @@
+1)Импарт шрыфта, sass
+2) зрабиць пакет паблик
+3) падключыць normalize.css и іспартціраваць праз @імпарт з node_modules - 1: 14:30  - https://www.youtube.com/watch?v=eSaF8NXeNsA
+4)  {
+        test: /\.(png|jpg|svg|gif)$/,
+        type: "asset/resource",
+      }, https://webpack.js.org/guides/asset-management/#loading-images
+
+5)дабавиць стварэння копий карцинак иконак праз webpack. Верагодна для гэтага есць плагин.
+6) дабавіць канфіг for prietter фарматаэра
+7) gulp, 
+8) падключыць __REDUX_DEVTOOLS_EXTENSION_COMPOSE__ для дэбага
+9) выдаліць index.css
+10) Navbar улажыць у кампанент линк бо шмат кода пазтараецца
+11) menuPanel__menu-item_active - праверыць БЭМ, колькасць цірэ
+12)  <NextNProgress options={{ showSpinner: false }} />
+13) fancybox - праз пакет паставиць
+14) Падсвечваюцца памылки у сасс. Глянуць прыклады. можа па іншаму зрабіць.
+15) фокус не правильна працуе на фильтры

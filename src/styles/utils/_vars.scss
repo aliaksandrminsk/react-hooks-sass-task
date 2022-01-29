@@ -1,0 +1,20 @@
+// colors
+$primaryColor: #336799;
+
+// font
+$mainFont: "Roboto", sans-serif;
+$linkFont: "PatuaOne", sans-serif;
+
+//screens
+$mobileM: "min-width: 375px";
+$mobileL: "min-width: 425px";
+$tablet: "min-width: 767px";
+$desktop: "min-width: 1024px";
+$projector: "min-width: 1200px";
+
+// shadows
+$bigShadow: 2px 4px 4px 1px rgba(0, 0, 0, 0.25);
+$smallShadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.25);
+
+// asset path
+$asset_path : "../../public";

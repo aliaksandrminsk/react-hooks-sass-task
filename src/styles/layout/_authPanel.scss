@@ -1,0 +1,73 @@
+.authPanel {
+  width: 100%;
+  height: 8.2rem;
+  background-color: #c4c4c4;
+  border: solid 1px #ff0000;
+  font-size: 2rem;
+
+
+  display: grid;
+  grid-template-rows: 0.8fr 0 1.2fr 1.2fr;
+  grid-template-columns: 1fr;
+
+  @media ($mobileM) {
+    height: 5.5rem;
+    grid-template-rows: 1fr;
+    grid-template-columns: 20rem 1fr 9rem 9rem;
+  }
+
+  & > div {
+    justify-self: center;
+    align-self: center;
+  }
+
+  &__title {
+    font-weight: bold;
+    //font-size: 2rem;
+    width: 100%;
+    text-align: center;
+    color: black;
+
+    @media ($mobileM) {
+      text-align: left;
+      letter-spacing: 2.8px;
+    }
+  }
+
+  &__menu-item {
+
+    @media ($mobileL) {
+      //margin: 0 0.45rem;
+    }
+
+    @media ($tablet) {
+      //margin: 0 3rem;
+    }
+
+    text-decoration: none;
+    color: black;
+    &:hover {
+      color: lighten(black, 40%);
+    }
+
+    &_active {
+      color: yellow;
+      &:hover {
+        color: darken(yellow, 5%);
+      }
+    }
+  }
+
+
+
+  //&__logout {
+  //  font-size: 1.5rem;
+  //  font-weight: bold;
+  //
+  //  width: 11.4rem;
+  //  height: 3.2rem;
+  //  border-radius: 1px;
+  //  box-shadow: $bigShadow;
+  //  border: solid 1px black;
+  //}
+}
