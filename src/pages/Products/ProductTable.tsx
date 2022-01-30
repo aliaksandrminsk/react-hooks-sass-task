@@ -4,10 +4,13 @@ import { IProduct } from "../../context/product/interfaces/IProduct";
 import is from "is_js";
 import { productConstants } from "../../context/product/constants";
 import { ProductContext } from "../../context/product/productContext";
+import { CartContext } from "../../context/cart/cartContext";
 
 export const ProductTable = () => {
   const { filteredProducts, activePage, nameFilter } =
     useContext(ProductContext);
+
+  const { addCartItem } = useContext(CartContext);
 
   const productsOnPage = filteredProducts.slice(
     activePage * productConstants.SIZE_PRODUCT_PAGE,
@@ -60,8 +63,8 @@ export const ProductTable = () => {
               photoUrl={`/products/${product.category}/${product.file}`}
               altText={product.name ?? "Photo"}
               onClickPhotoHandler={() => openFancyBox(product)}
-              onClickButtonHandler={() => console.log("Add to card")}
-            />{" "}
+              onClickButtonHandler={() => addCartItem(product)}
+            />
           </div>
         );
       })}

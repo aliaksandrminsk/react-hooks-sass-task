@@ -21,3 +21,7 @@
 17) фотки зменшыць вебпакам
 18) Loading and setLoading
 19) вебпакам шрыфты не правильна капируюцца у dist
+20) huski
+21) Бэм
+22) Object.assign - кланираваць масиу - https://www.samanthaming.com/tidbits/70-3-ways-to-clone-objects/
+23) CartState-> updateCartItem - праверыць што будзе калі меняць state напрастки
