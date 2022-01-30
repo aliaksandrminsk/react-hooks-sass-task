@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import React from "react";
 
-export const Navbar: React.FC = () => (
+export const ProductNavbar: React.FC = () => (
   <div className="menuPanel">
     <nav className="menuPanel__menu">
       <NavLink to="/categories/clothes" className="menuPanel__menu-item">

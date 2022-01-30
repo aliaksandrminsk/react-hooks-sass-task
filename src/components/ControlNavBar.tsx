@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-export const AuthStatusBar: React.FC = () => {
+export const ControlNavBar: React.FC = () => {
   return (
     <div className="authPanel">
       <div>
