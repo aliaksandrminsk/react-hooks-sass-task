@@ -7,6 +7,7 @@ interface ICartContext {
   addCartItem: (product: IProduct) => void;
   updateCartItem: (key: string, count: number) => void;
   removeCartItems: (keys: Array<string>) => void;
+  isAddedProduct: (key: string) => boolean;
 }
 
 export const CartContext = createContext({} as ICartContext);

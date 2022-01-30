@@ -6,6 +6,7 @@ interface IProductCardProps {
   altText: string;
   onClickPhotoHandler: () => void;
   onClickButtonHandler: () => void;
+  isAdded: boolean;
 }
 
 export const ProductCard: React.FC<IProductCardProps> = ({
@@ -14,6 +15,7 @@ export const ProductCard: React.FC<IProductCardProps> = ({
   altText,
   onClickPhotoHandler,
   onClickButtonHandler,
+  isAdded,
 }) => {
   return (
     <div className="photoCard">
@@ -24,13 +26,17 @@ export const ProductCard: React.FC<IProductCardProps> = ({
       <div className="photoCard__image" onClick={onClickPhotoHandler}>
         <img src={photoUrl} width="300" height="200" alt={altText} />
       </div>
-      <button
-        type="button"
-        style={{ width: "100px" }}
-        onClick={onClickButtonHandler}
-      >
-        Add to card
-      </button>
+      {isAdded ? (
+        <div className="photoCard__status">Product is already in cart</div>
+      ) : (
+        <button
+          type="button"
+          className="photoCard__button"
+          onClick={onClickButtonHandler}
+        >
+          Add to card
+        </button>
+      )}
     </div>
   );
 };

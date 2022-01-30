@@ -10,7 +10,7 @@ export const ProductTable = () => {
   const { filteredProducts, activePage, nameFilter } =
     useContext(ProductContext);
 
-  const { addCartItem } = useContext(CartContext);
+  const { addCartItem, isAddedProduct } = useContext(CartContext);
 
   const productsOnPage = filteredProducts.slice(
     activePage * productConstants.SIZE_PRODUCT_PAGE,
@@ -56,14 +56,14 @@ export const ProductTable = () => {
         );
 
         return (
-          <div className="products__item">
+          <div className="products__item" key={product.id}>
             <ProductCard
-              key={product.id}
               formattedName={formattedName}
               photoUrl={`/products/${product.category}/${product.file}`}
               altText={product.name ?? "Photo"}
               onClickPhotoHandler={() => openFancyBox(product)}
               onClickButtonHandler={() => addCartItem(product)}
+              isAdded={isAddedProduct(product.id)}
             />
           </div>
         );

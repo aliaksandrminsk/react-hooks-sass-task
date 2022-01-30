@@ -72,6 +72,16 @@
     cursor: pointer;
   }
 
+  &__status {
+    color:black;
+    font-weight: bold;
+  }
+
+  &__button {
+    width: 10rem;
+  }
+
+
   @media ($mobileL) {
     box-shadow: $bigShadow;
   }

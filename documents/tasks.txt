@@ -25,3 +25,5 @@
 21) Бэм
 22) Object.assign - кланираваць масиу - https://www.samanthaming.com/tidbits/70-3-ways-to-clone-objects/
 23) CartState-> updateCartItem - праверыць што будзе калі меняць state напрастки
+24) семантычныя тэги
+25) дадзеныя картки у куки або сторыдж

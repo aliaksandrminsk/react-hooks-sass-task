@@ -55,6 +55,15 @@ export const CartState: React.FC = ({ children }) => {
     });
   };
 
+  const isAddedProduct = (key: string) => {
+    for (const item of cartItems) {
+      if (item.id === key) {
+        return true;
+      }
+    }
+    return false;
+  };
+
   const { cartItems } = state;
 
   return (
@@ -64,6 +73,7 @@ export const CartState: React.FC = ({ children }) => {
         addCartItem,
         updateCartItem,
         removeCartItems,
+        isAddedProduct,
       }}
     >
       {children}
