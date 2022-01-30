@@ -1,38 +1,27 @@
 import React from "react";
-import { IProduct } from "../store/productGallery/IProduct";
 
-interface ProductCardProps {
+interface IProductCardProps {
   formattedName: string;
-  product: IProduct;
+  photoUrl: string;
+  altText: string;
   onClickPhotoHandler: () => void;
   onClickButtonHandler: () => void;
 }
 
-export const ProductCard: React.FC<ProductCardProps> = ({
+export const ProductCard: React.FC<IProductCardProps> = ({
   formattedName,
-  product,
+  photoUrl,
+  altText,
   onClickPhotoHandler,
   onClickButtonHandler,
 }) => {
-  const photoUrl = `/products/${product.category}/${product.file}`;
-
-  let description;
-  if (product.name) {
-    description = product.name;
-  }
-
   return (
     <div className="products__item photoCard">
       <a className="photoCard__link">
         <span dangerouslySetInnerHTML={{ __html: formattedName }} />
+
         <div className="photoCard__image" onClick={onClickPhotoHandler}>
-          <img
-            id={product.id}
-            src={photoUrl}
-            width="300"
-            height="200"
-            alt={description ?? "Photo"}
-          />
+          <img src={photoUrl} width="300" height="200" alt={altText} />
         </div>
         <button
           type="button"

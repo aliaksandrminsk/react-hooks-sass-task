@@ -1,13 +1,13 @@
 import React, { useReducer } from "react";
-import { ProductGalleryContext } from "./productGalleryContext";
-import { IProductState, productGalleryReducer } from "./productGalleryReducer";
-import { productGalleryConstants } from "./constants";
+import { ProductContext } from "./productContext";
+import { IProductState, productReducer } from "./productReducer";
+import { productConstants } from "./constants";
 import { ActionType } from "../types";
 import axios from "axios";
-import { IProduct } from "./IProduct";
-import { IFilter } from "./IFilter";
+import { IProduct } from "./interfaces/IProduct";
+import { IFilter } from "./interfaces/IFilter";
 
-export const ProductGalleryState: React.FC = ({ children }) => {
+export const ProductState: React.FC = ({ children }) => {
   const initialState: IProductState = {
     products: [],
     filteredProducts: [],
@@ -18,11 +18,15 @@ export const ProductGalleryState: React.FC = ({ children }) => {
     categoryFilter: "",
   };
 
-  const [state, dispatch] = useReducer(productGalleryReducer, initialState);
+  const [state, dispatch] = useReducer(productReducer, initialState);
 
   const getProducts = async () => {
     const response = await axios.get("/products/products.json");
     const products = response.data;
+
+    const pagesNumber = Math.ceil(
+      products.length / productConstants.SIZE_PRODUCT_PAGE
+    );
 
     dispatch({
       type: ActionType.GET_PRODUCTS,
@@ -58,7 +62,7 @@ export const ProductGalleryState: React.FC = ({ children }) => {
     }
 
     const pagesNumber = Math.ceil(
-      filteredProducts.length / productGalleryConstants.SIZE_PRODUCT_PAGE
+      filteredProducts.length / productConstants.SIZE_PRODUCT_PAGE
     );
 
     dispatch({
@@ -72,7 +76,7 @@ export const ProductGalleryState: React.FC = ({ children }) => {
 
   const setActivePage = (activePage: number) => {
     const pagesNumber = Math.ceil(
-      filteredProducts.length / productGalleryConstants.SIZE_PRODUCT_PAGE
+      filteredProducts.length / productConstants.SIZE_PRODUCT_PAGE
     );
 
     if (activePage >= pagesNumber) {
@@ -86,15 +90,6 @@ export const ProductGalleryState: React.FC = ({ children }) => {
     });
   };
 
-  const getDescription = (productId: string) => {
-    for (const item of products) {
-      if (productId === item.id) {
-        return item.desc;
-      }
-    }
-    return "";
-  };
-
   const {
     products,
     filteredProducts,
@@ -106,12 +101,11 @@ export const ProductGalleryState: React.FC = ({ children }) => {
   } = state;
 
   return (
-    <ProductGalleryContext.Provider
+    <ProductContext.Provider
       value={{
         getProducts,
         setActivePage,
         setFilter,
-        getDescription,
         products,
         filteredProducts,
         activePage,
@@ -121,6 +115,6 @@ export const ProductGalleryState: React.FC = ({ children }) => {
       }}
     >
       {children}
-    </ProductGalleryContext.Provider>
+    </ProductContext.Provider>
   );
 };

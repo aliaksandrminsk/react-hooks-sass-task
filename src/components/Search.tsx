@@ -1,9 +1,9 @@
 import React, { useContext, useState } from "react";
-import { ProductGalleryContext } from "../store/productGallery/productGalleryContext";
+import { ProductContext } from "../context/product/productContext";
 
 export const Search: React.FC<{ showFilter: boolean }> = (props) => {
   const [value, setValue] = useState<string>("");
-  const { setFilter } = useContext(ProductGalleryContext);
+  const { setFilter } = useContext(ProductContext);
 
   const onSubmit = (event: React.KeyboardEvent): void => {
     if (event.key !== "Enter") {

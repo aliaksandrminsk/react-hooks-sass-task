@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import { Products } from "./pages/Products/Products";
 import { ProductNavbar } from "./components/ProductNavbar";
-import { ProductGalleryState } from "./store/productGallery/ProductGalleryState";
+import { ProductState } from "./context/product/ProductState";
 import { ControlNavBar } from "./components/ControlNavBar";
 import { AboutUs } from "./pages/AboutUs/AboutUs";
 import { Cart } from "./pages/Cart/Cart";
@@ -16,7 +16,7 @@ declare global {
 
 function App() {
   return (
-    <ProductGalleryState>
+    <ProductState>
       <BrowserRouter>
         <ProductNavbar />
         <ControlNavBar />
@@ -31,7 +31,7 @@ function App() {
           </Routes>
         </main>
       </BrowserRouter>
-    </ProductGalleryState>
+    </ProductState>
   );
 }
 

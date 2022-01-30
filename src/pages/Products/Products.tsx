@@ -8,12 +8,11 @@ import React, {
 } from "react";
 
 import { useParams } from "react-router-dom";
-
-import { PhotoViewerContainer } from "./PhotoViewerContainer";
-import { ProductGalleryContext } from "../../store/productGallery/productGalleryContext";
+import { ProductTable } from "./ProductTable";
+import { ProductContext } from "../../context/product/productContext";
 import { Search } from "../../components/Search";
 import { PagesNav } from "../../components/PagesNav";
-import { IProduct } from "../../store/productGallery/IProduct";
+import { IProduct } from "../../context/product/interfaces/IProduct";
 import ErrorPage from "../ErrorPage/ErrorPage";
 
 export const Products = () => {
@@ -27,13 +26,13 @@ export const Products = () => {
 
   const {
     products,
-    pagesNumber,
     isProductJsonLoaded,
     getProducts,
     setActivePage,
     setFilter,
-  } = useContext(ProductGalleryContext);
+  } = useContext(ProductContext);
 
+  //It's checking of url. If category from url is wrong then we move to error page.
   const isValidateURL = useMemo(() => {
     let arr = [];
     if (category != null && products != null) {
@@ -59,14 +58,6 @@ export const Products = () => {
     };
   }, [products, category]);
 
-  if (!isProductJsonLoaded) {
-    return <p className="text-center">Loading...</p>;
-  } else {
-    if (!isValidateURL) {
-      return <ErrorPage />;
-    }
-  }
-
   const changeWindowSize = () => {
     setWindowWidth(window.innerWidth);
   };
@@ -85,6 +76,15 @@ export const Products = () => {
     }
   };
 
+  if (!isProductJsonLoaded) {
+    return <div className="loading">Loading...</div>;
+  } else {
+    if (!isValidateURL) {
+      //If category from url is wrong then we move to error page.
+      return <ErrorPage />;
+    }
+  }
+
   return (
     <Fragment>
       <button
@@ -102,24 +102,20 @@ export const Products = () => {
           showFilter={isOpenFilter || windowWidth >= SCREEN_SIZE_MOBILE_L}
         />
 
-        <h1 className="products__title">Shops</h1>
+        <h1 className="products__title">Products</h1>
         <hr className="products__hr" />
 
-        {pagesNumber > 1 ? (
-          <PagesNav
-            setFilterFunc={(pageIndex) => setActivePage(pageIndex)}
-            context={ProductGalleryContext}
-          />
-        ) : null}
+        <PagesNav
+          setFilterFunc={(pageIndex) => setActivePage(pageIndex)}
+          context={ProductContext}
+        />
 
-        <PhotoViewerContainer />
+        <ProductTable />
 
-        {pagesNumber > 1 ? (
-          <PagesNav
-            setFilterFunc={(pageIndex) => setActivePage(pageIndex)}
-            context={ProductGalleryContext}
-          />
-        ) : null}
+        <PagesNav
+          setFilterFunc={(pageIndex) => setActivePage(pageIndex)}
+          context={ProductContext}
+        />
       </section>
     </Fragment>
   );

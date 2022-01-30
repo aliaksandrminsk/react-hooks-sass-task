@@ -1,5 +1,5 @@
 import { ActionType } from "../types";
-import { IProduct } from "./IProduct";
+import { IProduct } from "./interfaces/IProduct";
 
 export interface IProductState {
   products: Array<IProduct>;
@@ -65,7 +65,7 @@ const handlers = {
   DEFAULT: (state: IProductState) => state,
 };
 
-export const productGalleryReducer = (
+export const productReducer = (
   state: IProductState,
   action: Action
 ): IProductState => {

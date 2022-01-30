@@ -1,6 +1,6 @@
 import { createContext } from "react";
-import { IProduct } from "./IProduct";
-import { IFilter } from "./IFilter";
+import { IProduct } from "./interfaces/IProduct";
+import { IFilter } from "./interfaces/IFilter";
 
 interface IProductContext {
   isProductJsonLoaded: boolean;
@@ -10,9 +10,8 @@ interface IProductContext {
   pagesNumber: number;
   activePage: number;
   getProducts: () => void;
-  getDescription: (productId: string) => string;
   setActivePage: (activePage: number) => void;
   setFilter: (filter: IFilter) => void;
 }
 
-export const ProductGalleryContext = createContext({} as IProductContext);
+export const ProductContext = createContext({} as IProductContext);
