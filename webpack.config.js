@@ -7,7 +7,6 @@ const TerserWebpackPlugin = require("terser-webpack-plugin");
 const ESLintWebpackPlugin = require("eslint-webpack-plugin");
 const BundleAnalyzerPlugin =
   require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
-const Dotenv = require("dotenv-webpack");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 
 const isDev = process.env.NODE_ENV === "development";
@@ -44,7 +43,6 @@ const babelOptions = () => {
 
 const plugins = () => {
   const base = [
-    new Dotenv(),
     new HTMLWebpackPlugin({
       template: path.resolve(__dirname, "public/index.html"),
       minify: isProd,

@@ -4,7 +4,7 @@ import { Products } from "./pages/Products/Products";
 import { ProductMenu } from "./components/Menu/ProductMenu";
 import { ProductState } from "./context/product/ProductState";
 import { ControlMenu } from "./components/Menu/ControlMenu";
-import { AboutUs } from "./pages/AboutUs/AboutUs";
+import { About } from "./pages/About/About";
 import { Cart } from "./pages/Cart/Cart";
 import ErrorPage from "./pages/ErrorPage/ErrorPage";
 
@@ -24,7 +24,7 @@ function App() {
           <Routes>
             <Route path="cart" element={<Cart />} />
             <Route path="categories/:id" element={<Products />} />
-            <Route path="/aboutus" element={<AboutUs />} />
+            <Route path="/about" element={<About />} />
             <Route path="/errorpage" element={<ErrorPage />} />
             <Route path="/" element={<Navigate to="categories/bike" />} />
             <Route path="*" element={<ErrorPage />} />

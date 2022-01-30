@@ -10,7 +10,7 @@ export const ControlMenu: React.FC = () => {
       <div>&nbsp;</div>
 
       <div>
-        <NavLink to="/aboutus" className="controlPanel__menu-item">
+        <NavLink to="/about" className="controlPanel__menu-item">
           {({ isActive }) => (
             <span
               className={

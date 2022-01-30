@@ -27,7 +27,7 @@ export const Search: React.FC<{ showFilter: boolean }> = (props) => {
         type="text"
         ref={(input) => input && input.focus()}
         className="products__filter-input"
-        placeholder="Enter a name of the country..."
+        placeholder="Enter a name of the product..."
         value={value}
         onChange={(event: React.ChangeEvent<HTMLInputElement>) =>
           setValue(event.target.value)
