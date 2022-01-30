@@ -382,6 +382,278 @@
     "name": "Vitus ZX-1 EVO CRS eTap AXS Road Bike",
     "desc": "Engineered for fast and agile performance suited to rapid group rides and long-distance tour events, the Vitus ZX-1 EVO CRS is a top performer. It features an aero full-carbon frameset that's equipped with a SRAM Force eTap wireless electronic groupset. The groupset shifts instantly and precisely though its 2x12-Speed gear range, and it includes hydraulic disc brakes for outstanding all-weather stopping power. Plus, this race bike rolls upon Tubeless Ready Reynolds AR58/62 DB Carbon wheels wrapped in Schwalbe ONE Performance Tubeless Easy (TLE) tyres.",
     "price": 1220
+  },
+  {
+    "id": 201,
+    "category": "book",
+    "file": "book1.jpg",
+    "name": "100+ Life-Changing, Plant-Based Recipes: A Cookbook",
+    "desc": "In her highly anticipated first cookbook, Charity lays out a plan for anyone who wants to eat less meat—whether they are looking to go completely vegan or just be a little bit more meat-free. Pulling inspiration from her Puerto Rican and Creole heritage as well as from the American South, where she lives with her family, Charity’s recipes are full of flavor. Think Smoky Jambalaya; hearty Jerk-Spiced Lentils with Coconut Rice & Mango Salsa; Jalapeño-Bae’con Corn Cakes with Chili-Lime Maple Syrup; and a molten, decadent Salted Caramel Apple Crisp.",
+    "price": 20
+  },
+  {
+    "id": 202,
+    "category": "book",
+    "file": "book2.jpg",
+    "name": "You Are More Than You Think You Are: Practical Enlightenment for Everyday Life",
+    "desc": "Many of us think that we just aren’t enough. Not good enough, not pretty enough, not rich enough, and not happy enough. But just because we think something doesn’t mean it’s true. YOU ARE MORE THAN YOU THINK YOU ARE teaches you how to revise your belief system, fulfill your deepest dreams and desires, and create an epic, successful, and inspiring life.",
+    "price": 30
+  },
+  {
+    "id": 203,
+    "category": "book",
+    "file": "book3.jpg",
+    "name": "To Paradise: A Novel",
+    "desc": "In an alternate version of 1893 America, New York is part of the Free States, where people may live and love whomever they please (or so it seems). The fragile young scion of a distinguished family resists betrothal to a worthy suitor, drawn to a charming music teacher of no means. In a 1993 Manhattan besieged by the AIDS epidemic, a young Hawaiian man lives with his much older, wealthier partner, hiding his troubled childhood and the fate of his father. And in 2093, in a world riven by plagues and governed by totalitarian rule, a powerful scientist’s damaged granddaughter tries to navigate life without him—and solve the mystery of her husband’s disappearances.",
+    "price": 24
+  },
+  {
+    "id": 204,
+    "category": "book",
+    "file": "book4.jpg",
+    "name": "A Flicker in the Dark: A Novel",
+    "desc": "Now twenty years later, Chloe is a psychologist in Baton Rouge and getting ready for her wedding. While she finally has a fragile grasp on the happiness she’s worked so hard to achieve, she sometimes feels as out of control of her own life as the troubled teens who are her patients. So when a local teenage girl goes missing, and then another, that terrifying summer comes crashing back. Is she paranoid, seeing parallels from her past that aren't actually there, or for the second time in her life, is Chloe about to unmask a killer?",
+    "price": 56
+  },
+  {
+    "id": 205,
+    "category": "book",
+    "file": "book5.jpg",
+    "name": "Gangsters of Capitalism: Smedley Butler, the Marines, and the Making and Breaking of America's Empire",
+    "desc": "Award-winning author Jonathan Myerson Katz traveled across the world―from China to Guantánamo, the mountains of Haiti to the Panama Canal―and pored over the personal letters of Butler, his fellow Marines, and his Quaker family on Philadelphia's Main Line. Along the way, Katz shows how the consequences of the Marines' actions are still very much alive: talking politics with a Sandinista commander in Nicaragua, getting a martial arts lesson from a devotee of the Boxer Rebellion in China, and getting cast as a P.O.W. extra in a Filipino movie about their American War. Tracing a path from the first wave of U.S. overseas expansionism to the rise of fascism in the 1930s to the crises of democracy in our own time, Gangsters of Capitalism tells an urgent story about a formative era most Americans have never learned about, but that the rest of the world cannot forget.",
+    "price": 12
+  },
+  {
+    "id": 206,
+    "category": "book",
+    "file": "book6.jpg",
+    "name": "Stolen Focus: Why You Can't Pay Attention--and How to Think Deeply Again",
+    "desc": "We think our inability to focus is a personal failure to exert enough willpower over our devices. The truth is even more disturbing: our focus has been stolen by powerful external forces that have left us uniquely vulnerable to corporations determined to raid our attention for profit. Hari found that there are twelve deep causes of this crisis, from the decline of mind-wandering to rising pollution, all of which have robbed some of our attention. In Stolen Focus, he introduces readers to Silicon Valley dissidents who learned to hack human attention, and veterinarians who diagnose dogs with ADHD. He explores a favela in Rio de Janeiro where everyone lost their attention in a particularly surreal way, and an office in New Zealand that discovered a remarkable technique to restore workers’ productivity.",
+    "price": 16
+  },
+  {
+    "id": 207,
+    "category": "book",
+    "file": "book7.jpg",
+    "name": "Demon Slayer: Kimetsu no Yaiba--Stories of Water and Flame",
+    "desc": "Savage demons devour unsuspecting humans in Taisho-era Japan. Armed with special swords, the Demon Slayer Corps fights to stop the devastation demons spread. Giyu Tomioka, the sole Water Hashira, and Kyojuro Rengoku, a high-ranking Kinoe, embark on missions to eliminate demons and prove their mettle as two of the fiercest Demon Slayers.",
+    "price": 17
+  },
+  {
+    "id": 208,
+    "category": "book",
+    "file": "book8.jpg",
+    "name": "Jujutsu Kaisen",
+    "desc": "In a world where cursed spirits feed on unsuspecting humans, fragments of the legendary and feared demon Ryomen Sukuna were lost and scattered about. Should any demon consume Sukuna’s body parts, the power they gain could destroy the world as we know it. Fortunately, there exists a mysterious school of Jujutsu Sorcerers who exist to protect the precarious existence of the living from the supernatural!",
+    "price": 11
+  },
+  {
+    "id": 209,
+    "category": "book",
+    "file": "book9.jpg",
+    "name": "M Is for Mama: A Rebellion Against Mediocre Motherhood",
+    "desc": "Motherhood is a challenge. Unfortunately, our worldly culture offers moms little in the way of real help. Mamas only connect to celebrate surviving another day and to share in their misery rather than rejoice in what God has done and to build each other up in hard times. There has a be a better way, a biblical way, for mamas to grow and thrive.    ",
+    "price": 40
+  },
+  {
+    "id": 210,
+    "category": "book",
+    "file": "book10.jpg",
+    "name": "Red-Handed: How American Elites Get Rich Helping China Win",
+    "desc": "In Red-Handed, six-time New York Times bestselling investigator Peter Schweizer presents his most alarming findings to date by revealing the secret deals wealthy Americans have cut to help China build its military, technological, and economic might. Equally as astonishing, many of these elites quietly believe the Chinese dictatorial regime is superior to American democracy.",
+    "price": 47
+  },
+  {
+    "id": 211,
+    "category": "book",
+    "file": "book11.jpg",
+    "name": "Reminders of Him: A Novel",
+    "desc": "After serving five years in prison for a tragic mistake, Kenna Rowan returns to the town where it all went wrong, hoping to reunite with her four-year-old daughter. But the bridges Kenna burned are proving impossible to rebuild. Everyone in her daughter’s life is determined to shut Kenna out, no matter how hard she works to prove herself.",
+    "price": 56
+  },
+  {
+    "id": 212,
+    "category": "book",
+    "file": "book12.jpg",
+    "name": "Enough Already: Learning to Love the Way I Am Today",
+    "desc": "Behind the curtain of her happy on-screen persona, Valerie Bertinelli’s life has been no easy ride, especially when it comes to her own self-image and self-worth. She waged a war against herself for years, learning to equate her value to her appearance as a child star on One Day at a Time and punishing herself in order to fit into the unachievable Hollywood mold. She struggled to make her marriage to Eddie Van Halen — the true love of her life — work, despite all the rifts the rock-star lifestyle created between them. She then watched her son follow in his father’s footsteps, right up onto the stage of Van Halen concerts, and begin his own music career. And like so many women, she cared for her parents as their health declined and saw the roles of parent and child reverse. Through mourning the loss of her parents, discovering more about her family’s past, and realizing how short life really is when she and her son lost Eddie, Valerie finally said, “Enough already!” to a lifelong battle with the scale and found a new path forward to joy and connection. Despite hardships and the pressures of the media industry to be something she’s not, Valerie is, at last, accepting herself: she knows who she is, has discovered her self-worth, and has learned how to prioritize her health and happiness over her weight. With an intimate look into her insecurities, heartbreaks, losses, triumphs, and revelations, Enough Already is the story of Valerie’s sometimes humorous, sometimes raw, but always honest journey to love herself and find joy in the everyday, in family, and in the food and memories we share.",
+    "price": 82
+  },
+  {
+    "id": 213,
+    "category": "book",
+    "file": "book13.jpg",
+    "name": "Off with My Head: The Definitive Basic B*tch Handbook to Surviving Rock Bottom",
+    "desc": "The year 2020 was going to be the best year of Stassi’s life. Besides getting engaged and feeling like she was on top of the world career-wise, she bought her first house and was planning her dream Italian wedding. The future showed so much freaking promise—until it all went to hell. Stassi may not be perfect—she may have made some (major) mistakes—but she does feel like she has some insight (and plenty of hilarious tales) about getting knocked up, called out, and learning from what went wrong.",
+    "price": 46
+  },
+  {
+    "id": 214,
+    "category": "book",
+    "file": "book14.jpg",
+    "name": "The Great Reset: Joe Biden and the Rise of Twenty-First-Century Fascism",
+    "desc": "An international conspiracy between powerful bankers, business leaders, and government officials; closed-door meetings in the Swiss Alps; and calls for a radical transformation of every society on earth—the Great Reset sounds like it is one henchman-with-an-eyepatch away from being the plot for the next James Bond movie. ",
+    "price": 32
+  },
+  {
+    "id": 215,
+    "category": "book",
+    "file": "book15.jpg",
+    "name": "I'll Be There",
+    "desc": "If you’ve ever asked yourself these questions, Amy Weatherly and Jess Johnston, founders of the widely popular “Sister, I Am with You,” are raising their hands to say, “Yeah, us too.” And they want to encourage, equip, and reassure you that you have what it takes to build the kind of friendships you want.",
+    "price": 18
+  },
+  {
+    "id": 216,
+    "category": "book",
+    "file": "book16.jpg",
+    "name": "The Lords of Easy Money: How the Federal Reserve Broke the American Economy",
+    "desc": "The New York Times bestselling business journalist Christopher Leonard infiltrates one of America’s most mysterious institutions—the Federal Reserve—to show how its policies spearheaded by Chairman Jerome Powell over the past ten years have accelerated income inequality and put our country’s economic stability at risk.",
+    "price": 41
+  },
+  {
+    "id": 301,
+    "category": "washer",
+    "file": "washer1.jpg",
+    "name": "LITM Upgraded Portable Washing Machine with Socks Laundry Bag",
+    "desc": "It comes with a blue starry sky gift bag and a small socks laundry bag. English manual. It is a best gift to baby, child or your friends and relatives.",
+    "price": 100
+  },
+  {
+    "id": 302,
+    "category": "washer",
+    "file": "washer2.jpg",
+    "name": "Portable Washing Machine",
+    "desc": "Our mini portable washing machine is designed for delicate and small things. Its small load can save water and electricity, but cleaning large items may damage the machine. The drain basket of our mini washing machine can make your items without dripping and avoid hand-twisting, but it can't completely dry the clothes.",
+    "price": 120
+  },
+  {
+    "id": 303,
+    "category": "washer",
+    "file": "washer3.jpg",
+    "name": "Amana NTW4516FW 3.5 Cu. Ft. White Top Load Washer",
+    "desc": "This refurbished product is tested and certified to look and work like new. The refurbishing process includes functionality testing, basic cleaning, inspection, and repackaging. The product ships with all relevant accessories, and may arrive in a generic box.",
+    "price": 220
+  },
+  {
+    "id": 304,
+    "category": "washer",
+    "file": "washer4.jpg",
+    "name": "Equator 1.6 cu.ft. Compact Washer with Winterize in White",
+    "desc": "Automatic Water Level Sensor: Machine weighs clothes and selects the right amount of water for each load - No wastage of water.",
+    "price": 280
+  },
+  {
+    "id": 305,
+    "category": "washer",
+    "file": "washer5.jpg",
+    "name": "Farberware Professional FCW10BSCWHA 1.0 Cu",
+    "desc": "LOOKS GREAT: Premium metallic silver design with chrome decoration offers a sleek and elegant look plus the soft closing cover has transparent tempered glass so you can get a clear view of washing process.",
+    "price": 500
+  },
+  {
+    "id": 306,
+    "category": "washer",
+    "file": "washer6.jpg",
+    "name": "VIVOHOME 2 in 1 Portable Compact Full Automatic",
+    "desc": "MULTIFUNCTIONAL CONTROL PANEL - The VIVOHOME compact washer is equipped with a multifunctional control panel which is easier to use for everyone; This fully automatic washing machine has 8 laundry modes and 10 optional water levels; Users can switch washing procedures manually by pushing button according to their needs or types of clothing.",
+    "price": 320
+  },
+  {
+    "id": 307,
+    "category": "washer",
+    "file": "washer7.jpg",
+    "name": "VIVOHOME Electric Portable 2 in 1 Twin",
+    "desc": "DOUBLE FUNCTION - In order to save your precious time, the new semi-automatic VIVOHOME washing machine can wash and spin dry clothes at the same time; You can transfer the clothes to the spin dryer after the washing tub is finished; It’s a simple and affordable way to wash batches of clothes quickly.",
+    "price": 440
+  },
+  {
+    "id": 308,
+    "category": "washer",
+    "file": "washer8.jpg",
+    "name": "Upgraded Version Pyle Portable Washer & Spin Dryer",
+    "desc": "The portable washer dryer features a convenient top loading system Simply insert detergent and water into the portable washer dryer combo A power cord and drain hose are included.",
+    "price": 520
+  },
+  {
+    "id": 309,
+    "category": "washer",
+    "file": "washer9.jpg",
+    "name": "Portable Laundry Washing Machine by BLACK+DECKER",
+    "desc": "ENERGY EFFICIENT OPERATION – This compact washing machine is only for use with cold water. It has a built in lint-filter that does not need to be replaced - just clean it about once a month. It’s designed for high efficiency (HE) detergents only. Door Material-Glass.",
+    "price": 290
+  },
+  {
+    "id": 310,
+    "category": "washer",
+    "file": "washer10.jpg",
+    "name": "Helohome Portable Washing Machine",
+    "desc": "This Full-Automatic washing machine has 6 programs that are most commonly used, including Normal, Heavy, Delicate Quick, Bulky, and Spin Only. You can quickly start the machine the way you like. The washer also has 3 water temperatures and 3 water levels for you to choose from. It not only come with an LED display, which can show you exactly which process the machine is going on but also have a see-through lid, which allows you to see and monitor the water condition.",
+    "price": 320
+  },
+  {
+    "id": 311,
+    "category": "washer",
+    "file": "washer11.jpg",
+    "name": "Think Gizmos - Portable Washing Machine with Drainage Pump",
+    "desc": "WASH & SPIN TIMER: The wash cycle can run up to 15 minutes on either a soft or normal wash and the spin cycle can run up to 5 minutes which means the clothes can be washed for the time required.",
+    "price": 433
+  },
+  {
+    "id": 312,
+    "category": "washer",
+    "file": "washer12.jpg",
+    "name": "BLACK+DECKER BPWM16W Portable Washer",
+    "desc": "AUTO CYCLE PROGRAMS & WATER SETTINGS – Meet all your laundry needs with Normal, Heavy, Delicate, Quick, Bulky, & Spin Only cycles. Control the Soak, Wash, Rinse, & Spin cycles with the push of a button, and adjust the water level based on load size.",
+    "price": 240
+  },
+  {
+    "id": 313,
+    "category": "washer",
+    "file": "washer13.jpg",
+    "name": "RCA RPW210 WASHER, 2.1 cu ft",
+    "desc": "CONVENIENT AND EASY TO USE: The top-loading hole eases the process of loading your towels, clothes, bedding etc. It provides easy access to the stainless steel water basin.",
+    "price": 399
+  },
+  {
+    "id": 314,
+    "category": "washer",
+    "file": "washer14.jpg",
+    "name": "COMFEE’ 1.6 Cu.ft Portable Washing Machine",
+    "desc": "Easy to Use: - This portable washing machine has 6 most commonly used programs including Normal, Quick, Heavy, Bulky, Delicate, and Spin Only. You are allowed to quickly start the machine the way you like. You can also add extra rinse time by pressing the “Extra Rinse” button. The washer also has 3 water temperatures, meet your different laundry needs. And it comes with a clear lid that allows you to look over the status of clothing at any time.",
+    "price": 299
+  },
+  {
+    "id": 315,
+    "category": "washer",
+    "file": "washer15.jpg",
+    "name": "LG Front Load Stackable Washer",
+    "desc": "LG Front Load Stackable Washer and Dryer Set WM3700HVA-DLEX3700V (Graphite Steel).",
+    "price": 299
+  },
+  {
+    "id": 401,
+    "category": "phone",
+    "file": "phone1.jpg",
+    "name": "Apple iPhone 11 Pro Max",
+    "desc": "This Renewed Premium product is shipped and sold by Amazon and has been certified by Amazon to work and look like new. With at least 90% battery life, it comes in deluxe, Amazon-branded packaging and is backed by a one-year warranty and technical support. See terms here.",
+    "price": 320
+  },
+  {
+    "id": 402,
+    "category": "phone",
+    "file": "phone2.jpg",
+    "name": "SAMSUNG Galaxy S20 FE 5G",
+    "desc": "SINGLE-TAKE AI: One tap of the screen captures multiple images and videos all at once. Fast Charging compatible on wired and wireless. Wired charging compatible with QC2.0 and AFC. Wireless charging compatible with WPC.",
+    "price": 200
+  },
+  {
+    "id": 403,
+    "category": "phone",
+    "file": "phone3.jpg",
+    "name": "Moto G Power",
+    "desc": "Unlocked for the freedom to choose your carrier. Compatible with AT&T, Sprint, T-Mobile, and Verizon networks. Sim card not included. Customers may need to contact Sprint for activation on Sprint’s network. To use this Device on Verizon, first, provision your SIM through Verizon Wireless. Log in to your account on Verizon Wireless. Devices - activate or switch devices - activate.",
+    "price": 300
   }
 ]
 

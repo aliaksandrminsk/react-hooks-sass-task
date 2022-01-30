@@ -4,12 +4,12 @@ import React from "react";
 export const ProductNavbar: React.FC = () => (
   <div className="menuPanel">
     <nav className="menuPanel__menu">
-      <NavLink to="/categories/clothes" className="menuPanel__menu-item">
+      <NavLink to="/categories/washer" className="menuPanel__menu-item">
         {({ isActive }) => (
           <span
             className={isActive ? " menuPanel__menu-item_active" : undefined}
           >
-            Clothes
+            Washers
           </span>
         )}
       </NavLink>
