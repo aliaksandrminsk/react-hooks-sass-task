@@ -2,186 +2,386 @@
   {
     "id": 1,
     "category": "laptop",
-    "file": "laptop1.png",
-    "name": "laptop1.png",
-    "desc": "laptop1.png",
-    "price": 20
+    "file": "laptop1.jpg",
+    "name": "Lenovo IdeaPad 3 Laptop",
+    "desc": "Powerhouse performance from AMD Ryzen 5 5500U mobile processor, 8GB DDR4 RAM, 256GB SSD storage, and AMD Radeon 7 Graphics.",
+    "price": 2000
   },
   {
     "id": 2,
     "category": "laptop",
     "file": "laptop2.jpg",
-    "name": "laptop2.jpg",
-    "desc": "laptop2.jpg",
-    "price": 20
+    "name": "2022 Acer Chromebook Spin 311 3H + Stylus",
+    "desc": "Spin 311 3H, designed to keep your ideas flowing, anywhere, anytime with the ability to multi-mode, this Chrome OS laptop has a 360 hinge so you can use it in laptop mode for everyday computing, tent mode for sharing, stand mode for binge-watching your favorite streaming shows, or tablet mode for easy interaction. Stylus pen is included, which brings more productive.",
+    "price": 3000
   },
   {
     "id": 3,
     "category": "laptop",
     "file": "laptop3.jpg",
-    "name": "laptop3.jpg",
-    "desc": "laptop3.jpg",
-    "price": 20
+    "name": "2021 Apple MacBook Pro",
+    "desc": "Up to 10-core CPU delivers up to 3.7x faster performance to fly through pro workflows quicker than ever.",
+    "price": 1300
   },
   {
     "id": 4,
     "category": "laptop",
     "file": "laptop4.jpg",
-    "name": "laptop4.jpg",
-    "desc": "laptop5.jpg",
-    "price": 20
+    "name": "HP Stream 11 Laptop, Intel Celeron N4020",
+    "desc": "WINDOWS 11 HOME AND WARRANTY – Experience faster bootup times, increased responsiveness, and added protection against phishing and malware with Windows 11 Home in S Mode (6). And with a 1-year limited hardware warranty, you’ll enjoy even more peace of mind.",
+    "price": 1200
   },
   {
     "id": 5,
     "category": "laptop",
-    "file": "laptop6.png",
-    "name": "laptop6.png",
-    "desc": "laptop6.png",
-    "price": 20
+    "file": "laptop5.jpg",
+    "name": "HP Pavilion 15 Laptop, 11th Gen Intel Core i7-1165G7 Processor",
+    "desc": "INSTANT GRATIFICATION – Experience a laptop with premium performance, so you can spend less time getting more done; it’s like a small PC that’s compact enough to go where you go with a long-lasting battery to power you through your day.",
+    "price": 3000
   },
   {
     "id": 6,
     "category": "laptop",
-    "file": "laptop7.jpg",
-    "name": "laptop7.jpg",
-    "desc": "laptop7.jpg",
-    "price": 20
+    "file": "laptop6.jpg",
+    "name": "Microsoft Surface Pro 7",
+    "desc": "EPIC ENTERTAINMENT – With audio by B&O, a larger screen-to-body ratio, and a 15.6-inch Full HD micro-edged screen to maximize your view, entertainment on your laptop feels like bringing the theater home (1).",
+    "price": 4500
   },
   {
     "id": 7,
     "category": "laptop",
-    "file": "laptop8.jpg",
-    "name": "laptop8.jpg",
-    "desc": "laptop8.jpg",
-    "price": 20
+    "file": "laptop7.jpg",
+    "name": "Acer Chromebook Spin 311 Convertible Laptop, Intel Celeron N4020",
+    "desc": "IMPRESSIVE GRAPHICS – The Intel Iris Xe Graphics gives you a new level of graphics performance with crisp, stunning visuals, plus the convenience of a thin and light laptop.",
+    "price": 3456
   },
   {
     "id": 8,
     "category": "laptop",
-    "file": "laptop9.jpg",
-    "name": "laptop9.jpg",
-    "desc": "laptop9.jpg",
-    "price": 20
+    "file": "laptop8.jpg",
+    "name": "Acer Aspire 5 Slim Laptop, 15.6 inches Full HD IPS Display",
+    "desc": "UNSTOPPABLE PERFORMANCE – Get things done fast with the 11th Generation Intel Core i7-1165G7 processor, which delivers instant responsiveness and best-in-class connectivity.",
+    "price": 1220
   },
   {
     "id": 9,
     "category": "laptop",
-    "file": "laptop10.jpg",
-    "name": "laptop10.jpg",
-    "desc": "laptop10.jpg",
-    "price": 20
+    "file": "laptop9.jpg",
+    "name": "Acer Nitro 5 AN515-55-53E5 Gaming Laptop",
+    "desc": "MEMORY AND STORAGE – Enjoy up to 15x faster performance than a traditional hard drive with 512 GB PCIe NVMe M.2 SSD storage (4) and experience improved multitasking with higher bandwidth thanks to 16 GB of RAM.",
+    "price": 1370
   },
   {
     "id": 10,
     "category": "laptop",
-    "file": "laptop11.png",
-    "name": "laptop11.png",
-    "desc": "laptop11.png",
-    "price": 20
+    "file": "laptop10.jpg",
+    "name": "2021 Apple MacBook Pro",
+    "desc": "WORK ON THE GO – Get work done on the go with a long battery life of up to 8 hours (5) while HP Fast Charge lets you go from 0 to 50% charge in approximately 45 minutes.",
+    "price": 1999
+  },
+  {
+    "id": 11,
+    "category": "laptop",
+    "file": "laptop11.jpg",
+    "name": "Acer Aspire 5 A515-56-36UT Slim Laptop",
+    "desc": "OS AND WARRANTY – Do more with better peace of mind thanks to the HP 1-year limited hardware warranty and the seamlessly integrated Windows 10 Pro operating system (7); get ready for the Windows 11 upgrade, coming soon and at no additional cost.",
+    "price": 3900
+  },
+  {
+    "id": 12,
+    "category": "laptop",
+    "file": "laptop12.jpg",
+    "name": "MSI GL66 Gaming Laptop",
+    "desc": "Visual Performance: The 15.6” 144hz display delivers true-to-life images with a high refresh rate so you can see every frame of the game.",
+    "price": 2300
+  },
+  {
+    "id": 13,
+    "category": "laptop",
+    "file": "laptop13.jpg",
+    "name": "ASUS TUF Dash 15 (2021) Ultra Slim Gaming Laptop",
+    "desc": "NVIDIA GeForce RTX 3050 Ti 4GB GDDR6 up to 1585MHz at 60W (75W with Dynamic Boost 2.0).",
+    "price": 2330
+  },
+  {
+    "id": 14,
+    "category": "laptop",
+    "file": "laptop14.jpg",
+    "name": "2020 Apple MacBook Air Laptop: Apple M1 Chip",
+    "desc": "Easy to Learn – If you already have an iPhone, MacBook Air feels familiar from the moment you turn it on. And it works perfectly with all your Apple devices. Use your iPad to extend the workspace of your Mac, answer texts and phone calls directly on your Mac, and more.",
+    "price": 4200
+  },
+  {
+    "id": 15,
+    "category": "laptop",
+    "file": "laptop15.jpg",
+    "name": "DERE Laptop with Fingerprint Unlock",
+    "desc": "The laptop comes with convenient fingerprint reader. Unlock immediately in 0.5 seconds, eliminating the trouble of entering a password. Strengthen the protection of personal privacy and information security.",
+    "price": 1290
+  },
+  {
+    "id": 16,
+    "category": "laptop",
+    "file": "laptop16.jpg",
+    "name": "TECLAST Windows 10 Laptop 13.3 Inch Traditional Mini Computer Laptops",
+    "desc": "Simply Compatible – All your existing apps work, including Adobe Creative Cloud, Microsoft 365, and Google Drive. Plus you can use your favorite iPhone and iPad apps directly on macOS. Altogether you’ll have access to the biggest collection of apps ever for Mac. All available on the App Store.",
+    "price": 3000
+  },
+  {
+    "id": 17,
+    "category": "laptop",
+    "file": "laptop17.jpg",
+    "name": "Acer Nitro 5 AN515-55-53E5 Gaming Laptop",
+    "desc": "Why Mac – Easy to learn. Easy to set up. Astoundingly powerful. Intuitive. Packed with apps to use right out of the box. Mac is designed to let you work, play, and create like never before.",
+    "price": 3400
+  },
+  {
+    "id": 18,
+    "category": "laptop",
+    "file": "laptop18.jpg",
+    "name": "Acer Predator Helios 300 PH315-54-760S Gaming Laptop",
+    "desc": "Stunning Display – With a 13.3” Retina display, images come alive with new levels of realism. Text is sharp and clear, and colors are more vibrant.",
+    "price": 1200
+  },
+  {
+    "id": 19,
+    "category": "laptop",
+    "file": "laptop19.jpg",
+    "name": "Acer Chromebook Spin 311 Convertible Laptop",
+    "desc": "Superfast Memory – 8GB of unified memory makes your entire system speedy and responsive. That way it can support tasks like memory-hogging multitab browsing and opening a huge graphic file quickly and easily.",
+    "price": 4040
+  },
+  {
+    "id": 20,
+    "category": "laptop",
+    "file": "laptop20.jpg",
+    "name": "MSI Stealth 15M Gaming Laptop",
+    "desc": "Built to connect, this notebook computer includes a variety of USB ports for effortless connectivity. Plus, stay in touch with the built-in camera. Bluetooth 4.2.",
+    "price": 1200
+  },
+  {
+    "id": 21,
+    "category": "laptop",
+    "file": "laptop21.jpg",
+    "name": "HP 15.6inch HD Laptop",
+    "desc": "The Lenovo Chromebook C330 is easy to use, offers built-in virus protection and keeps going with long battery life. No setup needed – Just login with a Google account so emails, maps, documents, and photos stay with you via cloud storage.",
+    "price": 2300
+  },
+  {
+    "id": 22,
+    "category": "laptop",
+    "file": "laptop22.jpg",
+    "name": "Lenovo Chromebook C330 2-in-1 Convertible Laptop",
+    "desc": "Sleek, stylish, and secure, this 360⁰ convertible laptop is less than 1-inch thin and about the weight of a hardback book, with an 11-inch touchscreen display that's perfect for day-to-day computing and multimedia, on or offline.",
+    "price": 2500
+  },
+  {
+    "id": 23,
+    "category": "laptop",
+    "file": "laptop23.jpg",
+    "name": "Lenovo Chromebook Flex 3",
+    "desc": "Designed with 6mm narrow bezel and 14.1 inch, our 1920x1080 FHD display gives you vivid color and excellent clarity with 2.5D touch. You can also keep the luxury laptop in hand for it only weighs 1.3kg.",
+    "price": 2310
+  },
+  {
+    "id": 24,
+    "category": "laptop",
+    "file": "laptop24.jpg",
+    "name": "TECLAST Traditional Laptop Computers 14 inch",
+    "desc": "Equipped with 45600mWh battery, TECLAST F7 plus3 windows 10 laptop computer makes all your entertainment completely captivating. Together with 2.4G+5G WiFi, Bluetooth4.2, USB3.0 port and mini-HDMI, this laptop supports to share your happy moment with big screen.",
+    "price": 4000
+  },
+  {
+    "id": 25,
+    "category": "laptop",
+    "file": "laptop25.jpg",
+    "name": "LincPlus 14-inch Laptop Intel Celeron",
+    "desc": "The laptop built-in Internal Dual-band 2.4G+5G wifi stable connection,The professional after-sales team provides LincPlus P3 laptop with a 2-year full range of services, including technical support,operation guide,installation.",
+    "price": 2009
+  },
+  {
+    "id": 26,
+    "category": "laptop",
+    "file": "laptop26.jpg",
+    "name": "HD Windows 10 Professional Slim n Light Laptop",
+    "desc": "Fusion5 has been honouring warranties since 2011. We have the upmost confidence in our product range of Laptops and Notebooks - so much so that we offer a full 12 month USA warranty period, applicable to our USA Service Centre.",
+    "price": 2060
   },
   {
     "id": 101,
     "category": "bike",
     "file": "bike1.jpg",
-    "name": "bike1",
-    "desc": "bike1.jpg",
-    "price": 20
+    "name": "Specialized Turbo Levo SL Expert Carbon 2021",
+    "desc": "The Turbo Levo SL is a new, lightweight breed of eMTB that harnesses the quick and lively ride of our Stumpjumper...and adds just enough power to introduce a whole new dimension of kick ass. The Turbo Levo SL Expert Carbon features a full carbon frame paired to full FOX suspension and a SRAM Eagle GX drivetrain. The Turbo Levo SL is effectively a Stumpjumper that lets you embark on ridiculously long adventures with no fear of bonking and helps you snag three laps of your favorite trail instead of just one. Looking for a ton of power and range? Check out our Turbo Levo and Kenevo models. Want a bike, on the other hand, that simply feels like you—a faster you, with the power to ride more trails, kind of you? That's Turbo Levo SL.By connecting with our Mission Control App, you can tune the SL 1.1 motor to your riding style, record rides, and monitor the battery. The motor even has a built-in power meter that transmits to any ANT+ head unit. Don't want to connect? No worries—the simple Turbo Connect Unit (TCU) on the top tube gives you all the control you need to just climb on and ride all day.",
+    "price": 5949
   },
   {
     "id": 102,
     "category": "bike",
     "file": "bike2.jpg",
-    "name": "bike3",
-    "desc": "bike2.jpg",
-    "price": 20
+    "name": "Norco Sight VLT C3 27.5 2020 Electric Mountain Bike",
+    "desc": "The Sight VLT C2 27.5 is an electric All-Mountain whip with amazing descending capability, sure-footed climbing and trail charging grip. By taking the ride characteristics of our most popular All-Mountain design and adding and Shimano STEPS E7000 e-assist and an integrated 500Wh in tube battery, the Sight VLT C2 27.5 opens up a whole new world of riding possibilities. Featuring modern All-Mountain geometry with e-MTB specific components and suspension kinematics for a fast, stable and playful ride, the Sight VLT will amplify your ride from bottom to top and top to bottom.",
+    "price": 4399
   },
   {
     "id": 103,
     "category": "bike",
     "file": "bike3.jpg",
-    "name": "bike3.jpg",
-    "desc": "bike3.jpg",
-    "price": 20
+    "name": "Haibike HardSeven 5",
+    "desc": "Tour or trail? Uphill or downhill? With the HardSeven 5, there is no need for tradeoffs because this is a versatile and agile eMTB. With 120mm travel, snappy disc brakes, nimble 27.5\" wheels and a powerful Bosch Performance Line motor with a sleek, integrated 500Wh battery you will have a huge amount of fun on and off the trail. Adventures - here we come!",
+    "price": 1200
   },
   {
     "id": 104,
     "category": "bike",
     "file": "bike4.jpg",
-    "name": "bike4.jpg",
-    "desc": "bike4.jpg",
-    "price": 20
+    "name": "Specialized Turbo Tero 4.0",
+    "desc": "The new Turbo Tero is an electric mountain bike equipped for everyday rides. A mountain bike that you can commute on. A commuter you can take touring. A touring bike that you can haul freight with. Whatever you need it to be, for wherever you want to go. A true do-it-all superhero, Tero combines adaptable utility with World Champion mountain bike DNA and category-leading electric pedal assist.",
+    "price": 3600
   },
   {
     "id": 105,
     "category": "bike",
     "file": "bike5.jpg",
-    "name": "bike5.jpg",
-    "desc": "bike5.jpg",
-    "price": 20
+    "name": "Urban",
+    "desc": "Urban is our most versatile E-bike for urban explorers to enjoy the city rides and adventures beyond the pavement roads.",
+    "price": 2560
   },
   {
     "id": 106,
     "category": "bike",
     "file": "bike6.jpg",
-    "name": "bike6.jpg",
-    "desc": "bike6.jpg",
-    "price": 20
+    "name": "Specialized Tero 3.0 2022",
+    "desc": "The new Turbo Tero is an electric mountain bike equipped for everyday rides. A mountainbike that you can commute on. A commuter you can take touring. A touring bike that youcan haul freight with. Whatever you need it to be, for wherever you want to go. A truedo-it-all superhero, Tero combines adaptable utility with World Champion mountain bikeDNA and category-leading electric pedal assist.",
+    "price": 1400
   },
   {
     "id": 107,
     "category": "bike",
     "file": "bike7.jpg",
-    "name": "bike7.jpg",
-    "desc": "bike7.jpg",
-    "price": 20
+    "name": "Brand-X Road Bike",
+    "desc": "With its strong and light aluminium frame that's complete with Shimano Tourney gearing, this road bike from Brand-X is built for reliability.",
+    "price": 566
   },
   {
     "id": 108,
     "category": "bike",
     "file": "bike8.jpg",
-    "name": "bike8.jpg",
-    "desc": "bike8.jpg",
-    "price": 20
+    "name": "Specialized Kenevo SL Comp 2022",
+    "desc": "Power up to trail riding’s next level and dominate any and all trail monsters—the Turbo Kenevo Super Light melds the legendary handling and all-around big trail prowess of the Enduro with our Super Light electric support to deliver indomitable capability, light weight, and power to conquer more and bigger trails.",
+    "price": 1222
   },
   {
     "id": 109,
     "category": "bike",
-    "file": "bike9.png",
-    "name": "bike9.png",
-    "desc": "bike9.png",
-    "price": 20
+    "file": "bike9.jpg",
+    "name": "De Rosa GRX800 Gravel Bike 2021",
+    "desc": "The De Rosa Gravel is optimised for fast, stable and agile off-road riding while also providing comfortable and efficient on-road performance. It features a full-carbon frameset, a Shimano GRX 800 groupset, hydraulic disc brakes and Fulcrum Rapid Red 5 wheels wrapped in Vredestein Aventura 38c tyres.",
+    "price": 3000
   },
   {
     "id": 110,
     "category": "bike",
-    "file": "bike10.png",
-    "name": "bike10.png",
-    "desc": "bike10.png",
-    "price": 20
+    "file": "bike10.jpg",
+    "name": "Electric Mountain Bike",
+    "desc": "An e-mountain bike with infinite capability. The shackles are off, go ride the unrideable. Again and again. Impressively precise. Uncommonly agile. With its low center of gravity, modern geometry and short chainstays, Moterra's handling is in a class of its own.\n\nBosch's powerful new Performance CX drive unit and a long-lasting PowerTube battery integrate cleanly into Moterra's burly carbon frame. The power and range to ride anything — in a beautiful package. Riders come in all sizes. Proportional Response is the only design that addresses this fact, tailoring the suspension layout by size so that every rider gets optimal traction, suppleness and control.",
+    "price": 344
   },
   {
     "id": 111,
     "category": "bike",
-    "file": "bike11.png",
-    "name": "bike11.png",
-    "desc": "bike11.png",
-    "price": 20
+    "file": "bike11.jpg",
+    "name": "Vitus ZX-1 EVO CR Road Bike",
+    "desc": "The Vitus ZX-1 EVO CR is engineered for fast speeds, agile handling, exceptional efficiency and long-distance racing dependability. It features a full-carbon aero-optimised frameset, a Shimano R7000 2x11-Speed groupset with hydraulic disc brakes. This road race bike rolls fast upon Reynolds AR 58/62 carbon wheels wrapped in Tubeless Ready Schwalbe One Performance tyres.",
+    "price": 677
   },
   {
     "id": 112,
     "category": "bike",
-    "file": "bike12.png",
-    "name": "bike12.png",
-    "desc": "bike12.png",
-    "price": 20
+    "file": "bike12.jpg",
+    "name": "Specialized Kenevo Comp 2021 Electric Mountain Bike",
+    "desc": "The Kenevo is the most capable eMTB you can find—complete with 180mm of front and rear suspension, the smoothest and most powerful motor available, and more miles per charge than ever before. Our Kenevo Comp model pairs all that technology with a smart mix of components that’ll withstand the most demanding conditions and riders. The new Kenevo gains a stiffer, lower-slung Sidearm-style chassis and more aggressive geometry. And like the new Enduro, the Kenevo features an axle path and suspension that give you the smoothest, fastest ride over the roughest possible terrain. It all adds up to a bike that provides you with a whole new level of confidence and control on the toughest trails.\n\nThe Kenevo’s Specialized 2.1 motor amplifies your pedaling input by a mind blowing 410%. And as for range, our 500-watt hour battery provides you with plenty of range. What’s more, our Mission Control App can handle battery management automatically, ensuring your battery will last as long as you need it to. More power. More miles per ride. More awesome.",
+    "price": 3000
   },
   {
     "id": 113,
     "category": "bike",
-    "file": "bike13.png",
-    "name": "bike13.png",
-    "desc": "bike13.png",
-    "price": 20
+    "file": "bike13.jpg",
+    "name": "Cannondale Habit Neo 4+",
+    "desc": "Press play: We took our most fun trail bike and put a motor in it. It’s play time. Where it thrives: Challenging trails, up and down hills. What it's built for: Traction, efficiency, handling.",
+    "price": 1200
+  },
+  {
+    "id": 114,
+    "category": "bike",
+    "file": "bike14.jpg",
+    "name": "Specialized Turbo Levo Comp 29 202",
+    "desc": "Specialized designed the Turbo Levo Comp to be a proper trail bike, first and foremost. It takes geo, kinematics, and design cues from our newest trail bikes, like the Stumpjumper, and adds industry-leading tech that gives you the power to ride more trails. The Turbo Levo is a fully-fledged progressive trail bike. We’ve lengthened the reach, kept the chainstays nice and short, and maintained a low center of gravity. Next, we slackened the head angle for more confident descents and steepened the seat angle to improve climbing efficiency. It’s dialed.",
+    "price": 1600
+  },
+  {
+    "id": 115,
+    "category": "bike",
+    "file": "bike15.jpg",
+    "name": "Specialized Turbo Levo Comp 29 202",
+    "desc": "Specialized designed the Turbo Levo Comp to be a proper trail bike, first and foremost. It takes geo, kinematics, and design cues from our newest trail bikes, like the Stumpjumper, and adds industry-leading tech that gives you the power to ride more trails. The Turbo Levo is a fully-fledged progressive trail bike. We’ve lengthened the reach, kept the chainstays nice and short, and maintained a low center of gravity. Next, we slackened the head angle for more confident descents and steepened the seat angle to improve climbing efficiency. It’s dialed.",
+    "price": 1500
+  },
+  {
+    "id": 116,
+    "category": "bike",
+    "file": "bike16.jpg",
+    "name": "Specialized Turbo Levo SL Comp Carbon 2021 Electric Mountain Bike",
+    "desc": "The Turbo Levo SL is a new, lightweight breed of eMTB that harnesses the quick and lively ride of our Stumpjumper...and adds just enough power to introduce a whole new dimension of kick ass. The Turbo Levo SL Comp Carbon features a full carbon frame, full FOX suspension and a SRAM Eagle NX drivetrain. The Turbo Levo SL is effectively a Stumpjumper that lets you embark on ridiculously long adventures with no fear of bonking and helps you snag three laps of your favorite trail instead of just one. Looking for a ton of power and range? Check out our Turbo Levo and Kenevo models. Want a bike, on the other hand, that simply feels like you—a faster you, with the power to ride more trails, kind of you? That's Turbo Levo SL.By connecting with our Mission Control App, you can tune the SL 1.1 motor to your riding style, record rides, and monitor the battery. The motor even has a built-in power meter that transmits to any ANT+ head unit. Don't want to connect? No worries—the simple Turbo Connect Unit (TCU) on the top tube gives you all the control you need to just climb on and ride all day. The Turbo Levo SL looks like a Stumpjumper and, out on the trail, feels like one too. That’s no mistake. We aimed to build a Stumpjumper with a bit more boost to it and that’s exactly what you get—a Sidearm chassis with just the right amount of front-to-rear stiffness and 150mm of smooth, custom-tuned FOX front and rear suspension. To top it all off, we constructed this Turbo Levo SL chassis entirely from our light-yet-strong FACT 11m carbon. The lightweight SL 1.1 motor doubles your effort with as much as 240 watts of silent and powerful assistance to your pedals. The motor’s responsive torque curve delivers power perfectly in-tune with your normal riding cadence and leaves no resistance when you’re riding without power assistance.",
+    "price": 1300
+  },
+  {
+    "id": 117,
+    "category": "bike",
+    "file": "bike17.jpg",
+    "name": "Trek Powerfly FS 4 500 2022",
+    "desc": "Powerfly FS 4 is a full suspension electric mountain bike built to tackle rugged trail adventures. The plush suspension set-up soaks up rough terrain, and the powerful Bosch electric drive system boosts your capacity to crush climbs and mile after mile of singletrack.",
+    "price": 1200
+  },
+  {
+    "id": 118,
+    "category": "bike",
+    "file": "bike18.jpg",
+    "name": "Haibike HardSeven 4",
+    "desc": "So you're looking for an agile hardtail eMTB with a powerful drive unit? The HardSeven 4 is equipped with a powerful Bosch Performance Line motor and always offers the right support level you need to suit the terrain. This eBike, equipped with 27.5 wheels, comes with a sophisticated selection of components and will always get you to your destination even after countless miles on the trail.",
+    "price": 1000
+  },
+  {
+    "id": 119,
+    "category": "bike",
+    "file": "bike19.jpg",
+    "name": "Cannondale Habit Neo 4+",
+    "desc": "Specialized Kenevo SL Expert Carbon 2022 Electric Mountain Bike",
+    "price": 1220
+  },
+  {
+    "id": 120,
+    "category": "bike",
+    "file": "bike20.jpg",
+    "name": "Specialized Kenevo SL Expert Carbon 2022 Electric Mountain Bike",
+    "desc": "Power up to trail riding’s next level and dominate any and all trail monsters—the Turbo Kenevo Super Light melds the legendary handling and all-around big trail prowess of the Enduro with our Super Light electric support to deliver indomitable capability light weight and power to conquer more and bigger trails.",
+    "price": 1207
+  },
+  {
+    "id": 121,
+    "category": "bike",
+    "file": "bike21.jpg",
+    "name": "Vitus Razor Road Bike",
+    "desc": "The Vitus Razor is a superb bike to get new riders up to speed into the world of road cycling and is also a great bike for training, weekend racing, seasonal sportive riding and casual group rides. It features a quality aluminium frame, carbon forks, a Shimano Claris drivetrain and powerful dual pivot caliper rim brakes. This bike provides excellent performance and style without breaking the bank.",
+    "price": 2000
+  },
+  {
+    "id": 122,
+    "category": "bike",
+    "file": "bike22.jpg",
+    "name": "Vitus ZX-1 EVO CRS eTap AXS Road Bike",
+    "desc": "Engineered for fast and agile performance suited to rapid group rides and long-distance tour events, the Vitus ZX-1 EVO CRS is a top performer. It features an aero full-carbon frameset that's equipped with a SRAM Force eTap wireless electronic groupset. The groupset shifts instantly and precisely though its 2x12-Speed gear range, and it includes hydraulic disc brakes for outstanding all-weather stopping power. Plus, this race bike rolls upon Tubeless Ready Reynolds AR58/62 DB Carbon wheels wrapped in Schwalbe ONE Performance Tubeless Easy (TLE) tyres.",
+    "price": 1220
   }
 ]
 
