@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { ProductCard } from "./ProductCard";
+import { ProductCard } from "../../components/Cards/ProductCard";
 import { IProduct } from "../../context/product/interfaces/IProduct";
 import is from "is_js";
 import { productConstants } from "../../context/product/constants";
@@ -53,14 +53,16 @@ export const ProductTable = () => {
         );
 
         return (
-          <ProductCard
-            key={product.id}
-            formattedName={formattedName}
-            photoUrl={`/products/${product.category}/${product.file}`}
-            altText={product.name ?? "Photo"}
-            onClickPhotoHandler={() => openFancyBox(product)}
-            onClickButtonHandler={() => console.log("Add to card")}
-          />
+          <div className="products__item">
+            <ProductCard
+              key={product.id}
+              formattedName={formattedName}
+              photoUrl={`/products/${product.category}/${product.file}`}
+              altText={product.name ?? "Photo"}
+              onClickPhotoHandler={() => openFancyBox(product)}
+              onClickButtonHandler={() => console.log("Add to card")}
+            />{" "}
+          </div>
         );
       })}
     </div>

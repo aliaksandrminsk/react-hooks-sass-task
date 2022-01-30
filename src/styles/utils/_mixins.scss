@@ -41,45 +41,35 @@
   }
 }
 
-@mixin photoCard($width: 32rem) {
+@mixin photoCard($width: 32rem, $minSize: 0) {
   width: $width;
-  padding: 0.9rem;
+  min-width:  $minSize;
+  min-height: $minSize;
+
   border-radius: 0.5rem;
   box-shadow: $smallShadow;
   border: solid 0.1rem black;
   background-image: url($asset_path + "/ui/fon24.png");
   background-color: white;
 
-  min-width: 20rem;
-  min-height: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.9rem;
 
-  &__link {
-    width: 100%;
-    height: 100%;
+  @extend %blackText;
+  text-decoration: none;
+  overflow: hidden;
+  font-size: 1.8rem;
+  text-align: center;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    @extend %blackText;
-    text-decoration: none;
-    overflow: hidden;
-    font-size: 1.8rem;
-    text-align: center;
+  &__title {
+    margin-bottom: 1rem;
   }
 
   &__image {
     margin-bottom: 1rem;
-    display: flex;
     cursor: pointer;
-
-    span {
-      display: flex;
-      img {
-        max-width: 30rem;
-        max-height: 30rem;
-      }
-    }
   }
 
   @media ($mobileL) {
@@ -87,10 +77,3 @@
   }
 }
 
-@mixin photoEditCard($width: 32rem) {
-
-}
-
-@mixin simpleCard($isFolder: false) {
-
-}

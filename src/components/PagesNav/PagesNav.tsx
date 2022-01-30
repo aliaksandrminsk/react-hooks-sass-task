@@ -6,12 +6,12 @@ interface IPageNavContext {
 }
 
 interface IPagesNavProps<T> {
-  setFilterFunc(pageIndex: number): void;
+  setActivePage(pageIndex: number): void;
   context: Context<T>;
 }
 
 export const PagesNav = <T extends IPageNavContext>({
-  setFilterFunc,
+  setActivePage,
   context,
 }: IPagesNavProps<T>) => {
   const { pagesNumber, activePage } = useContext(context);
@@ -32,7 +32,7 @@ export const PagesNav = <T extends IPageNavContext>({
         } else {
           return (
             <button
-              onClick={() => setFilterFunc(index)}
+              onClick={() => setActivePage(index)}
               key={"page" + index}
               className="pagesNav__link-passive"
             >

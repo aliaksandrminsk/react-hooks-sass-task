@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import { ProductContext } from "../context/product/productContext";
+import { ProductContext } from "../../context/product/productContext";
 
 export const Search: React.FC<{ showFilter: boolean }> = (props) => {
   const [value, setValue] = useState<string>("");

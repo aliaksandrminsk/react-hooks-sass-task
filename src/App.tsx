@@ -1,9 +1,9 @@
 import React from "react";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import { Products } from "./pages/Products/Products";
-import { ProductNavbar } from "./components/ProductNavbar";
+import { ProductMenu } from "./components/Menu/ProductMenu";
 import { ProductState } from "./context/product/ProductState";
-import { ControlNavBar } from "./components/ControlNavBar";
+import { ControlMenu } from "./components/Menu/ControlMenu";
 import { AboutUs } from "./pages/AboutUs/AboutUs";
 import { Cart } from "./pages/Cart/Cart";
 import ErrorPage from "./pages/ErrorPage/ErrorPage";
@@ -18,8 +18,8 @@ function App() {
   return (
     <ProductState>
       <BrowserRouter>
-        <ProductNavbar />
-        <ControlNavBar />
+        <ProductMenu />
+        <ControlMenu />
         <main className="container">
           <Routes>
             <Route path="cart" element={<Cart />} />

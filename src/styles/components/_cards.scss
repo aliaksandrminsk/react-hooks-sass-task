@@ -1,29 +1,3 @@
-//Card have photo and description
 .photoCard {
-  @include photoCard();
-}
-
-//Card have only photo without description
-.simplePhotoCard {
-  @include photoCard();
-  width: max-content;
-
-  .photoCard__image {
-    margin-bottom: 0;
-  }
-}
-
-//Card with photo and two fields
-.photoEditCard {
-  @include photoEditCard();
-}
-
-//Card have only description without photo
-.countryCard {
-  @include simpleCard(true);
-}
-
-//Card have only description without photo
-.albumCard {
-  @include simpleCard(false);
+  @include photoCard(32rem, 20rem);
 }

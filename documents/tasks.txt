@@ -11,7 +11,7 @@
 7) gulp, 
 8) падключыць __REDUX_DEVTOOLS_EXTENSION_COMPOSE__ для дэбага
 9) выдаліць index.css
-10) ProductNavbar улажыць у кампанент линк бо шмат кода пазтараецца
+10) ProductMenu улажыць у кампанент линк бо шмат кода пазтараецца
 11) menuPanel__menu-item_active - праверыць БЭМ, колькасць цірэ
 12)  <NextNProgress options={{ showSpinner: false }} />
 13) fancybox - праз пакет паставиць

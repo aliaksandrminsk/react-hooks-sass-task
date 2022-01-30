@@ -1,4 +1,4 @@
-.menuPanel {
+.productPanel {
   width: 100%;
   background-color: black;
   position: relative;
@@ -19,7 +19,6 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 3rem 1.2rem 3rem;
     justify-items: center;
-
 
     @media ($mobileL) {
       grid-template-columns: repeat( 5, fit-content(20%));

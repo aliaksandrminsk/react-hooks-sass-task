@@ -10,8 +10,8 @@ import React, {
 import { useParams } from "react-router-dom";
 import { ProductTable } from "./ProductTable";
 import { ProductContext } from "../../context/product/productContext";
-import { Search } from "../../components/Search";
-import { PagesNav } from "../../components/PagesNav";
+import { Search } from "../../components/Search/Search";
+import { PagesNav } from "../../components/PagesNav/PagesNav";
 import { IProduct } from "../../context/product/interfaces/IProduct";
 import ErrorPage from "../ErrorPage/ErrorPage";
 
@@ -106,14 +106,14 @@ export const Products = () => {
         <hr className="products__hr" />
 
         <PagesNav
-          setFilterFunc={(pageIndex) => setActivePage(pageIndex)}
+          setActivePage={(pageIndex) => setActivePage(pageIndex)}
           context={ProductContext}
         />
 
         <ProductTable />
 
         <PagesNav
-          setFilterFunc={(pageIndex) => setActivePage(pageIndex)}
+          setActivePage={(pageIndex) => setActivePage(pageIndex)}
           context={ProductContext}
         />
       </section>
