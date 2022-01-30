@@ -1,43 +1,38 @@
 import React from "react";
-import { getIconSize } from "../lib/getMiniPhotoSize";
 import { IProduct } from "../store/productGallery/IProduct";
 
-interface PhotoCardProps {
+interface ProductCardProps {
   formattedName: string;
-  item: IProduct;
+  product: IProduct;
   onClickPhotoHandler: () => void;
   onClickButtonHandler: () => void;
 }
 
-export const PhotoCard: React.FC<PhotoCardProps> = ({
+export const ProductCard: React.FC<ProductCardProps> = ({
   formattedName,
-  item,
+  product,
   onClickPhotoHandler,
   onClickButtonHandler,
 }) => {
-  const photoUrl = `/products/${item.category}/${item.file}`;
+  const photoUrl = `/products/${product.category}/${product.file}`;
 
   let description;
-  if (item.name) {
-    description = item.name;
+  if (product.name) {
+    description = product.name;
   }
-
-  const iconPhotoSize = getIconSize({ w: 900, h: 600 });
 
   return (
     <div className="products__item photoCard">
       <a className="photoCard__link">
         <span dangerouslySetInnerHTML={{ __html: formattedName }} />
         <div className="photoCard__image" onClick={onClickPhotoHandler}>
-          {iconPhotoSize.w > 0 && iconPhotoSize.h > 0 ? (
-            <img
-              id={photoUrl}
-              src={photoUrl}
-              width={iconPhotoSize.w}
-              height={iconPhotoSize.h}
-              alt={description ?? "Photo"}
-            />
-          ) : null}
+          <img
+            id={product.id}
+            src={photoUrl}
+            width="300"
+            height="200"
+            alt={description ?? "Photo"}
+          />
         </div>
         <button
           type="button"

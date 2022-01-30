@@ -1,6 +1,6 @@
 import React, { useReducer } from "react";
 import { ProductGalleryContext } from "./productGalleryContext";
-import { IState, productGalleryReducer } from "./productGalleryReducer";
+import { IProductState, productGalleryReducer } from "./productGalleryReducer";
 import { productGalleryConstants } from "./constants";
 import { ActionType } from "../types";
 import axios from "axios";
@@ -8,7 +8,7 @@ import { IProduct } from "./IProduct";
 import { IFilter } from "./IFilter";
 
 export const ProductGalleryState: React.FC = ({ children }) => {
-  const initialState: IState = {
+  const initialState: IProductState = {
     products: [],
     filteredProducts: [],
     pagesNumber: 1,
@@ -116,15 +116,12 @@ export const ProductGalleryState: React.FC = ({ children }) => {
         setActivePage,
         setFilter,
         getDescription,
-        setLoading,
         products,
-
         filteredProducts,
         activePage,
         pagesNumber,
         loading,
         nameFilter,
-        categoryFilter,
       }}
     >
       {children}

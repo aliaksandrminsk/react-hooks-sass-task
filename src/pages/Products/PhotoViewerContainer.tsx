@@ -1,25 +1,26 @@
-import React from "react";
-import { PhotoCard } from "../../components/PhotoCard";
+import React, { useContext } from "react";
+import { ProductCard } from "../../components/ProductCard";
 import { IProduct } from "../../store/productGallery/IProduct";
 import is from "is_js";
 import { productGalleryConstants } from "../../store/productGallery/constants";
+import { ProductGalleryContext } from "../../store/productGallery/productGalleryContext";
 
-export const PhotoViewerContainer: React.FC<{
-  filteredProducts: Array<IProduct>;
-  nameFilter: string;
-  activePage: number;
-}> = (props) => {
+export const PhotoViewerContainer: React.FC = () => {
+  const { filteredProducts, activePage, nameFilter } = useContext(
+    ProductGalleryContext
+  );
+
   const openFancyBox = (currentProduct: IProduct) => {
     const productCollection = new Array<FancyBoxGroupItem>();
     let productIndex = -1;
 
-    props.filteredProducts.map((product, index) => {
+    filteredProducts.map((product, index) => {
       if (product.file === currentProduct.file) {
         productIndex = index;
       }
       productCollection.push({
         type: "image",
-        src: `/images/${product.file}`,
+        src: `/products/${product.category}/${product.file}`,
         opts: {
           caption: product.desc,
         },
@@ -38,9 +39,9 @@ export const PhotoViewerContainer: React.FC<{
     }
   };
 
-  const productsOnPage = props.filteredProducts.slice(
-    props.activePage * productGalleryConstants.SIZE_PRODUCT_PAGE,
-    (props.activePage + 1) * productGalleryConstants.SIZE_PRODUCT_PAGE
+  const productsOnPage = filteredProducts.slice(
+    activePage * productGalleryConstants.SIZE_PRODUCT_PAGE,
+    (activePage + 1) * productGalleryConstants.SIZE_PRODUCT_PAGE
   );
 
   return (
@@ -48,16 +49,16 @@ export const PhotoViewerContainer: React.FC<{
       {productsOnPage.map((product: IProduct) => {
         const formattedName = getFormattedProductName(
           product.name,
-          props.nameFilter,
-          2
+          nameFilter,
+          product.price
         );
 
         return (
-          <PhotoCard
+          <ProductCard
             onClickPhotoHandler={() => openFancyBox(product)}
             onClickButtonHandler={() => console.log("Add to card")}
-            key={product.file}
-            item={product}
+            key={product.id}
+            product={product}
             formattedName={formattedName}
           />
         );

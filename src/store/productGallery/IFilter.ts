@@ -1,5 +1,4 @@
 export interface IFilter {
-    categoryFilter?: string;
-    nameFilter?: string;
-
+  categoryFilter?: string;
+  nameFilter?: string;
 }

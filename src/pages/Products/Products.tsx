@@ -10,7 +10,6 @@ import { useParams } from "react-router-dom";
 
 import { PhotoViewerContainer } from "./PhotoViewerContainer";
 import { ProductGalleryContext } from "../../store/productGallery/productGalleryContext";
-import { productGalleryConstants } from "../../store/productGallery/constants";
 import { Search } from "../../components/Search";
 import { PagesNav } from "../../components/PagesNav";
 
@@ -31,10 +30,8 @@ export const Products = () => {
     loading,
     getProducts,
     setActivePage,
-    setLoading,
     setFilter,
     nameFilter,
-    categoryFilter,
   } = useContext(ProductGalleryContext);
 
   useEffect(() => {
@@ -104,11 +101,7 @@ export const Products = () => {
         ) : null}
 
         <div className="products__items">
-          <PhotoViewerContainer
-            filteredProducts={filteredProducts}
-            activePage={activePage}
-            nameFilter={nameFilter}
-          />
+          <PhotoViewerContainer />
         </div>
 
         {pagesNumber > 1 ? (
