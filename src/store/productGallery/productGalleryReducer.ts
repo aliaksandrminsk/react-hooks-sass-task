@@ -7,7 +7,8 @@ export interface IState {
   pagesNumber: number;
   activePage: number;
   loading: boolean;
-  filter: string;
+  categoryFilter: string;
+  nameFilter: string;
 }
 
 type GetProductsAction = {
@@ -15,7 +16,6 @@ type GetProductsAction = {
   products: Array<IProduct>;
   filteredProducts: Array<IProduct>;
   pagesNumber: number;
-  activePage: number;
 };
 
 type SetActivePageAction = {
@@ -28,7 +28,8 @@ type SetFilterAction = {
   type: ActionType.SET_FILTER;
   filteredProducts: Array<IProduct>;
   pagesNumber: number;
-  filter: string;
+  categoryFilter: string;
+  nameFilter: string;
 };
 
 type SetLoadingAction = {
@@ -47,7 +48,7 @@ const handlers = {
     products: (action as GetProductsAction).products,
     filteredProducts: (action as GetProductsAction).filteredProducts,
     pagesNumber: (action as GetProductsAction).pagesNumber,
-    activePage: (action as GetProductsAction).activePage,
+    activePage: 0,
     loading: false,
   }),
   [ActionType.SET_ACTIVE_PAGE]: (state: IState, action: Action): IState => ({
@@ -58,7 +59,8 @@ const handlers = {
   [ActionType.SET_FILTER]: (state: IState, action: Action): IState => ({
     ...state,
     filteredProducts: (action as SetFilterAction).filteredProducts,
-    filter: (action as SetFilterAction).filter,
+    nameFilter: (action as SetFilterAction).nameFilter,
+    categoryFilter: (action as SetFilterAction).categoryFilter,
     pagesNumber: (action as SetFilterAction).pagesNumber,
     activePage: 0,
   }),
@@ -73,6 +75,7 @@ export const productGalleryReducer = (
   state: IState,
   action: Action
 ): IState => {
+  console.log("AAAAAAAAAAAAA reducer", action);
   const handler = handlers[action.type] || handlers.DEFAULT;
   return handler(state, action);
 };

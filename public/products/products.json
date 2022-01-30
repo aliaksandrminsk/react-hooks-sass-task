@@ -1,0 +1,187 @@
+[
+  {
+    "id": 1,
+    "category": "laptop",
+    "file": "laptop1.png",
+    "name": "laptop1.png",
+    "desc": "laptop1.png",
+    "price": 20
+  },
+  {
+    "id": 2,
+    "category": "laptop",
+    "file": "laptop2.jpg",
+    "name": "laptop2.jpg",
+    "desc": "laptop2.jpg",
+    "price": 20
+  },
+  {
+    "id": 3,
+    "category": "laptop",
+    "file": "laptop3.jpg",
+    "name": "laptop3.jpg",
+    "desc": "laptop3.jpg",
+    "price": 20
+  },
+  {
+    "id": 4,
+    "category": "laptop",
+    "file": "laptop4.jpg",
+    "name": "laptop4.jpg",
+    "desc": "laptop5.jpg",
+    "price": 20
+  },
+  {
+    "id": 5,
+    "category": "laptop",
+    "file": "laptop6.png",
+    "name": "laptop6.png",
+    "desc": "laptop6.png",
+    "price": 20
+  },
+  {
+    "id": 6,
+    "category": "laptop",
+    "file": "laptop7.jpg",
+    "name": "laptop7.jpg",
+    "desc": "laptop7.jpg",
+    "price": 20
+  },
+  {
+    "id": 7,
+    "category": "laptop",
+    "file": "laptop8.jpg",
+    "name": "laptop8.jpg",
+    "desc": "laptop8.jpg",
+    "price": 20
+  },
+  {
+    "id": 8,
+    "category": "laptop",
+    "file": "laptop9.jpg",
+    "name": "laptop9.jpg",
+    "desc": "laptop9.jpg",
+    "price": 20
+  },
+  {
+    "id": 9,
+    "category": "laptop",
+    "file": "laptop10.jpg",
+    "name": "laptop10.jpg",
+    "desc": "laptop10.jpg",
+    "price": 20
+  },
+  {
+    "id": 10,
+    "category": "laptop",
+    "file": "laptop11.png",
+    "name": "laptop11.png",
+    "desc": "laptop11.png",
+    "price": 20
+  },
+  {
+    "id": 101,
+    "category": "bike",
+    "file": "bike1.jpg",
+    "name": "bike1",
+    "desc": "bike1.jpg",
+    "price": 20
+  },
+  {
+    "id": 102,
+    "category": "bike",
+    "file": "bike2.jpg",
+    "name": "bike3",
+    "desc": "bike2.jpg",
+    "price": 20
+  },
+  {
+    "id": 103,
+    "category": "bike",
+    "file": "bike3.jpg",
+    "name": "bike3.jpg",
+    "desc": "bike3.jpg",
+    "price": 20
+  },
+  {
+    "id": 104,
+    "category": "bike",
+    "file": "bike4.jpg",
+    "name": "bike4.jpg",
+    "desc": "bike4.jpg",
+    "price": 20
+  },
+  {
+    "id": 105,
+    "category": "bike",
+    "file": "bike5.jpg",
+    "name": "bike5.jpg",
+    "desc": "bike5.jpg",
+    "price": 20
+  },
+  {
+    "id": 106,
+    "category": "bike",
+    "file": "bike6.jpg",
+    "name": "bike6.jpg",
+    "desc": "bike6.jpg",
+    "price": 20
+  },
+  {
+    "id": 107,
+    "category": "bike",
+    "file": "bike7.jpg",
+    "name": "bike7.jpg",
+    "desc": "bike7.jpg",
+    "price": 20
+  },
+  {
+    "id": 108,
+    "category": "bike",
+    "file": "bike8.jpg",
+    "name": "bike8.jpg",
+    "desc": "bike8.jpg",
+    "price": 20
+  },
+  {
+    "id": 109,
+    "category": "bike",
+    "file": "bike9.png",
+    "name": "bike9.png",
+    "desc": "bike9.png",
+    "price": 20
+  },
+  {
+    "id": 110,
+    "category": "bike",
+    "file": "bike10.png",
+    "name": "bike10.png",
+    "desc": "bike10.png",
+    "price": 20
+  },
+  {
+    "id": 111,
+    "category": "bike",
+    "file": "bike11.png",
+    "name": "bike11.png",
+    "desc": "bike11.png",
+    "price": 20
+  },
+  {
+    "id": 112,
+    "category": "bike",
+    "file": "bike12.png",
+    "name": "bike12.png",
+    "desc": "bike12.png",
+    "price": 20
+  },
+  {
+    "id": 113,
+    "category": "bike",
+    "file": "bike13.png",
+    "name": "bike13.png",
+    "desc": "bike13.png",
+    "price": 20
+  }
+]
+

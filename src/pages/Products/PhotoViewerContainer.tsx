@@ -6,7 +6,7 @@ import { productGalleryConstants } from "../../store/productGallery/constants";
 
 export const PhotoViewerContainer: React.FC<{
   filteredProducts: Array<IProduct>;
-  filter: string;
+  nameFilter: string;
   activePage: number;
 }> = (props) => {
   const openFancyBox = (currentProduct: IProduct) => {
@@ -47,8 +47,8 @@ export const PhotoViewerContainer: React.FC<{
     <>
       {productsOnPage.map((product: IProduct) => {
         const formattedName = getFormattedProductName(
-          product.shortDesc,
-          props.filter,
+          product.name,
+          props.nameFilter,
           2
         );
 

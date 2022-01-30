@@ -1,9 +1,11 @@
 import { createContext } from "react";
 import { IProduct } from "./IProduct";
+import { IFilter } from "./IFilter";
 
 interface IProductGalleryContext {
   loading: boolean;
-  filter: string;
+  nameFilter: string;
+  categoryFilter: string;
   products: Array<IProduct>;
   filteredProducts: Array<IProduct>;
   pagesNumber: number;
@@ -12,12 +14,13 @@ interface IProductGalleryContext {
   getDescription: (productId: string) => string;
   setActivePage: (activePage: number) => void;
   setLoading: () => void;
-  setFilter: (filter: string) => void;
+  setFilter: (filter: IFilter) => void;
 }
 
 export const ProductGalleryContext = createContext<IProductGalleryContext>({
   loading: false,
-  filter: "",
+  nameFilter: "",
+  categoryFilter: "",
   products: [],
   filteredProducts: [],
   pagesNumber: 0,

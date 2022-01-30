@@ -1,8 +1,8 @@
 export interface IProduct {
+  category: string;
   id: string;
   file: string;
-  shortDesc: string;
+  name: string;
   desc: string;
-  width: number;
-  height: number;
+  price: number;
 }

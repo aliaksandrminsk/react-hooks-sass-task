@@ -1,14 +1,10 @@
 import React from "react";
 import { getIconSize } from "../lib/getMiniPhotoSize";
+import { IProduct } from "../store/productGallery/IProduct";
 
 interface PhotoCardProps {
   formattedName: string;
-  item: {
-    file: string;
-    shortDesc?: string;
-    width: number;
-    height: number;
-  };
+  item: IProduct;
   onClickPhotoHandler: () => void;
   onClickButtonHandler: () => void;
 }
@@ -19,14 +15,14 @@ export const PhotoCard: React.FC<PhotoCardProps> = ({
   onClickPhotoHandler,
   onClickButtonHandler,
 }) => {
-  const photoUrl = `/images/${item.file}`;
+  const photoUrl = `/products/${item.category}/${item.file}`;
 
   let description;
-  if (item.shortDesc) {
-    description = item.shortDesc;
+  if (item.name) {
+    description = item.name;
   }
 
-  const iconPhotoSize = getIconSize({ w: item.width, h: item.height });
+  const iconPhotoSize = getIconSize({ w: 900, h: 600 });
 
   return (
     <div className="products__item photoCard">

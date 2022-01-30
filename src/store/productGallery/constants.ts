@@ -1,3 +1,3 @@
 export const productGalleryConstants = {
-  SIZE_PRODUCT_PAGE: 32,
+  SIZE_PRODUCT_PAGE: 12,
 };

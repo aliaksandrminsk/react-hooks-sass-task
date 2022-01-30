@@ -18,7 +18,7 @@ export const Search: React.FC<{ showFilter: boolean }> = (props) => {
   }
 
   const setFilterData = () => {
-    setFilter(value.trim());
+    setFilter({ nameFilter: value.trim() });
   };
 
   return (

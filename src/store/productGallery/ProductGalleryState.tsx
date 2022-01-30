@@ -5,6 +5,7 @@ import { productGalleryConstants } from "./constants";
 import { ActionType } from "../types";
 import axios from "axios";
 import { IProduct } from "./IProduct";
+import { IFilter } from "./IFilter";
 
 export const ProductGalleryState: React.FC = ({ children }) => {
   const initialState: IState = {
@@ -13,7 +14,8 @@ export const ProductGalleryState: React.FC = ({ children }) => {
     pagesNumber: 1,
     activePage: 0,
     loading: false,
-    filter: "",
+    nameFilter: "",
+    categoryFilter: "",
   };
 
   const [state, dispatch] = useReducer(productGalleryReducer, initialState);
@@ -21,19 +23,52 @@ export const ProductGalleryState: React.FC = ({ children }) => {
   const getProducts = async () => {
     setLoading();
 
-    const response = await axios.get("/products.json");
-
+    const response = await axios.get("/products/products.json");
     const products = response.data;
-    const pagesNumber = Math.ceil(
-      products.length / productGalleryConstants.SIZE_PRODUCT_PAGE
-    );
 
     dispatch({
       type: ActionType.GET_PRODUCTS,
       products,
       filteredProducts: products,
       pagesNumber,
-      activePage: 0,
+    });
+  };
+
+  const setFilter = (filter: IFilter) => {
+    let filteredProducts;
+    let category: string;
+    let name: string;
+
+    if (filter.categoryFilter != null) {
+      category = filter.categoryFilter;
+    } else {
+      category = categoryFilter;
+    }
+    filteredProducts = products.filter(function (product: IProduct) {
+      return product.category === category;
+    });
+
+    if (filter.nameFilter != null) {
+      name = filter.nameFilter;
+    } else {
+      name = nameFilter;
+    }
+    if (name.length > 0) {
+      filteredProducts = filteredProducts.filter(function (product: IProduct) {
+        return product.name.toLowerCase().indexOf(name.toLowerCase()) > -1;
+      });
+    }
+
+    const pagesNumber = Math.ceil(
+      filteredProducts.length / productGalleryConstants.SIZE_PRODUCT_PAGE
+    );
+
+    dispatch({
+      type: ActionType.SET_FILTER,
+      filteredProducts,
+      nameFilter: name,
+      categoryFilter: category,
+      pagesNumber,
     });
   };
 
@@ -49,30 +84,6 @@ export const ProductGalleryState: React.FC = ({ children }) => {
     dispatch({
       type: ActionType.SET_ACTIVE_PAGE,
       activePage,
-      pagesNumber,
-    });
-  };
-
-  const setFilter = (filter: string) => {
-    let filteredProducts;
-    if (filter.trim().length > 0) {
-      filteredProducts = products.filter(function (product: IProduct) {
-        return (
-          product.shortDesc.toLowerCase().indexOf(filter.toLowerCase()) > -1
-        );
-      });
-    } else {
-      filteredProducts = products;
-    }
-
-    const pagesNumber = Math.ceil(
-      filteredProducts.length / productGalleryConstants.SIZE_PRODUCT_PAGE
-    );
-
-    dispatch({
-      type: ActionType.SET_FILTER,
-      filteredProducts,
-      filter,
       pagesNumber,
     });
   };
@@ -94,7 +105,8 @@ export const ProductGalleryState: React.FC = ({ children }) => {
     activePage,
     pagesNumber,
     loading,
-    filter,
+    nameFilter,
+    categoryFilter,
   } = state;
 
   return (
@@ -106,11 +118,13 @@ export const ProductGalleryState: React.FC = ({ children }) => {
         getDescription,
         setLoading,
         products,
+
         filteredProducts,
         activePage,
         pagesNumber,
         loading,
-        filter,
+        nameFilter,
+        categoryFilter,
       }}
     >
       {children}

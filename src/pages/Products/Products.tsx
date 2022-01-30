@@ -6,6 +6,8 @@ import React, {
   useRef,
 } from "react";
 
+import { useParams } from "react-router-dom";
+
 import { PhotoViewerContainer } from "./PhotoViewerContainer";
 import { ProductGalleryContext } from "../../store/productGallery/productGalleryContext";
 import { productGalleryConstants } from "../../store/productGallery/constants";
@@ -18,28 +20,37 @@ export const Products = () => {
   const [windowWidth, setWindowWidth] = useState<number>(0);
   const [isOpenFilter, setFilterState] = useState<boolean>(false);
 
+  let params = useParams();
+  const category = params.id;
+
   const {
-    products,
     filteredProducts,
+    products,
     activePage,
     pagesNumber,
-    filter,
     loading,
     getProducts,
     setActivePage,
     setLoading,
     setFilter,
+    nameFilter,
+    categoryFilter,
   } = useContext(ProductGalleryContext);
 
   useEffect(() => {
     setWindowWidth(window.innerWidth);
     window.addEventListener("resize", changeWindowSize);
-    getProducts();
+
+    if (products.length === 0) {
+      getProducts();
+    } else {
+      setFilter({ categoryFilter: category });
+    }
 
     return function cleanupListener() {
       window.removeEventListener("resize", changeWindowSize);
     };
-  }, []);
+  }, [products, category]);
 
   const changeWindowSize = () => {
     setWindowWidth(window.innerWidth);
@@ -96,7 +107,7 @@ export const Products = () => {
           <PhotoViewerContainer
             filteredProducts={filteredProducts}
             activePage={activePage}
-            filter={filter}
+            nameFilter={nameFilter}
           />
         </div>
 

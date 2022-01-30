@@ -22,7 +22,8 @@ function App() {
         <main className="container">
           <Routes>
             <Route path="cart" element={<Cart />} />
-            <Route path="categories/*" element={<Products />} />
+            <Route path="categories/:id" element={<Products />} />
+            <Route path="aboutus" element={<AboutUs />} />
             <Route path="*" element={<AboutUs />} />
           </Routes>
         </main>

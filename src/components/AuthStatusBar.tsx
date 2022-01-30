@@ -10,7 +10,7 @@ export const AuthStatusBar: React.FC = () => {
       <div>&nbsp;</div>
 
       <div>
-        <NavLink to="/" className="authPanel__menu-item">
+        <NavLink to="/aboutus" className="authPanel__menu-item">
           {({ isActive }) => (
             <span
               className={isActive ? " authPanel__menu-item_active" : undefined}
@@ -27,7 +27,7 @@ export const AuthStatusBar: React.FC = () => {
             <span
               className={isActive ? " authPanel__menu-item_active" : undefined}
             >
-              Card
+              Cart
             </span>
           )}
         </NavLink>
