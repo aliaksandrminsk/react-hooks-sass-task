@@ -4,6 +4,7 @@ import React, {
   Fragment,
   useState,
   useRef,
+  useMemo,
 } from "react";
 
 import { useParams } from "react-router-dom";
@@ -12,6 +13,8 @@ import { PhotoViewerContainer } from "./PhotoViewerContainer";
 import { ProductGalleryContext } from "../../store/productGallery/productGalleryContext";
 import { Search } from "../../components/Search";
 import { PagesNav } from "../../components/PagesNav";
+import { IProduct } from "../../store/productGallery/IProduct";
+import ErrorPage from "../ErrorPage/ErrorPage";
 
 export const Products = () => {
   const SCREEN_SIZE_MOBILE_L = 425;
@@ -23,22 +26,29 @@ export const Products = () => {
   const category = params.id;
 
   const {
-    filteredProducts,
     products,
-    activePage,
     pagesNumber,
-    loading,
+    isProductJsonLoaded,
     getProducts,
     setActivePage,
     setFilter,
-    nameFilter,
   } = useContext(ProductGalleryContext);
+
+  const isValidateURL = useMemo(() => {
+    let arr = [];
+    if (category != null && products != null) {
+      arr = products.filter(function (product: IProduct) {
+        return product.category === category;
+      });
+    }
+    return arr.length > 0;
+  }, [category, products]);
 
   useEffect(() => {
     setWindowWidth(window.innerWidth);
     window.addEventListener("resize", changeWindowSize);
 
-    if (products.length === 0) {
+    if (!isProductJsonLoaded) {
       getProducts();
     } else {
       setFilter({ categoryFilter: category });
@@ -49,13 +59,17 @@ export const Products = () => {
     };
   }, [products, category]);
 
+  if (!isProductJsonLoaded) {
+    return <p className="text-center">Loading...</p>;
+  } else {
+    if (!isValidateURL) {
+      return <ErrorPage />;
+    }
+  }
+
   const changeWindowSize = () => {
     setWindowWidth(window.innerWidth);
   };
-
-  if (loading) {
-    return <p className="text-center">Loading...</p>;
-  }
 
   const clickFilterButton = () => {
     if (filterOpenBtnRef == null || filterOpenBtnRef.current == null) return;
@@ -92,25 +106,19 @@ export const Products = () => {
         <hr className="products__hr" />
 
         {pagesNumber > 1 ? (
-          <Fragment>
-            <PagesNav
-              setFilterFunc={(pageIndex) => setActivePage(pageIndex)}
-              context={ProductGalleryContext}
-            />
-          </Fragment>
+          <PagesNav
+            setFilterFunc={(pageIndex) => setActivePage(pageIndex)}
+            context={ProductGalleryContext}
+          />
         ) : null}
 
-        <div className="products__items">
-          <PhotoViewerContainer />
-        </div>
+        <PhotoViewerContainer />
 
         {pagesNumber > 1 ? (
-          <Fragment>
-            <PagesNav
-              setFilterFunc={(pageIndex) => setActivePage(pageIndex)}
-              context={ProductGalleryContext}
-            />
-          </Fragment>
+          <PagesNav
+            setFilterFunc={(pageIndex) => setActivePage(pageIndex)}
+            context={ProductGalleryContext}
+          />
         ) : null}
       </section>
     </Fragment>

@@ -13,7 +13,7 @@ export const ProductGalleryState: React.FC = ({ children }) => {
     filteredProducts: [],
     pagesNumber: 1,
     activePage: 0,
-    loading: false,
+    isProductJsonLoaded: false,
     nameFilter: "",
     categoryFilter: "",
   };
@@ -21,8 +21,6 @@ export const ProductGalleryState: React.FC = ({ children }) => {
   const [state, dispatch] = useReducer(productGalleryReducer, initialState);
 
   const getProducts = async () => {
-    setLoading();
-
     const response = await axios.get("/products/products.json");
     const products = response.data;
 
@@ -97,14 +95,12 @@ export const ProductGalleryState: React.FC = ({ children }) => {
     return "";
   };
 
-  const setLoading = () => dispatch({ type: ActionType.SET_LOADING });
-
   const {
     products,
     filteredProducts,
     activePage,
     pagesNumber,
-    loading,
+    isProductJsonLoaded,
     nameFilter,
     categoryFilter,
   } = state;
@@ -120,7 +116,7 @@ export const ProductGalleryState: React.FC = ({ children }) => {
         filteredProducts,
         activePage,
         pagesNumber,
-        loading,
+        isProductJsonLoaded,
         nameFilter,
       }}
     >

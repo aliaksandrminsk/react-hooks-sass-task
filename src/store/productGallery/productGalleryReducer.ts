@@ -6,7 +6,7 @@ export interface IProductState {
   filteredProducts: Array<IProduct>;
   pagesNumber: number;
   activePage: number;
-  loading: boolean;
+  isProductJsonLoaded: boolean;
   categoryFilter: string;
   nameFilter: string;
 }
@@ -32,15 +32,7 @@ type SetFilterAction = {
   nameFilter: string;
 };
 
-type SetLoadingAction = {
-  type: ActionType.SET_LOADING;
-};
-
-type Action =
-  | GetProductsAction
-  | SetActivePageAction
-  | SetLoadingAction
-  | SetFilterAction;
+type Action = GetProductsAction | SetActivePageAction | SetFilterAction;
 
 const handlers = {
   [ActionType.GET_PRODUCTS]: (state: IProductState, action: Action) => ({
@@ -49,7 +41,7 @@ const handlers = {
     filteredProducts: (action as GetProductsAction).filteredProducts,
     pagesNumber: (action as GetProductsAction).pagesNumber,
     activePage: 0,
-    loading: false,
+    isProductJsonLoaded: true,
   }),
   [ActionType.SET_ACTIVE_PAGE]: (
     state: IProductState,
@@ -69,10 +61,6 @@ const handlers = {
     categoryFilter: (action as SetFilterAction).categoryFilter,
     pagesNumber: (action as SetFilterAction).pagesNumber,
     activePage: 0,
-  }),
-  [ActionType.SET_LOADING]: (state: IProductState): IProductState => ({
-    ...state,
-    loading: true,
   }),
   DEFAULT: (state: IProductState) => state,
 };

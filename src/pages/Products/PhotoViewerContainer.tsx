@@ -45,7 +45,7 @@ export const PhotoViewerContainer: React.FC = () => {
   );
 
   return (
-    <>
+    <div className="products__items">
       {productsOnPage.map((product: IProduct) => {
         const formattedName = getFormattedProductName(
           product.name,
@@ -63,7 +63,7 @@ export const PhotoViewerContainer: React.FC = () => {
           />
         );
       })}
-    </>
+    </div>
   );
 };
 

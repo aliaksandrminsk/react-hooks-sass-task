@@ -3,7 +3,7 @@ import { IProduct } from "./IProduct";
 import { IFilter } from "./IFilter";
 
 interface IProductContext {
-  loading: boolean;
+  isProductJsonLoaded: boolean;
   products: Array<IProduct>;
   filteredProducts: Array<IProduct>;
   nameFilter: string;
