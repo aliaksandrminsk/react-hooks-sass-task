@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { CartContext } from "../../context/cart/cartContext";
 import { IProduct } from "../../context/product/interfaces/IProduct";
 import { ICartItem } from "../../context/cart/interfaces/ICartItem";
+import { Link } from "react-router-dom";
 
 export const Cart = () => {
   const { cartItems, updateCartItemCount, selectCartItem } =
@@ -49,7 +50,9 @@ export const Cart = () => {
         })}
       </div>
       <div className="cart__button">
-        <input type="button" value="Order" />
+        <Link to="/order">
+          <input type="button" value="Order" />
+        </Link>
       </div>
     </section>
   );
