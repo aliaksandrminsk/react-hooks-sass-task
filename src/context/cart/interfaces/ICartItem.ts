@@ -1,7 +1,8 @@
 export interface ICartItem {
   id: string;
-  file: string;
+  imageUrl: string;
   name: string;
   price: number;
   count: number;
+  selected: boolean;
 }

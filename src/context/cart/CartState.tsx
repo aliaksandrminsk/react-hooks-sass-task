@@ -15,10 +15,11 @@ export const CartState: React.FC = ({ children }) => {
   const addCartItem = (product: IProduct) => {
     const cartItem: ICartItem = {
       id: product.id,
-      file: product.file,
+      imageUrl: `/products/${product.category}/${product.file}`,
       name: product.name,
       price: product.price,
       count: 1,
+      selected: true,
     };
 
     dispatch({
@@ -27,11 +28,29 @@ export const CartState: React.FC = ({ children }) => {
     });
   };
 
-  const updateCartItem = (key: string, count: number) => {
+  const updateCartItemCount = (key: string, count: number) => {
     const newCartItems = [...cartItems];
+
+    if (count > 99) count = 99;
+    if (count < 0) count = 0;
+
     for (const item of newCartItems) {
       if (item.id === key) {
         item.count = count;
+        break;
+      }
+    }
+    dispatch({
+      type: ActionType.UPDATE_CART_ITEMS,
+      cartItems: newCartItems,
+    });
+  };
+
+  const selectCartItem = (key: string, selected: boolean) => {
+    const newCartItems = [...cartItems];
+    for (const item of newCartItems) {
+      if (item.id === key) {
+        item.selected = selected;
         break;
       }
     }
@@ -71,7 +90,8 @@ export const CartState: React.FC = ({ children }) => {
       value={{
         cartItems,
         addCartItem,
-        updateCartItem,
+        updateCartItemCount,
+        selectCartItem,
         removeCartItems,
         isAddedProduct,
       }}
