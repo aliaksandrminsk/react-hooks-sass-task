@@ -1,0 +1,76 @@
+.cardOrder {
+  @extend %section;
+
+  &__title {
+    @include h1();
+  }
+
+  .form {
+    width: 100%;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__card {
+      margin-top: 1rem;
+      margin-bottom: 3rem;
+    }
+
+    &__number {
+      & > input {
+        height: 3rem;
+        width: 27rem;
+        margin-bottom: 1rem;
+      }
+    }
+
+
+    &__name {
+      & > input {
+        height: 3rem;
+        width: 27rem;
+        margin-bottom: 1rem;
+      }
+    }
+
+    &__expiry-cvc {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 1rem;
+      max-width: 27rem;
+
+      & > input {
+        width: 13rem;
+        margin: 5px;
+        height: 3rem;
+      }
+    }
+
+    &__buttons {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 1rem;
+      max-width: 27rem;
+
+      & > button {
+        width: 6rem;
+        margin: 5px;
+        height: 3rem;
+      }
+    }
+
+
+  }
+
+}

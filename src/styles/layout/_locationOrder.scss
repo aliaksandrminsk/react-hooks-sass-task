@@ -1,0 +1,8 @@
+.locationOrder {
+  @extend %section;
+
+  &__title {
+    @include h1();
+  }
+
+}

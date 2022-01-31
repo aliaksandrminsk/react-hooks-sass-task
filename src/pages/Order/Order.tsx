@@ -2,7 +2,7 @@ import React, { ReactElement, useContext } from "react";
 
 import { OrderContext } from "../../context/order/orderContext";
 import { InfoOrder } from "./InfoOrder";
-import { MapOrder } from "./MapOrder";
+import { LocationOrder } from "./LocationOrder";
 import { CardOrder } from "./CardOrder";
 
 export const Order = () => {
@@ -15,15 +15,10 @@ export const Order = () => {
   } else if (userCard == null) {
     orderContainer = <CardOrder />;
   } else if (userLocation == null) {
-    orderContainer = <MapOrder />;
+    orderContainer = <LocationOrder />;
   } else {
     console.log("Order is made!");
   }
 
-  return (
-    <section className="order">
-      <h1 className="order__title">Order</h1>
-      {orderContainer}
-    </section>
-  );
+  return orderContainer;
 };

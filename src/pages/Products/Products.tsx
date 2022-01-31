@@ -11,7 +11,7 @@ import { useParams } from "react-router-dom";
 import { ProductTable } from "./ProductTable";
 import { ProductContext } from "../../context/product/productContext";
 import { Search } from "./Search";
-import { PagesNav } from "../../components/PagesNav";
+import { PagesNav } from "../../components/PagesNav/PagesNav";
 import { IProduct } from "../../context/product/interfaces/IProduct";
 import ErrorPage from "../ErrorPage/ErrorPage";
 

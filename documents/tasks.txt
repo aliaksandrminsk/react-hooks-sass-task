@@ -31,3 +31,5 @@
 27) На оз.бай не развальваецца пры малых памерах
 28) phone: string; - дабавиць
 29) дабавіць вывад інфармацыі аб поўнай сумме заказа каля кнопкі заказаць
+30) https://www.youtube.com/watch?v=cNUTCKq-_-Y Styled Components & React ПОЛНЫЙ КУРС
+31) https://www.youtube.com/watch?v=OEg8jm-NbQ0
