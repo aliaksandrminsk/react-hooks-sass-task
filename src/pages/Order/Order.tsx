@@ -4,6 +4,9 @@ import { OrderContext } from "../../context/order/orderContext";
 import { InfoOrder } from "./InfoOrder";
 import { LocationOrder } from "./LocationOrder";
 import { CardOrder } from "./CardOrder";
+import { CartContext } from "../../context/cart/cartContext";
+import { useNavigate } from "react-router-dom";
+import { ResultOrder } from "./ResultOrder";
 
 export const Order = () => {
   const { userInfo, userCard, userLocation } = useContext(OrderContext);
@@ -17,7 +20,7 @@ export const Order = () => {
   } else if (userLocation == null) {
     orderContainer = <LocationOrder />;
   } else {
-    console.log("Order is made!");
+    orderContainer = <ResultOrder />;
   }
 
   return orderContainer;

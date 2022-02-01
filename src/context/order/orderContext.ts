@@ -10,5 +10,6 @@ interface IOrderContext {
   setUserInfo: (userInfo: IUserInfo) => void;
   setUserCard: (userCard: IUserCard) => void;
   setUserLocation: (userLocation: IUserLocation) => void;
+  deleteOrder: () => void;
 }
 export const OrderContext = createContext({} as IOrderContext);

@@ -36,6 +36,12 @@ export const OrderState: React.FC = ({ children }) => {
     });
   };
 
+  const deleteOrder = () => {
+    dispatch({
+      type: ActionType.DELETE_ORDER,
+    });
+  };
+
   const { userInfo, userCard, userLocation } = state;
 
   return (
@@ -47,6 +53,7 @@ export const OrderState: React.FC = ({ children }) => {
         setUserInfo,
         setUserCard,
         setUserLocation,
+        deleteOrder,
       }}
     >
       {children}

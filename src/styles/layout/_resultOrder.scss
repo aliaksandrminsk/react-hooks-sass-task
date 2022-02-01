@@ -1,0 +1,8 @@
+.resultOrder {
+  @extend %section;
+
+  &__title {
+    @include h1();
+  }
+
+}

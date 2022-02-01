@@ -24,7 +24,15 @@ type SetUserLocationAction = {
   userLocation: IUserLocation;
 };
 
-type Action = SetUserInfoAction | SetUserCardAction | SetUserLocationAction;
+type DeleteOrderAction = {
+  type: ActionType.DELETE_ORDER;
+};
+
+type Action =
+  | SetUserInfoAction
+  | SetUserCardAction
+  | SetUserLocationAction
+  | DeleteOrderAction;
 
 const handlers = {
   [ActionType.SET_USER_INFO]: (state: IOrderState, action: Action) => ({
@@ -38,6 +46,12 @@ const handlers = {
   [ActionType.SET_USER_LOCATION]: (state: IOrderState, action: Action) => ({
     ...state,
     userLocation: (action as SetUserLocationAction).userLocation,
+  }),
+  [ActionType.DELETE_ORDER]: (state: IOrderState) => ({
+    ...state,
+    userLocation: null,
+    userCard: null,
+    userInfo: null,
   }),
   DEFAULT: (state: IOrderState) => state,
 };
