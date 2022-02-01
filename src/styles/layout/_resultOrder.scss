@@ -1,8 +1,23 @@
 .resultOrder {
   @extend %section;
+  text-align: center;
 
   &__title {
     @include h1();
+  }
+
+  &__data {
+    font-size: 1.2rem;
+    display: inline-block;
+    margin-bottom: 2rem;
+  }
+
+  &__button {
+    & > button {
+      width: 12rem;
+      margin: 5px;
+      height: 3rem;
+    }
   }
 
 }

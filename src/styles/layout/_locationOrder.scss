@@ -1,61 +1,21 @@
 .locationOrder {
   @extend %section;
+  text-align: center;
 
   &__title {
     @include h1();
   }
 
-  .form {
-    margin-left: auto;
-    margin-right: auto;
-
-    display: grid;
-    width: 50rem;
-    max-width: 100%;
-
-    @extend %blackText;
-    text-decoration: none;
-    overflow: hidden;
-    font-size: 1.8rem;
-    text-align: center;
-
-    &__item {
-      display: grid;
-      justify-items: center;
-      margin-bottom: 1rem;
-      grid-template-columns: 7rem 1fr;;
-
-      & > label {
-        grid-column: 1/2;
-        grid-row: 1/2;
-      }
-
-      & > input {
-        margin-left: 3rem;
-        margin-right: 3rem;
-        grid-column: 2/3;
-        grid-row: 1/2;
-        height: 3rem;
-        width: 100%;
-      }
-
-      &> span {
-        grid-column: 2/3;
-        grid-row: 2/3;
-        color: red;
-        font-weight: bold;
-        font-size: 1.2rem;
-      }
-    }
-
-
-    &__button {
-      & > button {
-        width: 12rem;
-        margin: 5px;
-        height: 3rem;
-      }
-    }
+  &__map {
+    display: inline-block;
+    margin-bottom: 2rem;
   }
 
+  &__button {
+    & > button {
+      width: 12rem;
+      margin: 5px;
+      height: 3rem;
+    }
+  }
 }

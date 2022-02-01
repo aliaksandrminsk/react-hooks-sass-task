@@ -1,11 +1,9 @@
-import React, { ReactElement, useContext } from "react";
+import React, { useContext } from "react";
 
 import { OrderContext } from "../../context/order/orderContext";
 import { InfoOrder } from "./InfoOrder";
 import { LocationOrder } from "./LocationOrder";
 import { CardOrder } from "./CardOrder";
-import { CartContext } from "../../context/cart/cartContext";
-import { useNavigate } from "react-router-dom";
 import { ResultOrder } from "./ResultOrder";
 
 export const Order = () => {

@@ -56,15 +56,17 @@ export const ResultOrder: React.FC = () => {
     <section className="resultOrder">
       <h1 className="resultOrder__title">Order is made</h1>
       {dataForServer ? (
-        <div>
+        <div className="resultOrder__data">
           {"Data was sent to server:" +
             JSON.stringify(dataForServer, undefined, 2)}
         </div>
       ) : null}
 
-      <button type="submit" onClick={onClickHandler}>
-        Back
-      </button>
+      <div className="resultOrder__button">
+        <button type="submit" onClick={onClickHandler}>
+          Back
+        </button>
+      </div>
     </section>
   );
 };
