@@ -5,8 +5,16 @@ import { ICartItem } from "../../context/cart/interfaces/ICartItem";
 import { Link } from "react-router-dom";
 
 export const Cart = () => {
-  const { cartItems, updateCartItemCount, selectCartItem } =
+  const { cartItems, updateCartItemCount, selectCartItem, removeCartItems } =
     useContext(CartContext);
+
+  const deleteItems = () => {
+    const keys = new Array<string>();
+    for (const item of cartItems) {
+      if (item.selected) keys.push(item.id);
+    }
+    removeCartItems(keys);
+  };
 
   return (
     <section className="cart">
@@ -53,6 +61,9 @@ export const Cart = () => {
         <Link to="/order">
           <input type="button" value="Order" />
         </Link>
+      </div>
+      <div className="cart__button">
+        <input type="button" value="Delete" onClick={deleteItems} />
       </div>
     </section>
   );

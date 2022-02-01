@@ -12,10 +12,9 @@ interface IServerData {
 }
 
 export const ResultOrder: React.FC = () => {
-  const { userInfo, userCard, userLocation, deleteOrder } =
-    useContext(OrderContext);
+  const { userInfo, userCard, userLocation } = useContext(OrderContext);
 
-  const { removeCartItems } = useContext(CartContext);
+  const { cartItems, removeCartItems } = useContext(CartContext);
   let navigate = useNavigate();
 
   let dataForServer = null;
@@ -29,26 +28,12 @@ export const ResultOrder: React.FC = () => {
     };
   }
 
-  //React.useEffect(() => {
-  //******Sent data to Server***************************
-  // let dataForServer: IServerData;
-  // if (userLocation && userInfo && userCard) {
-  //   dataForServer = {
-  //     location: userLocation?.location,
-  //     name: userInfo?.name,
-  //     email: userInfo?.email,
-  //     phone: userInfo?.phone,
-  //     card: userCard?.card,
-  //   };
-  // alert(
-  //   "Data was sent to server:" + JSON.stringify(dataForServer, undefined, 2)
-  // );
-  //}
-  //});
-
   const onClickHandler = () => {
-    deleteOrder();
-    //removeCartItems(); Зрабиць метад ачысткі пасля заказа!!!!!!!!!!!!!!
+    const keys = new Array<string>();
+    for (const item of cartItems) {
+      if (item.selected) keys.push(item.id);
+    }
+    removeCartItems(keys);
     navigate(`/`);
   };
 

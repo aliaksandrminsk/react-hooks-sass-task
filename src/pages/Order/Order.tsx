@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 
 import { OrderContext } from "../../context/order/orderContext";
 import { InfoOrder } from "./InfoOrder";
@@ -7,10 +7,14 @@ import { CardOrder } from "./CardOrder";
 import { ResultOrder } from "./ResultOrder";
 
 export const Order = () => {
-  const { userInfo, userCard, userLocation } = useContext(OrderContext);
+  const { userInfo, userCard, userLocation, deleteOrder } =
+    useContext(OrderContext);
+
+  useEffect(() => {
+    return deleteOrder;
+  }, []);
 
   let orderContainer = null;
-
   if (userInfo == null) {
     orderContainer = <InfoOrder />;
   } else if (userCard == null) {
