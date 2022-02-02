@@ -23,7 +23,7 @@
     flex-direction: column;
     align-items: center;
 
-    margin-top: 0;
+    margin-top: 2rem;
     margin-left: auto;
     margin-right: auto;
 
@@ -62,8 +62,8 @@
   &__column-image {
     flex-basis: 17rem;
     & > img {
-      width: 12rem;
-      height: 8rem;
+      width: 9rem;
+      height: 6rem;
       border: solid 1px black;
 
       @media ($mobileL) {
@@ -103,15 +103,25 @@
     wordBreak: break-word;
   }
 
-  &__button {
+  &__buttons {
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    margin-top: 3rem;
+    margin-top: 2rem;
+
+    @media ($mobileM) {
+      flex-direction: row;
+      justify-content: center;
+    }
 
     input {
-      width: 20rem;
-      height: 4rem;
+      width: 12rem;
+      height: 2.8rem;
 
-      font-size: 1.8rem;
+      margin: 1rem;
+
+      font-size: 1.4rem;
       font-weight: bold;
 
       border-radius: 1px;
@@ -119,10 +129,11 @@
       border: solid 1px black;
 
       @media ($mobileL) {
+        font-size: 1.6rem;
+        width: 17rem;
+        height: 3.5rem;
         box-shadow: $bigShadow;
       }
     }
   }
-
-
 }

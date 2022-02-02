@@ -10,6 +10,7 @@ export const Cart = () => {
   return (
     <section className="cart">
       <h1 className="cart__title">Shopping cart</h1>
+      <hr className="cart__hr" />
       {cartItems.length === 0 ? (
         <div className="cart__message-empty">Your cart is empty.</div>
       ) : (
@@ -57,22 +58,24 @@ export const Cart = () => {
         </div>
       )}
 
-      <div className="cart__button">
-        <Link to="/order">
+      <div className="cart__buttons">
+        <div className="cart__button">
+          <Link to="/order">
+            <input
+              type="button"
+              value="Buy"
+              disabled={getSelectedItems().length === 0}
+            />
+          </Link>
+        </div>
+        <div className="cart__button">
           <input
             type="button"
-            value="Order"
+            value="Delete"
+            onClick={() => removeCartItems(getSelectedItems())}
             disabled={getSelectedItems().length === 0}
           />
-        </Link>
-      </div>
-      <div className="cart__button">
-        <input
-          type="button"
-          value="Delete"
-          onClick={() => removeCartItems(getSelectedItems())}
-          disabled={getSelectedItems().length === 0}
-        />
+        </div>
       </div>
     </section>
   );

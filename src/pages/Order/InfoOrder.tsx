@@ -41,7 +41,7 @@ export const InfoOrder: React.FC = () => {
   const phoneValidator = (value: string) => {
     let valid = true;
     if (value && value.length === 17) {
-      if (value.slice(0, 7) != "+375 (2") {
+      if (value.slice(0, 4) != "+375") {
         valid = false;
       }
     } else {
@@ -87,7 +87,7 @@ export const InfoOrder: React.FC = () => {
                     <input
                       {...input}
                       type="text"
-                      placeholder="+375 (2_) _______"
+                      placeholder="+375 (__) _______"
                       maxLength={17}
                     />
                     {meta.error && meta.touched && <span>{meta.error}</span>}
