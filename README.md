@@ -12,4 +12,4 @@ npm run start
 ```
 
 [React-Flux-Sass Example
-](https://react-flux-sass-task.web.app/)
+](https://react-flux-sass.web.app/)
