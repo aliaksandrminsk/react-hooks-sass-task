@@ -25,7 +25,6 @@ export const Search: React.FC<{ showFilter: boolean }> = (props) => {
     <div className={filterClasses.join(" ")}>
       <input
         type="text"
-        ref={(input) => input && input.focus()}
         className="products__filter-input"
         placeholder="Enter a name of the product..."
         value={value}
