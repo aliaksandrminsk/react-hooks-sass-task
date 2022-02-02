@@ -7,14 +7,6 @@ interface IFormValues {
   location: string;
 }
 
-interface IServerData {
-  location: string;
-  name: string;
-  email: string;
-  phone: string;
-  card: string;
-}
-
 export const LocationOrder: React.FC = () => {
   const { setUserLocation } = useContext(OrderContext);
 
@@ -37,7 +29,7 @@ export const LocationOrder: React.FC = () => {
 
   return (
     <section className="locationOrder">
-      <h1 className="locationOrder__title">Order (3/3)</h1>
+      <h1 className="locationOrder__title">Placing Order (3/3)</h1>
 
       <div className="locationOrder__map">
         <YMaps

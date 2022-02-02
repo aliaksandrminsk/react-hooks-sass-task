@@ -3,14 +3,6 @@ import { OrderContext } from "../../context/order/orderContext";
 import { useNavigate } from "react-router-dom";
 import { CartContext } from "../../context/cart/cartContext";
 
-interface IServerData {
-  location: string;
-  name: string;
-  email: string;
-  phone: string;
-  card: string;
-}
-
 export const ResultOrder: React.FC = () => {
   const { userInfo, userCard, userLocation } = useContext(OrderContext);
 

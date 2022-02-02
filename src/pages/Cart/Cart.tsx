@@ -8,13 +8,21 @@ export const Cart = () => {
   const { cartItems, updateCartItemCount, selectCartItem, removeCartItems } =
     useContext(CartContext);
 
-  const deleteItems = () => {
+  const getSelectedItems = () => {
     const keys = new Array<string>();
     for (const item of cartItems) {
       if (item.selected) keys.push(item.id);
     }
-    removeCartItems(keys);
+    return keys;
   };
+
+  const deleteItems = () => {
+    removeCartItems(getSelectedItems());
+  };
+
+  if (cartItems.length === 0) {
+    return <div>No Items in cart</div>;
+  }
 
   return (
     <section className="cart">
@@ -59,11 +67,20 @@ export const Cart = () => {
       </div>
       <div className="cart__button">
         <Link to="/order">
-          <input type="button" value="Order" />
+          <input
+            type="button"
+            value="Order"
+            disabled={getSelectedItems().length === 0}
+          />
         </Link>
       </div>
       <div className="cart__button">
-        <input type="button" value="Delete" onClick={deleteItems} />
+        <input
+          type="button"
+          value="Delete"
+          onClick={deleteItems}
+          disabled={getSelectedItems().length === 0}
+        />
       </div>
     </section>
   );

@@ -34,3 +34,4 @@
 30) https://www.youtube.com/watch?v=cNUTCKq-_-Y Styled Components & React ПОЛНЫЙ КУРС
 31) https://www.youtube.com/watch?v=OEg8jm-NbQ0
 32) пакеты перакинуць з dependencies у devDependencies
+33) should be added useMemo and useCallback

@@ -23,7 +23,7 @@ export const CardOrder: React.FC = () => {
 
   return (
     <section className="cardOrder">
-      <h1 className="cardOrder__title">Order (2/3)</h1>
+      <h1 className="cardOrder__title">Placing Order (2/3)</h1>
       <Form
         onSubmit={onSubmit}
         render={({

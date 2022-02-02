@@ -1,29 +1,41 @@
 import React, { useContext, useEffect } from "react";
-
 import { OrderContext } from "../../context/order/orderContext";
 import { InfoOrder } from "./InfoOrder";
 import { LocationOrder } from "./LocationOrder";
 import { CardOrder } from "./CardOrder";
 import { ResultOrder } from "./ResultOrder";
+import { CartContext } from "../../context/cart/cartContext";
+import { useNavigate } from "react-router-dom";
 
-export const Order = () => {
+export const Order: React.FC = () => {
   const { userInfo, userCard, userLocation, deleteOrder } =
     useContext(OrderContext);
 
+  const { cartItems } = useContext(CartContext);
+  let navigate = useNavigate();
+
   useEffect(() => {
-    return deleteOrder;
+    const keys = [];
+    for (const item of cartItems) {
+      if (item.selected) keys.push(item.id);
+    }
+    //If order is empty then move to cart page
+    if (keys.length === 0) {
+      navigate(`/cart`);
+    }
+    return deleteOrder; //Delete all information from order state if we leave order page.
   }, []);
 
-  let orderContainer = null;
+  let container;
   if (userInfo == null) {
-    orderContainer = <InfoOrder />;
+    container = <InfoOrder />; //Showing an order panel (step 1).
   } else if (userCard == null) {
-    orderContainer = <CardOrder />;
+    container = <CardOrder />; //Showing an order panel (step 2).
   } else if (userLocation == null) {
-    orderContainer = <LocationOrder />;
+    container = <LocationOrder />; //Showing an order panel (step 3).
   } else {
-    orderContainer = <ResultOrder />;
+    container = <ResultOrder />; //Showing result of order
   }
 
-  return orderContainer;
+  return container;
 };
