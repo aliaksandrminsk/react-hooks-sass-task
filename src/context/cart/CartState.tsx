@@ -1,4 +1,4 @@
-import React, { useReducer } from "react";
+import React, { useEffect, useReducer } from "react";
 import { ActionType } from "../types";
 import { CartContext } from "./cartContext";
 import { cartReducer, ICartState } from "./cartReducer";
@@ -21,10 +21,12 @@ export const CartState: React.FC = ({ children }) => {
       quantity: 1,
       selected: true,
     };
+    const newCartItems = [...cartItems, cartItem];
 
+    localStorage.setItem("cart", JSON.stringify(newCartItems));
     dispatch({
       type: ActionType.UPDATE_CART_ITEMS,
-      cartItems: [...cartItems, cartItem],
+      cartItems: newCartItems,
     });
   };
 
@@ -33,8 +35,8 @@ export const CartState: React.FC = ({ children }) => {
 
     let quantity;
     if (values.quantity != null) {
-      if (values.quantity > 99) {
-        quantity = 99;
+      if (values.quantity > 9) {
+        quantity = 9;
       } else if (values.quantity < 1) {
         quantity = 1;
       } else {
@@ -48,6 +50,7 @@ export const CartState: React.FC = ({ children }) => {
         break;
       }
     }
+    localStorage.setItem("cart", JSON.stringify(newCartItems));
     dispatch({
       type: ActionType.UPDATE_CART_ITEMS,
       cartItems: newCartItems,
@@ -62,6 +65,7 @@ export const CartState: React.FC = ({ children }) => {
       });
     }
 
+    localStorage.setItem("cart", JSON.stringify(newCartItems));
     dispatch({
       type: ActionType.UPDATE_CART_ITEMS,
       cartItems: newCartItems,
@@ -84,6 +88,17 @@ export const CartState: React.FC = ({ children }) => {
     }
     return keys;
   };
+
+  useEffect(() => {
+    const savedCart = localStorage.getItem("cart");
+    if (savedCart != null) {
+      const cartItems: Array<ICartItem> = JSON.parse(savedCart);
+      dispatch({
+        type: ActionType.UPDATE_CART_ITEMS,
+        cartItems: cartItems,
+      });
+    }
+  }, []);
 
   const { cartItems } = state;
 

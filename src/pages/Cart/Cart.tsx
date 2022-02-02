@@ -38,7 +38,7 @@ export const Cart = () => {
                     id="quantity"
                     name="quantity"
                     min="1"
-                    max="99"
+                    max="9"
                     maxLength={1}
                     value={cartItem.quantity}
                     onChange={(event) =>
