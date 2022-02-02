@@ -9,16 +9,13 @@ export const ResultOrder: React.FC = () => {
   const { cartItems, removeCartItems } = useContext(CartContext);
   let navigate = useNavigate();
 
-  let dataForServer = null;
-  if (userLocation && userInfo && userCard) {
-    dataForServer = {
-      location: userLocation?.location,
-      name: userInfo?.name,
-      email: userInfo?.email,
-      phone: userInfo?.phone,
-      card: userCard?.card,
-    };
-  }
+  let dataForServer = {
+    location: userLocation?.location,
+    name: userInfo?.name,
+    email: userInfo?.email,
+    phone: userInfo?.phone,
+    card: userCard?.card,
+  };
 
   const onClickHandler = () => {
     const keys = new Array<string>();
@@ -31,7 +28,10 @@ export const ResultOrder: React.FC = () => {
 
   return (
     <section className="resultOrder">
-      <h1 className="resultOrder__title">Order is made</h1>
+      <h1 className="resultOrder__title">
+        Thank you for shopping with us. We’ll send a confirmation when your
+        items ship.
+      </h1>
       {dataForServer ? (
         <div className="resultOrder__data">
           {"Data was sent to server:" +
@@ -41,7 +41,7 @@ export const ResultOrder: React.FC = () => {
 
       <div className="resultOrder__button">
         <button type="submit" onClick={onClickHandler}>
-          Back
+          Back to shop
         </button>
       </div>
     </section>

@@ -28,7 +28,7 @@ export const CardOrder: React.FC = () => {
         onSubmit={onSubmit}
         validate={(values) => {
           const errors: any = {};
-          if (!/^[\d| ]{19}$/.test(values.number)) {
+          if (!/^[\d| ]{16,22}$/.test(values.number)) {
             errors.number = "Please enter a valid card number";
           }
           if (!values.name) {
@@ -62,7 +62,7 @@ export const CardOrder: React.FC = () => {
                         {...input}
                         type="text"
                         placeholder="Card Number"
-                        maxLength={19}
+                        maxLength={22}
                       />
                       {meta.error && meta.touched && <span>{meta.error}</span>}
                     </div>

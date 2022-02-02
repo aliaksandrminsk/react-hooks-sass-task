@@ -1,11 +1,6 @@
 import React, { useContext, useState } from "react";
 import { OrderContext } from "../../context/order/orderContext";
-
-import { YMaps, Map, Placemark, MapProps } from "react-yandex-maps";
-
-interface IFormValues {
-  location: string;
-}
+import { YMaps, Map, Placemark } from "react-yandex-maps";
 
 export const LocationOrder: React.FC = () => {
   const { setUserLocation } = useContext(OrderContext);
@@ -31,15 +26,14 @@ export const LocationOrder: React.FC = () => {
     <section className="locationOrder">
       <h1 className="locationOrder__title">Placing Order (3/3)</h1>
 
-      <div className="locationOrder__map">
+      <div className="locationOrder__ymaps">
         <YMaps
           query={{
             apikey: process.env.API_KEY,
           }}
         >
           <Map
-            width={"400px"}
-            height={"400px"}
+            className="locationOrder__map"
             onClick={clickOnMap}
             state={state.mapState}
           >
@@ -56,7 +50,7 @@ export const LocationOrder: React.FC = () => {
       </div>
       <div className="locationOrder__button">
         <button type="submit" onClick={onSubmit}>
-          Order
+          Place your order
         </button>
       </div>
     </section>

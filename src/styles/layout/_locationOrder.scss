@@ -6,9 +6,14 @@
     @include h1();
   }
 
-  &__map {
+  &__ymaps {
     display: inline-block;
     margin-bottom: 2rem;
+  }
+
+  &__map {
+    width: 40rem;
+    height: 40rem;
   }
 
   &__button {
