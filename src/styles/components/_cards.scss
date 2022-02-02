@@ -27,6 +27,9 @@
   &__image {
     margin-bottom: 1rem;
     cursor: pointer;
+    img{
+      border: solid 0.1rem grey;
+    }
   }
 
   &__status {
@@ -35,7 +38,8 @@
   }
 
   &__button {
-    width: 10rem;
+    width: 20rem;
+    height: 2.5rem;
   }
 
   @media ($mobileL) {

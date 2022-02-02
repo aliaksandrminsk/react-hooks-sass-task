@@ -1,0 +1,16 @@
+.about {
+  @extend %section;
+
+  &__title {
+    @include h1();
+  }
+
+  &__text {
+    font-size: 1.8rem;
+    text-align: center;
+
+    @media ($mobileL) {
+      font-size: 2.2rem;
+    }
+  }
+}

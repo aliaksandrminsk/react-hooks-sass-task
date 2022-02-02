@@ -2,78 +2,39 @@ import React from "react";
 
 export const About = () => {
   return (
-    <div>
-      <div>
-        <h2>What is Lorem Ipsum?</h2>
-        <p>
-          <strong>Lorem Ipsum</strong> is simply dummy text of the printing and
-          typesetting industry. Lorem Ipsum has been the industry&apos;s
-          standard dummy text ever since the 1500s, when an unknown printer took
-          a galley of type and scrambled it to make a type specimen book. It has
-          survived not only five centuries, but also the leap into electronic
-          typesetting, remaining essentially unchanged. It was popularised in
-          the 1960s with the release of Letraset sheets containing Lorem Ipsum
-          passages, and more recently with desktop publishing software like
-          Aldus PageMaker including versions of Lorem Ipsum.
-        </p>
+    <section className="about">
+      <div className="about__title">About shop</div>
+      <div className="about__text">
+        Established in 1956 with 38 charter members, the organization began as
+        the National Association of Store Fixture Manufacturers. Membership grew
+        slowly in the early years, but exploded in the 1990s following the
+        implementation of the association’s first strategic plan. Originally
+        restricted to manufacturers of wood store fixtures, the association
+        gradually came to encompass industry suppliers, other types of fixture
+        providers, and retail designers. This evolution prompted a name change
+        in 2007 to the Association for Retail Environments. The association has
+        moved its headquarters to various locations throughout its history,
+        including Hollywood, FL, where its office was largely furnished and
+        installed by members. During this time, its reach extended
+        internationally, with members in more than 30 countries all over the
+        world. Run by members for members, the association has seen 31
+        presidents, as the volunteer leadership is designed to rotate. Staffing
+        has been headed by a succession of four executive directors over the
+        years. The association merged with the National Association of Display
+        Industries (NADI) in 2001 and assumed administration of the Planning and
+        Visual Education Partnership (PAVE) in 2006. In October 2015, the
+        Association for Retail Environments (A.R.E.) merged with Point of
+        Purchase Advertising International (POPAI) to become Shop Environments
+        Association. Established in 1936, POPAI was a not-for-profit association
+        for the in-store marketing industry. International in scope, its
+        membership was made up of leading retailers, CPGs, brand agencies,
+        producers and educators committed to relevant shopper marketing research
+        and education. A.R.E. was established in 1956 as the National
+        Association of Store Fixture Manufacturers. The association merged with
+        the National Association of Display Industries (NADI) in 2001 and
+        assumed administration of the Planning and Visual Education Partnership
+        (PAVE) in 2006.
       </div>
-      <div>
-        <h2>Why do we use it?</h2>
-        <p>
-          It is a long established fact that a reader will be distracted by the
-          readable content of a page when looking at its layout. The point of
-          using Lorem Ipsum is that it has a more-or-less normal distribution of
-          letters, as opposed to using &apos;Content here, content here&apos;,
-          making it look like readable English. Many desktop publishing packages
-          and web page editors now use Lorem Ipsum as their default model text,
-          and a search for &apos;lorem ipsum&apos; will uncover many web sites
-          still in their infancy. Various versions have evolved over the years,
-          sometimes by accident, sometimes on purpose (injected humour and the
-          like).
-        </p>
-      </div>
-
-      <div>
-        <h2>Where does it come from?</h2>
-        <p>
-          Contrary to popular belief, Lorem Ipsum is not simply random text. It
-          has roots in a piece of classical Latin literature from 45 BC, making
-          it over 2000 years old. Richard McClintock, a Latin professor at
-          Hampden-Sydney College in Virginia, looked up one of the more obscure
-          Latin words, consectetur, from a Lorem Ipsum passage, and going
-          through the cites of the word in classical literature, discovered the
-          undoubtable source. Lorem Ipsum comes from sections 1.10.32 and
-          1.10.33 of &quot;de Finibus Bonorum et Malorum&quot; (The Extremes of
-          Good and Evil) by Cicero, written in 45 BC. This book is a treatise on
-          the theory of ethics, very popular during the Renaissance. The first
-          line of Lorem Ipsum, &quot;Lorem ipsum dolor sit amet..&quot;, comes
-          from a line in section 1.10.32.
-        </p>
-        <p>
-          The standard chunk of Lorem Ipsum used since the 1500s is reproduced
-          below for those interested. Sections 1.10.32 and 1.10.33 from &quot;de
-          Finibus Bonorum et Malorum&quot; by Cicero are also reproduced in
-          their exact original form, accompanied by English versions from the
-          1914 translation by H. Rackham.
-        </p>
-      </div>
-      <div>
-        <h2>Where can I get some?</h2>
-        <p>
-          There are many variations of passages of Lorem Ipsum available, but
-          the majority have suffered alteration in some form, by injected
-          humour, or randomised words which don&apos;t look even slightly
-          believable. If you are going to use a passage of Lorem Ipsum, you need
-          to be sure there isn&apos;t anything embarrassing hidden in the middle
-          of text. All the Lorem Ipsum generators on the Internet tend to repeat
-          predefined chunks as necessary, making this the first true generator
-          on the Internet. It uses a dictionary of over 200 Latin words,
-          combined with a handful of model sentence structures, to generate
-          Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is
-          therefore always free from repetition, injected humour, or
-          non-characteristic words etc.
-        </p>
-      </div>
-    </div>
+    </section>
   );
 };

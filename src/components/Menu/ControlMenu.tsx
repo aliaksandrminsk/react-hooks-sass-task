@@ -8,7 +8,6 @@ export const ControlMenu: React.FC = () => {
         <div className="controlMenu__title">Local shop</div>
       </div>
       <div>&nbsp;</div>
-
       <div>
         <NavLink to="/about" className="controlMenu__menu-item">
           {({ isActive }) => (
