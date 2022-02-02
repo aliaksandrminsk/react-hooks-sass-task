@@ -11,5 +11,5 @@ npm install
 npm run start
 ```
 
-[React-Flux-Sass Example
+[React-Hooks-Sass Example
 ](https://react-hooks-sass-task.web.app/)
