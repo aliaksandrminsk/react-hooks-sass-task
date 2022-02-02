@@ -26,14 +26,23 @@ export const CardOrder: React.FC = () => {
       <h1 className="cardOrder__title">Placing Order (2/3)</h1>
       <Form
         onSubmit={onSubmit}
-        render={({
-          handleSubmit,
-          form,
-          submitting,
-          pristine,
-          values,
-          active,
-        }) => {
+        validate={(values) => {
+          const errors: any = {};
+          if (!/^[\d| ]{19}$/.test(values.number)) {
+            errors.number = "Please enter a valid card number";
+          }
+          if (!values.name) {
+            errors.name = "Please enter a valid name";
+          }
+          if (!/^\d\d\/\d\d$/.test(values.expiry)) {
+            errors.expiry = "Please enter a valid expiry";
+          }
+          if (!/^\d{3}$/.test(values.cvc)) {
+            errors.cvc = "Please enter a valid cvc";
+          }
+          return Object.keys(errors).length ? errors : {};
+        }}
+        render={({ handleSubmit, form, pristine, valid, values, active }) => {
           return (
             <form onSubmit={handleSubmit} className="form">
               <div className="form__card">
@@ -46,52 +55,71 @@ export const CardOrder: React.FC = () => {
                 />
               </div>
               <div className="form__number">
-                <Field
-                  name="number"
-                  component="input"
-                  type="text"
-                  pattern="[\d| ]{16,22}"
-                  placeholder="Card Number"
-                  format={formatCreditCardNumber}
-                />
+                <Field name="number" format={formatCreditCardNumber}>
+                  {({ input, meta }) => (
+                    <div>
+                      <input
+                        {...input}
+                        type="text"
+                        placeholder="Card Number"
+                        maxLength={19}
+                      />
+                      {meta.error && meta.touched && <span>{meta.error}</span>}
+                    </div>
+                  )}
+                </Field>
               </div>
               <div className="form__name">
-                <Field
-                  name="name"
-                  component="input"
-                  type="text"
-                  placeholder="Name"
-                />
+                <Field name="name">
+                  {({ input, meta }) => (
+                    <div>
+                      <input {...input} type="text" placeholder="Name" />
+                      {meta.error && meta.touched && <span>{meta.error}</span>}
+                    </div>
+                  )}
+                </Field>
               </div>
               <div className="form__expiry-cvc">
                 <Field
                   name="expiry"
-                  component="input"
-                  type="text"
-                  pattern="\d\d/\d\d"
-                  placeholder="Valid Thru"
                   format={formatExpirationDate}
                   className="form__expiry"
-                />
-                <Field
-                  name="cvc"
-                  component="input"
-                  type="text"
-                  pattern="\d{3,4}"
-                  placeholder="CVC"
-                  format={formatCVC}
-                  className="form__cvc"
-                />
+                >
+                  {({ input, meta }) => (
+                    <div>
+                      <input
+                        {...input}
+                        type="text"
+                        placeholder="Valid Thru"
+                        maxLength={5}
+                      />
+                      {meta.error && meta.touched && <span>{meta.error}</span>}
+                    </div>
+                  )}
+                </Field>
+                <Field name="cvc" format={formatCVC} className="form__cvc">
+                  {({ input, meta }) => (
+                    <div>
+                      <input
+                        {...input}
+                        type="text"
+                        placeholder="CVC"
+                        maxLength={3}
+                      />
+                      {meta.error && meta.touched && <span>{meta.error}</span>}
+                    </div>
+                  )}
+                </Field>
               </div>
 
               <div className="form__buttons">
-                <button type="submit" disabled={submitting}>
-                  Pay
+                <button type="submit" disabled={!valid}>
+                  Next
                 </button>
                 <button
                   type="button"
                   onClick={() => form.reset()}
-                  disabled={submitting || pristine}
+                  disabled={pristine}
                 >
                   Reset
                 </button>

@@ -22,20 +22,19 @@
     }
 
     &__number {
-      & > input {
+      input {
         height: 3rem;
         width: 27rem;
         margin-bottom: 1rem;
       }
     }
 
-
     &__name {
-      & > input {
+     input {
         height: 3rem;
         width: 27rem;
         margin-bottom: 1rem;
-      }
+     }
     }
 
     &__expiry-cvc {
@@ -47,7 +46,7 @@
       margin-bottom: 1rem;
       max-width: 27rem;
 
-      & > input {
+      input {
         width: 13rem;
         margin: 5px;
         height: 3rem;
@@ -63,14 +62,12 @@
       margin-bottom: 1rem;
       max-width: 27rem;
 
-      & > button {
+      button {
         width: 6rem;
         margin: 5px;
         height: 3rem;
       }
     }
-
-
   }
 
 }
