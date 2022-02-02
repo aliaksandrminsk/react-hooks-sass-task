@@ -3,18 +3,18 @@ import { NavLink } from "react-router-dom";
 
 export const ControlMenu: React.FC = () => {
   return (
-    <div className="controlPanel">
+    <div className="controlMenu">
       <div>
-        <div className="controlPanel__title">Local shop</div>
+        <div className="controlMenu__title">Local shop</div>
       </div>
       <div>&nbsp;</div>
 
       <div>
-        <NavLink to="/about" className="controlPanel__menu-item">
+        <NavLink to="/about" className="controlMenu__menu-item">
           {({ isActive }) => (
             <span
               className={
-                isActive ? " controlPanel__menu-item_active" : undefined
+                isActive ? " controlMenu__menu-item_active" : undefined
               }
             >
               About&nbsp;Us
@@ -24,11 +24,11 @@ export const ControlMenu: React.FC = () => {
       </div>
 
       <div>
-        <NavLink to="/cart" className="controlPanel__menu-item">
+        <NavLink to="/cart" className="controlMenu__menu-item">
           {({ isActive }) => (
             <span
               className={
-                isActive ? " controlPanel__menu-item_active" : undefined
+                isActive ? " controlMenu__menu-item_active" : undefined
               }
             >
               Cart

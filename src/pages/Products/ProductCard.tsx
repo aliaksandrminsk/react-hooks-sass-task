@@ -34,7 +34,7 @@ export const ProductCard: React.FC<IProductCardProps> = ({
           className="productCard__button"
           onClick={onClickButtonHandler}
         >
-          Add to card
+          Add to cart
         </button>
       )}
     </div>
