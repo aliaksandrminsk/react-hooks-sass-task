@@ -11,6 +11,13 @@
     margin-right: auto;
   }
 
+  &__message-empty {
+    @extend %blackText;
+    text-decoration: none;
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
   &__items {
     display: flex;
     flex-direction: column;

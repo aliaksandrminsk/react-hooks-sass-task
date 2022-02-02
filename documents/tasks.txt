@@ -35,3 +35,5 @@
 31) https://www.youtube.com/watch?v=OEg8jm-NbQ0
 32) пакеты перакинуць з dependencies у devDependencies
 33) should be added useMemo and useCallback
+34) Cart.getSelectedItems праз Map
+35)const newCartItems = [...cartItems]; in updateCartItemCount in CartState

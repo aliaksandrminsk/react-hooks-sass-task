@@ -3,6 +3,6 @@ export interface ICartItem {
   imageUrl: string;
   name: string;
   price: number;
-  count: number;
+  quantity: number;
   selected: boolean;
 }

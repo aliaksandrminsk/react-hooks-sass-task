@@ -18,7 +18,7 @@ export const CartState: React.FC = ({ children }) => {
       imageUrl: `/products/${product.category}/${product.file}`,
       name: product.name,
       price: product.price,
-      count: 1,
+      quantity: 1,
       selected: true,
     };
 
@@ -28,29 +28,23 @@ export const CartState: React.FC = ({ children }) => {
     });
   };
 
-  const updateCartItemCount = (key: string, count: number) => {
+  const updateCartItemCount = (key: string, values: Partial<ICartItem>) => {
     const newCartItems = [...cartItems];
 
-    if (count > 99) count = 99;
-    if (count < 0) count = 0;
-
-    for (const item of newCartItems) {
-      if (item.id === key) {
-        item.count = count;
-        break;
+    let quantity;
+    if (values.quantity != null) {
+      if (values.quantity > 99) {
+        quantity = 99;
+      } else if (values.quantity < 1) {
+        quantity = 1;
+      } else {
+        quantity = values.quantity;
       }
     }
-    dispatch({
-      type: ActionType.UPDATE_CART_ITEMS,
-      cartItems: newCartItems,
-    });
-  };
-
-  const selectCartItem = (key: string, selected: boolean) => {
-    const newCartItems = [...cartItems];
     for (const item of newCartItems) {
       if (item.id === key) {
-        item.selected = selected;
+        if (quantity != null) item.quantity = quantity;
+        if (values.selected != null) item.selected = values.selected;
         break;
       }
     }
@@ -83,6 +77,14 @@ export const CartState: React.FC = ({ children }) => {
     return false;
   };
 
+  const getSelectedItems = () => {
+    const keys = new Array<string>();
+    for (const item of cartItems) {
+      if (item.selected) keys.push(item.id);
+    }
+    return keys;
+  };
+
   const { cartItems } = state;
 
   return (
@@ -91,9 +93,9 @@ export const CartState: React.FC = ({ children }) => {
         cartItems,
         addCartItem,
         updateCartItemCount,
-        selectCartItem,
         removeCartItems,
         isAddedProduct,
+        getSelectedItems,
       }}
     >
       {children}
