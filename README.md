@@ -1,16 +1,15 @@
-# React-Redux-Thunk Example
+# React-Flux-Sass Example
 
-The package shows how to use [Redux-Thunk](https://github.com/reduxjs/redux-thunk) along with [TypeScript](https://www.typescriptlang.org/) language.
-I also use bootstrap and webpack in this example.
+The package shows how to use React Hooks along with [TypeScript](https://www.typescriptlang.org/) language.
 
 To run the package.
 
 ```
-git clone https://github.com/aliaksandrminsk/react-redux-bootstrap-task.git
+git clone https://github.com/aliaksandrminsk/react-flux-sass-task.git
 cd react-redux-bootstrap-task
 npm install
 npm run start
 ```
 
-[React-Redux-Thunk Example
-](https://react-redux-bootstrap-task.web.app/)
+[React-Flux-Sass Example
+](https://react-flux-sass-task.web.app/)

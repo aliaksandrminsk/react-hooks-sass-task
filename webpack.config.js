@@ -61,7 +61,7 @@ const plugins = () => {
         },
       ],
     }),
-    //new ESLintWebpackPlugin({ extensions: ["ts", "tsx"] }),
+    new ESLintWebpackPlugin({ extensions: ["ts", "tsx"] }),
   ];
 
   if (isProd) {

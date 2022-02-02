@@ -21,7 +21,7 @@ export const Products = () => {
   const [windowWidth, setWindowWidth] = useState<number>(0);
   const [isOpenFilter, setFilterState] = useState<boolean>(false);
 
-  let params = useParams();
+  const params = useParams();
   const category = params.id;
 
   const {

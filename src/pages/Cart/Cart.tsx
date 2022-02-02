@@ -21,7 +21,7 @@ export const Cart = () => {
                   <input
                     type="checkbox"
                     defaultChecked={cartItem.selected}
-                    onChange={(event) =>
+                    onChange={() =>
                       updateCartItemCount(cartItem.id, {
                         selected: !cartItem.selected,
                       })

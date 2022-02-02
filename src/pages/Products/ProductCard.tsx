@@ -18,20 +18,20 @@ export const ProductCard: React.FC<IProductCardProps> = ({
   isAdded,
 }) => {
   return (
-    <div className="photoCard">
+    <div className="productCard">
       <div
-        className="photoCard__title"
+        className="productCard__title"
         dangerouslySetInnerHTML={{ __html: formattedName }}
       />
-      <div className="photoCard__image" onClick={onClickPhotoHandler}>
+      <div className="productCard__image" onClick={onClickPhotoHandler}>
         <img src={photoUrl} width="300" height="200" alt={altText} />
       </div>
       {isAdded ? (
-        <div className="photoCard__status">Product is already in cart</div>
+        <div className="productCard__status">Product is already in cart</div>
       ) : (
         <button
           type="button"
-          className="photoCard__button"
+          className="productCard__button"
           onClick={onClickButtonHandler}
         >
           Add to card

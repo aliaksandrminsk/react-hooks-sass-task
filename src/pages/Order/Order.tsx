@@ -12,7 +12,7 @@ export const Order: React.FC = () => {
     useContext(OrderContext);
 
   const { cartItems } = useContext(CartContext);
-  let navigate = useNavigate();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const keys = [];

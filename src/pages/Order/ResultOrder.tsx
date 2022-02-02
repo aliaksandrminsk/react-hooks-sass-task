@@ -7,9 +7,9 @@ export const ResultOrder: React.FC = () => {
   const { userInfo, userCard, userLocation } = useContext(OrderContext);
 
   const { cartItems, removeCartItems } = useContext(CartContext);
-  let navigate = useNavigate();
+  const navigate = useNavigate();
 
-  let dataForServer = {
+  const dataForServer = {
     location: userLocation?.location,
     name: userInfo?.name,
     email: userInfo?.email,

@@ -55,7 +55,7 @@ export const InfoOrder: React.FC = () => {
       <h1 className="infoOrder__title">Placing Order (1/3)</h1>
       <Form
         onSubmit={onSubmit}
-        render={({ handleSubmit, pristine, submitting }) => {
+        render={({ handleSubmit, pristine }) => {
           return (
             <form onSubmit={handleSubmit} className="form">
               <Field name="name" validate={nameValidator}>
