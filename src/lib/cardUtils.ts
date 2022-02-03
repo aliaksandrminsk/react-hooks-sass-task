@@ -4,7 +4,7 @@ function clearNumber(value = "") {
   return value.replace(/\D+/g, "");
 }
 
-export function formatCreditCardNumber(value, name) {
+export function formatCreditCardNumber(value: string) {
   if (!value) {
     return "";
   }
@@ -37,7 +37,11 @@ export function formatCreditCardNumber(value, name) {
   return nextValue.trim();
 }
 
-export function formatCVC(value, prevValue, allValues = {}) {
+export function formatCVC(
+  value: string,
+  prevValue: string,
+  allValues: { number?: string } = {}
+) {
   const clearValue = clearNumber(value);
   let maxLength = 4;
 
@@ -49,7 +53,7 @@ export function formatCVC(value, prevValue, allValues = {}) {
   return clearValue.slice(0, maxLength);
 }
 
-export function formatExpirationDate(value) {
+export function formatExpirationDate(value: string) {
   const clearValue = clearNumber(value);
 
   if (clearValue.length >= 3) {

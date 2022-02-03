@@ -12,6 +12,8 @@
 12) Added HTML Semantic Elements
 13) added useMemo and useCallback
 14) https://www.youtube.com/watch?v=OEg8jm-NbQ0
+15) Sorting
+16) Change color of checkbox
 
 
 
