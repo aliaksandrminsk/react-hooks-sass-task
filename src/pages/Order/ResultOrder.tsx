@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { OrderContext } from "../../context/order/orderContext";
 import { useNavigate } from "react-router-dom";
 import { CartContext } from "../../context/cart/cartContext";
@@ -17,12 +17,15 @@ export const ResultOrder: React.FC = () => {
     card: userCard?.card,
   };
 
-  const onClickHandler = () => {
+  useEffect(() => {
     const keys = new Array<string>();
     for (const item of cartItems) {
       if (item.selected) keys.push(item.id);
     }
     removeCartItems(keys);
+  }, []);
+
+  const onClickHandler = () => {
     navigate(`/`);
   };
 
