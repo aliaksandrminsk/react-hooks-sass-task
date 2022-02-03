@@ -9,11 +9,10 @@
   &__ymaps {
     display: inline-block;
     margin-bottom: 2rem;
-    width: 40rem;
-    height: 40rem;
   }
 
   &__map {
+    background-color: grey;
     width: 40rem;
     height: 40rem;
     border: solid 0.1rem black;;
