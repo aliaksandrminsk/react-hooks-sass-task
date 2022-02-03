@@ -12,9 +12,9 @@ export const Search: React.FC<{ showFilter: boolean }> = (props) => {
     setFilterData();
   };
 
-  const filterClasses = ["products__filter"];
+  const filterClasses = ["filter"];
   if (!props.showFilter) {
-    filterClasses.push("products__filter_invisible");
+    filterClasses.push("filter_invisible");
   }
 
   const setFilterData = () => {
@@ -25,7 +25,7 @@ export const Search: React.FC<{ showFilter: boolean }> = (props) => {
     <div className={filterClasses.join(" ")}>
       <input
         type="text"
-        className="products__filter-input"
+        className="filter__input"
         placeholder="Enter a name of the product..."
         value={value}
         onChange={(event: React.ChangeEvent<HTMLInputElement>) =>
@@ -37,7 +37,7 @@ export const Search: React.FC<{ showFilter: boolean }> = (props) => {
       <input
         type="button"
         onClick={setFilterData}
-        className="products__filter-button"
+        className="filter__button"
         value="Search"
       />
     </div>

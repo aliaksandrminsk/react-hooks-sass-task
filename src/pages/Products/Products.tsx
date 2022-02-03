@@ -88,7 +88,7 @@ export const Products = () => {
   return (
     <Fragment>
       <button
-        className="products__filterOpenBtn"
+        className="filterOpenBtn"
         title="Open filter"
         onClick={clickFilterButton}
         type="button"
