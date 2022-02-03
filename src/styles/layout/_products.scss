@@ -5,15 +5,6 @@
     @include h1();
   }
 
-  &__description {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   &__hr {
     max-width: 55rem;
     margin-left: auto;
@@ -23,11 +14,6 @@
   &__items {
     display: flex;
     flex-direction: column;
-    align-items: center;
-
-    margin-top: 0;
-    margin-left: auto;
-    margin-right: auto;
 
     @media ($mobileL) {
       max-width: 137rem;
@@ -35,12 +21,13 @@
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-evenly;
-      align-items: center;
+      align-items: stretch;
     }
   }
 
   &__item {
     margin: 1rem;
+    width: 32rem;
 
     &-filter {
       color: blue;
