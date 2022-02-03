@@ -6,11 +6,11 @@
   }
 
   &__text {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     text-align: center;
 
     @media ($mobileL) {
-      font-size: 2.2rem;
+      font-size: 1.8rem;
     }
   }
 }

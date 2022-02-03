@@ -95,8 +95,12 @@ export const InfoOrder: React.FC = () => {
                 )}
               </Field>
 
-              <div className="form__button">
-                <button type="submit" disabled={pristine}>
+              <div>
+                <button
+                  type="submit"
+                  disabled={pristine}
+                  className="normalButton"
+                >
                   Next
                 </button>
               </div>

@@ -11,13 +11,4 @@
     display: inline-block;
     margin-bottom: 2rem;
   }
-
-  &__button {
-    & > button {
-      width: 12rem;
-      margin: 5px;
-      height: 3rem;
-    }
-  }
-
 }

@@ -119,13 +119,18 @@ export const CardOrder: React.FC = () => {
 
               <div className="form__buttons">
                 <div>
-                  <button type="submit" disabled={!valid}>
+                  <button
+                    type="submit"
+                    disabled={!valid}
+                    className="smallButton"
+                  >
                     Next
                   </button>
                 </div>
                 <div>
                   <button
                     type="button"
+                    className="smallButton"
                     onClick={() => form.reset()}
                     disabled={pristine}
                   >

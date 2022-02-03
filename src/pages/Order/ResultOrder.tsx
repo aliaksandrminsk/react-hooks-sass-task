@@ -39,11 +39,9 @@ export const ResultOrder: React.FC = () => {
         </div>
       ) : null}
 
-      <div className="resultOrder__button">
-        <button type="submit" onClick={onClickHandler}>
-          Back to shop
-        </button>
-      </div>
+      <button type="submit" onClick={onClickHandler} className="normalButton">
+        Back to shop
+      </button>
     </section>
   );
 };

@@ -59,17 +59,19 @@ export const Cart = () => {
       )}
 
       <div className="cart__buttons">
-        <div className="cart__button">
+        <div>
           <Link to="/order">
             <input
+              className="normalButton"
               type="button"
               value="Buy"
               disabled={getSelectedItems().length === 0}
             />
           </Link>
         </div>
-        <div className="cart__button">
+        <div>
           <input
+            className="normalButton"
             type="button"
             value="Delete"
             onClick={() => removeCartItems(getSelectedItems())}

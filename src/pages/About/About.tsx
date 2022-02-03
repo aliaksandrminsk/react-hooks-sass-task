@@ -3,7 +3,7 @@ import React from "react";
 export const About = () => {
   return (
     <section className="about">
-      <div className="about__title">About shop</div>
+      <h1 className="about__title">About shop</h1>
       <div className="about__text">
         Established in 1956 with 38 charter members, the organization began as
         the National Association of Store Fixture Manufacturers. Membership grew

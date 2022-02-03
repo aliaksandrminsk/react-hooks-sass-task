@@ -48,8 +48,8 @@ export const LocationOrder: React.FC = () => {
           </Map>
         </YMaps>
       </div>
-      <div className="locationOrder__button">
-        <button type="submit" onClick={onSubmit}>
+      <div>
+        <button type="submit" onClick={onSubmit} className="normalButton">
           Place your order
         </button>
       </div>

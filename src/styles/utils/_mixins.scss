@@ -1,26 +1,3 @@
-%blackText {
-  font-family: $mainFont;
-  color: black;
-}
-
-@mixin h1($weight: bold) {
-
-  @if $weight != bold and $weight != normal {
-    @debug "Property font-weight must be either bold or normal.";
-  }
-  font-size: 2.2rem;
-  font-weight: $weight;
-  color: black;
-  font-family: $mainFont;
-  margin-bottom: 1.8rem;
-  text-align: center;
-
-  @media ($mobileL) {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-  }
-}
-
 %section {
   padding: 1.4rem 0;
 
@@ -41,7 +18,42 @@
   }
 }
 
-@mixin photoCard($width: 32rem, $minSize: 0) {
+@mixin h1($weight: bold) {
 
+  @if $weight != bold and $weight != normal {
+    @debug "Property font-weight must be either bold or normal.";
+  }
+  font-size: 2.2rem;
+  font-weight: $weight;
+  color: black;
+  font-family: $mainFont;
+  margin-bottom: 1.8rem;
+  text-align: center;
+
+  @media ($mobileL) {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@mixin button ($width: 17rem, $height: 3.5rem) {
+  width: $width * 8/9;
+  height: $height * 8/9;
+
+  margin: 1rem;
+
+  font-size: 1.4rem;
+  font-weight: bold;
+
+  border-radius: 1px;
+  box-shadow: $smallShadow;
+  border: solid 1px black;
+
+  @media ($mobileL) {
+    font-size: 1.6rem;
+    width: $width;
+    height: $height;
+    box-shadow: $bigShadow;
+  }
 }
 
