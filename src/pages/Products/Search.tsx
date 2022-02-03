@@ -38,7 +38,7 @@ export const Search: React.FC<{ showFilter: boolean }> = (props) => {
         type="button"
         onClick={setFilterData}
         className="products__filter-button"
-        value="Find"
+        value="Search"
       />
     </div>
   );
