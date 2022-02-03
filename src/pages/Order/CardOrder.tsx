@@ -73,7 +73,12 @@ export const CardOrder: React.FC = () => {
                 <Field name="name">
                   {({ input, meta }) => (
                     <div>
-                      <input {...input} type="text" placeholder="Name" />
+                      <input
+                        {...input}
+                        type="text"
+                        placeholder="Name"
+                        maxLength={50}
+                      />
                       {meta.error && meta.touched && <span>{meta.error}</span>}
                     </div>
                   )}
@@ -113,16 +118,20 @@ export const CardOrder: React.FC = () => {
               </div>
 
               <div className="form__buttons">
-                <button type="submit" disabled={!valid}>
-                  Next
-                </button>
-                <button
-                  type="button"
-                  onClick={() => form.reset()}
-                  disabled={pristine}
-                >
-                  Reset
-                </button>
+                <div>
+                  <button type="submit" disabled={!valid}>
+                    Next
+                  </button>
+                </div>
+                <div>
+                  <button
+                    type="button"
+                    onClick={() => form.reset()}
+                    disabled={pristine}
+                  >
+                    Reset
+                  </button>
+                </div>
               </div>
             </form>
           );

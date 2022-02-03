@@ -9,18 +9,36 @@
   &__ymaps {
     display: inline-block;
     margin-bottom: 2rem;
+    width: 40rem;
+    height: 40rem;
   }
 
   &__map {
     width: 40rem;
     height: 40rem;
+    border: solid 0.1rem black;;
   }
 
   &__button {
     & > button {
-      width: 12rem;
-      margin: 5px;
-      height: 3rem;
+      width: 14rem;
+      height: 2.8rem;
+
+      margin: 1rem;
+
+      font-size: 1.4rem;
+      font-weight: bold;
+
+      border-radius: 1px;
+      box-shadow: $smallShadow;
+      border: solid 1px black;
+
+      @media ($mobileL) {
+        font-size: 1.6rem;
+        width: 17rem;
+        height: 3.5rem;
+        box-shadow: $bigShadow;
+      }
     }
   }
 }
