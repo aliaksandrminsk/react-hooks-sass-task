@@ -77,7 +77,11 @@ export const Products = () => {
   };
 
   if (!isProductJsonLoaded) {
-    return <div className="loading">Loading...</div>;
+    return (
+      <section className="products">
+        <h1 className="products__title">Loading...</h1>
+      </section>
+    );
   } else {
     if (!isValidateURL) {
       //If category from url is wrong then we move to error page.
