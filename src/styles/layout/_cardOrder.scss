@@ -16,6 +16,13 @@
     justify-content: center;
     align-items: center;
 
+    span {
+      color: red;
+      font-weight: bold;
+      font-size: 1.2rem;
+      text-align: center;
+    }
+
     &__card {
       margin-top: 1rem;
       margin-bottom: 3rem;
@@ -51,13 +58,13 @@
     }
 
     &__expiry-cvc {
+      margin-bottom: 1rem;
+
       display: flex;
       flex-direction: row;
       flex-wrap: nowrap;
       justify-content: center;
       align-items: flex-start;
-      margin-bottom: 1rem;
-      max-width: 27rem;
 
       & > div {
         display: flex;
@@ -66,7 +73,8 @@
 
         input {
           width: 13rem;
-          margin: 5px;
+          margin-left: 0.5rem;
+          margin-right: 0.5rem;
           height: 3rem;
         }
       }
@@ -77,19 +85,14 @@
       flex-direction: row;
       flex-wrap: nowrap;
       justify-content: center;
-      align-items: center;
-
-      max-width: 27rem;
-      padding: 0;
-      margin: 0;
+      align-items: flex-start;
 
       button {
-        margin: 0;
         font-weight: bold;
-
         width: 13rem;
-        margin: 5px;
         height: 3rem;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
       }
     }
   }

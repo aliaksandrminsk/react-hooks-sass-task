@@ -10,6 +10,12 @@
   &__ymaps {
     display: inline-block;
     margin-bottom: 2rem;
+
+    width: 40rem;
+    height: 40rem;
+    max-width:40rem;
+    max-height:40rem;
+    background-color: #c4c4c4;
   }
 
   &__map {

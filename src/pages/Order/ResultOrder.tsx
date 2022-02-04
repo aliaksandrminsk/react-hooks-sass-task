@@ -37,7 +37,7 @@ export const ResultOrder: React.FC = () => {
       </h1>
       {dataForServer ? (
         <div className="resultOrder__data">
-          {"Data was sent to server:" +
+          {"Data was sent to server: " +
             JSON.stringify(dataForServer, undefined, 2)}
         </div>
       ) : null}
