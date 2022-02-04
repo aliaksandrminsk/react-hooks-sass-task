@@ -6,9 +6,9 @@ export const LocationOrder: React.FC = () => {
   const { setUserLocation } = useContext(OrderContext);
 
   const [state, setState] = useState<any>({
-    coords: [53.9, 27.56],
+    coords: [53.90718200521836, 27.44253585139894],
     mapState: {
-      center: [53.9, 27.56],
+      center: [53.90718200521836, 27.44253585139894],
       zoom: 9,
     },
   });
