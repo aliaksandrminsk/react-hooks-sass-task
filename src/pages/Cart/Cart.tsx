@@ -18,8 +18,8 @@ export const Cart = () => {
         <div className="cart__items">
           {cartItems.map((cartItem: ICartItem) => {
             return (
-              <div className="cart__item" key={"cartItem" + cartItem.id}>
-                <div className="cart__column-toggle">
+              <>
+                <div>
                   <input
                     type="checkbox"
                     defaultChecked={cartItem.selected}
@@ -34,7 +34,7 @@ export const Cart = () => {
                   <img src={cartItem.imageUrl} />
                 </div>
                 <div className="cart__column-name">{cartItem.name}</div>
-                <div className="cart__column-count">
+                <div className="cart__column-quantity">
                   <input
                     type="number"
                     id="quantity"
@@ -50,10 +50,8 @@ export const Cart = () => {
                     }
                   />
                 </div>
-                <div className="cart__column-price">
-                  {cartItem.price}&nbsp;USD
-                </div>
-              </div>
+                <div>{cartItem.price}&nbsp;USD</div>
+              </>
             );
           })}
         </div>
