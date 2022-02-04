@@ -1,4 +1,4 @@
-import React, { Fragment, useContext, useMemo } from "react";
+import React, { Fragment, useContext } from "react";
 import { CartContext } from "../../context/cart/cartContext";
 import { ICartItem } from "../../context/cart/interfaces/ICartItem";
 import { Link } from "react-router-dom";
