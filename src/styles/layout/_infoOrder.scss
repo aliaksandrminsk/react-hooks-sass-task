@@ -9,29 +9,33 @@
     margin-left: auto;
     margin-right: auto;
 
-    display: grid;
     width: 50rem;
     max-width: 100%;
 
-    text-decoration: none;
-    overflow: hidden;
-    font-size: 1.8rem;
     text-align: center;
+    font-size: 1.4rem;
 
-    &__item {
+    @media ($mobileL) {
+      font-size: 1.6rem;
+    }
+
+    &__field {
       display: grid;
       justify-items: center;
       margin-bottom: 1.5rem;
-      grid-template-columns: 7rem 1fr;;
+      grid-template-columns: 7rem 1fr;
+      padding-right: 1rem;
+      padding-left: 1rem;
 
       & > label {
         grid-column: 1/2;
         grid-row: 1/2;
+        justify-self: flex-end;
+        align-self: center;
+        margin-right: 1rem;
       }
 
       & > input {
-        margin-left: 3rem;
-        margin-right: 3rem;
         grid-column: 2/3;
         grid-row: 1/2;
         height: 3rem;

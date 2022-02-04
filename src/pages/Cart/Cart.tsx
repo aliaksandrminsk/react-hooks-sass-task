@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { Fragment, useContext, useMemo } from "react";
 import { CartContext } from "../../context/cart/cartContext";
 import { ICartItem } from "../../context/cart/interfaces/ICartItem";
 import { Link } from "react-router-dom";
@@ -18,7 +18,7 @@ export const Cart = () => {
         <div className="cart__items">
           {cartItems.map((cartItem: ICartItem) => {
             return (
-              <>
+              <Fragment key={cartItem.id}>
                 <div>
                   <input
                     type="checkbox"
@@ -50,8 +50,8 @@ export const Cart = () => {
                     }
                   />
                 </div>
-                <div>{cartItem.price}&nbsp;USD</div>
-              </>
+                <div>{cartItem.price * cartItem.quantity}&nbsp;USD</div>
+              </Fragment>
             );
           })}
         </div>

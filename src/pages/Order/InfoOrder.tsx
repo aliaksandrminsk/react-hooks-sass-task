@@ -55,12 +55,12 @@ export const InfoOrder: React.FC = () => {
       <h1 className="infoOrder__title">Placing Order (1/3)</h1>
       <Form
         onSubmit={onSubmit}
-        render={({ handleSubmit, pristine }) => {
+        render={({ handleSubmit, valid, pristine }) => {
           return (
             <form onSubmit={handleSubmit} className="form">
               <Field name="name" validate={nameValidator}>
                 {({ input, meta }) => (
-                  <div className="form__item">
+                  <div className="form__field">
                     <label>Name:</label>
                     <input {...input} type="text" placeholder="Name" />
                     {meta.error && meta.touched && <span>{meta.error}</span>}
@@ -69,7 +69,7 @@ export const InfoOrder: React.FC = () => {
               </Field>
               <Field name="email" validate={emailValidator}>
                 {({ input, meta }) => (
-                  <div className="form__item">
+                  <div className="form__field">
                     <label>Email:</label>
                     <input {...input} type="text" placeholder="Email" />
                     {meta.error && meta.touched && <span>{meta.error}</span>}
@@ -82,7 +82,7 @@ export const InfoOrder: React.FC = () => {
                 validate={phoneValidator}
               >
                 {({ input, meta }) => (
-                  <div className="form__item">
+                  <div className="form__field">
                     <label>Phone:</label>
                     <input
                       {...input}
@@ -98,7 +98,7 @@ export const InfoOrder: React.FC = () => {
               <div>
                 <button
                   type="submit"
-                  disabled={pristine}
+                  disabled={pristine || !valid}
                   className="normalButton"
                 >
                   Next
