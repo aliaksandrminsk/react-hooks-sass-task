@@ -6,13 +6,14 @@ import { Link } from "react-router-dom";
 export const Cart = () => {
   const { cartItems, updateCartItemCount, removeCartItems, getSelectedItems } =
     useContext(CartContext);
+  const selectedCartItems = getSelectedItems();
 
   return (
     <section className="cart">
       <h1 className="cart__title">Shopping cart</h1>
       <hr className="cart__hr" />
       {cartItems.length === 0 ? (
-        <div className="cart__message-empty">Your cart is empty.</div>
+        <div className="cart__empty-message">Your cart is empty.</div>
       ) : (
         <div className="cart__items">
           {cartItems.map((cartItem: ICartItem) => {
@@ -65,7 +66,7 @@ export const Cart = () => {
               className="normalButton"
               type="button"
               value="Buy"
-              disabled={getSelectedItems().length === 0}
+              disabled={selectedCartItems.length === 0}
             />
           </Link>
         </div>
@@ -74,8 +75,8 @@ export const Cart = () => {
             className="normalButton"
             type="button"
             value="Delete"
-            onClick={() => removeCartItems(getSelectedItems())}
-            disabled={getSelectedItems().length === 0}
+            onClick={() => removeCartItems(selectedCartItems)}
+            disabled={selectedCartItems.length === 0}
           />
         </div>
       </div>
