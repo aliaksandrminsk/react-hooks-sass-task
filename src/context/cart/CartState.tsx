@@ -15,6 +15,7 @@ export const CartState: React.FC = ({ children }) => {
   const addCartItem = (product: IProduct) => {
     const cartItem: ICartItem = {
       id: product.id,
+      desc: product.desc,
       imageUrl: `/products/${product.category}/${product.file}`,
       name: product.name,
       price: product.price,

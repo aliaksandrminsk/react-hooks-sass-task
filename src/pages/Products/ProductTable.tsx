@@ -5,7 +5,6 @@ import is from "is_js";
 import { productConstants } from "../../context/product/constants";
 import { ProductContext } from "../../context/product/productContext";
 import { CartContext } from "../../context/cart/cartContext";
-import "@fancyapps/fancybox";
 
 export const ProductTable = () => {
   const { filteredProducts, activePage, nameFilter } =
@@ -17,35 +16,6 @@ export const ProductTable = () => {
     activePage * productConstants.SIZE_PRODUCT_PAGE,
     (activePage + 1) * productConstants.SIZE_PRODUCT_PAGE
   );
-
-  const openFancyBox = (currentProduct: IProduct) => {
-    const productCollection = new Array<FancyBoxGroupItem>();
-    let productIndex = -1;
-
-    productsOnPage.map((product, index) => {
-      if (product.file === currentProduct.file) {
-        productIndex = index;
-      }
-      productCollection.push({
-        type: "image",
-        src: `/products/${product.category}/${product.file}`,
-        opts: {
-          caption: product.desc,
-        },
-      });
-    });
-    if (productIndex >= 0) {
-      $.fancybox.open(
-        productCollection,
-        {
-          arrows: false,
-          infobar: false,
-          buttons: ["close"],
-        },
-        productIndex
-      );
-    }
-  };
 
   return (
     <div className="products__items">
@@ -62,7 +32,7 @@ export const ProductTable = () => {
               formattedName={formattedName}
               photoUrl={`/products/${product.category}/${product.file}`}
               altText={product.name ?? "Photo"}
-              onClickPhotoHandler={() => openFancyBox(product)}
+              desc={product.desc}
               onClickButtonHandler={() => addCartItem(product)}
               isAdded={isAddedProduct(product.id)}
             />

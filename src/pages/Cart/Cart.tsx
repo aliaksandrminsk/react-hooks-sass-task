@@ -2,6 +2,7 @@ import React, { Fragment, useContext } from "react";
 import { CartContext } from "../../context/cart/cartContext";
 import { ICartItem } from "../../context/cart/interfaces/ICartItem";
 import { Link } from "react-router-dom";
+import { openFancyBox } from "../../lib/fancyBox";
 
 export const Cart = () => {
   const { cartItems, updateCartItemCount, removeCartItems, getSelectedItems } =
@@ -31,7 +32,12 @@ export const Cart = () => {
                   />
                 </div>
                 <div className="cart__column-image">
-                  <img src={cartItem.imageUrl} />
+                  <img
+                    src={cartItem.imageUrl}
+                    onClick={() =>
+                      openFancyBox(cartItem.imageUrl, cartItem.desc)
+                    }
+                  />
                 </div>
                 <div className="cart__column-name">{cartItem.name}</div>
                 <div className="cart__column-quantity">

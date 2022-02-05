@@ -1,10 +1,12 @@
 import React from "react";
+import "@fancyapps/fancybox";
+import { openFancyBox } from "../../lib/fancyBox";
 
 interface IProductCardProps {
   formattedName: string;
   photoUrl: string;
   altText: string;
-  onClickPhotoHandler: () => void;
+  desc: string;
   onClickButtonHandler: () => void;
   isAdded: boolean;
 }
@@ -13,7 +15,7 @@ export const ProductCard: React.FC<IProductCardProps> = ({
   formattedName,
   photoUrl,
   altText,
-  onClickPhotoHandler,
+  desc,
   onClickButtonHandler,
   isAdded,
 }) => {
@@ -23,7 +25,10 @@ export const ProductCard: React.FC<IProductCardProps> = ({
         className="productCard__title"
         dangerouslySetInnerHTML={{ __html: formattedName }}
       />
-      <div className="productCard__image" onClick={onClickPhotoHandler}>
+      <div
+        className="productCard__image"
+        onClick={() => openFancyBox(photoUrl, desc)}
+      >
         <img src={photoUrl} width="300" height="200" alt={altText} />
       </div>
       {isAdded ? (
