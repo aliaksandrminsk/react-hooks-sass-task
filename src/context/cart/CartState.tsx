@@ -57,13 +57,14 @@ export const CartState: React.FC = ({ children }) => {
     });
   };
 
-  const removeCartItems = (keys: Array<string>) => {
+  const removeCartItems = (keys: Set<string>) => {
     let newCartItems = [...cartItems];
-    for (const key of keys) {
+
+    keys.forEach((key) => {
       newCartItems = newCartItems.filter((item) => {
         return !(item.id === key);
       });
-    }
+    });
 
     localStorage.setItem("cart", JSON.stringify(newCartItems));
     dispatch({
@@ -82,9 +83,9 @@ export const CartState: React.FC = ({ children }) => {
   };
 
   const getSelectedItems = () => {
-    const keys = new Array<string>();
+    const keys = new Set<string>();
     for (const item of cartItems) {
-      if (item.selected) keys.push(item.id);
+      if (item.selected) keys.add(item.id);
     }
     return keys;
   };

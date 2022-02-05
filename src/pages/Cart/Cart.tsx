@@ -64,7 +64,7 @@ export const Cart = () => {
               className="normalButton"
               type="button"
               value="Buy"
-              disabled={selectedCartItems.length === 0}
+              disabled={selectedCartItems.size === 0}
             />
           </Link>
         </div>
@@ -74,7 +74,7 @@ export const Cart = () => {
             type="button"
             value="Delete"
             onClick={() => removeCartItems(selectedCartItems)}
-            disabled={selectedCartItems.length === 0}
+            disabled={selectedCartItems.size === 0}
           />
         </div>
       </div>
