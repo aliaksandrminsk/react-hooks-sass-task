@@ -1,16 +1,12 @@
-1) Should be as public package
-3) Copy pictures with different sizes via Webpack.
-4) Config of Prettier
-5) gulp
-6) Use enum
-9) Design in small size (oz.by).
-10) Packages in dependencies and devDependencies. Check more.
-11) Array in Cart.getSelectedItems convert to Map.
-12) Added HTML Semantic Elements
-13) added useMemo and useCallback
-14) https://www.youtube.com/watch?v=OEg8jm-NbQ0
-15) Sorting
-16) Change color of checkbox
+1) Copy pictures with different sizes via Webpack.
+2) Should be as public package
+3) Use enum
+4) Packages in dependencies and devDependencies. Check more.
+5) Added HTML Semantic Elements
+6) added useMemo and useCallback
+7) https://www.youtube.com/watch?v=OEg8jm-NbQ0
+8) Sorting
+9) Change color of checkbox
 
 
 

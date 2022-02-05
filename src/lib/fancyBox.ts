@@ -1,4 +1,5 @@
 import "@fancyapps/fancybox";
+import("default-passive-events");
 
 export function openFancyBox(photoUrl: string, desc = "") {
   $.fancybox.open({
