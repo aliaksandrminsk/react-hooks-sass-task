@@ -5,6 +5,7 @@ import is from "is_js";
 import { productConstants } from "../../context/product/constants";
 import { ProductContext } from "../../context/product/productContext";
 import { CartContext } from "../../context/cart/cartContext";
+import "@fancyapps/fancybox";
 
 export const ProductTable = () => {
   const { filteredProducts, activePage, nameFilter } =
@@ -34,7 +35,7 @@ export const ProductTable = () => {
       });
     });
     if (productIndex >= 0) {
-      window.$.fancybox.open(
+      $.fancybox.open(
         productCollection,
         {
           arrows: false,

@@ -11,12 +11,6 @@ import { CartState } from "./context/cart/CartState";
 import { OrderState } from "./context/order/OrderState";
 import { Order } from "./pages/Order/Order";
 
-declare global {
-  interface Window {
-    $: typeof jQuery; //It's for FancyBox
-  }
-}
-
 function App() {
   return (
     <ProductState>

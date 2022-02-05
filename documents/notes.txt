@@ -1,11 +1,8 @@
 1) Should be as public package
-2) Import normalize.css from node_modules - time 1:14:30  - https://www.youtube.com/watch?v=eSaF8NXeNsA
 3) Copy pictures with different sizes via Webpack.
 4) Config of Prettier
 5) gulp
 6) Use enum
-7) fancybox should be package, not link.
-8) Change color of checkbox (from interview)
 9) Design in small size (oz.by).
 10) Packages in dependencies and devDependencies. Check more.
 11) Array in Cart.getSelectedItems convert to Map.
