@@ -1,1 +1,1 @@
-declare module "default-passive-events";
+declare module "@fancyapps/ui/dist/fancybox.esm.js";

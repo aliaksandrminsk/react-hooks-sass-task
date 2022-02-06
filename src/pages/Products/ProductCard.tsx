@@ -1,5 +1,4 @@
 import React from "react";
-import "@fancyapps/fancybox";
 import { openFancyBox } from "../../lib/fancyBox";
 
 interface IProductCardProps {
