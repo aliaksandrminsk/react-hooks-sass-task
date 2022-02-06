@@ -2,7 +2,7 @@
   {
     "id": 1,
     "category": "laptop",
-    "file": "laptop1.jpg",
+    "file": "laptop1_mini.jpg",
     "name": "Lenovo IdeaPad 3 Laptop",
     "desc": "Powerhouse performance from AMD Ryzen 5 5500U mobile processor, 8GB DDR4 RAM, 256GB SSD storage, and AMD Radeon 7 Graphics.",
     "price": 2000
@@ -10,7 +10,7 @@
   {
     "id": 2,
     "category": "laptop",
-    "file": "laptop2.jpg",
+    "file": "laptop2_mini.jpg",
     "name": "2022 Acer Chromebook Spin 311 3H + Stylus",
     "desc": "Spin 311 3H, designed to keep your ideas flowing, anywhere, anytime with the ability to multi-mode, this Chrome OS laptop has a 360 hinge so you can use it in laptop mode for everyday computing, tent mode for sharing, stand mode for binge-watching your favorite streaming shows, or tablet mode for easy interaction. Stylus pen is included, which brings more productive.",
     "price": 3000
@@ -18,7 +18,7 @@
   {
     "id": 3,
     "category": "laptop",
-    "file": "laptop3.jpg",
+    "file": "laptop3_mini.jpg",
     "name": "2021 Apple MacBook Pro",
     "desc": "Up to 10-core CPU delivers up to 3.7x faster performance to fly through pro workflows quicker than ever.",
     "price": 1300
@@ -26,7 +26,7 @@
   {
     "id": 4,
     "category": "laptop",
-    "file": "laptop4.jpg",
+    "file": "laptop4_mini.jpg",
     "name": "HP Stream 11 Laptop, Intel Celeron N4020",
     "desc": "WINDOWS 11 HOME AND WARRANTY – Experience faster bootup times, increased responsiveness, and added protection against phishing and malware with Windows 11 Home in S Mode (6). And with a 1-year limited hardware warranty, you’ll enjoy even more peace of mind.",
     "price": 1200
@@ -34,7 +34,7 @@
   {
     "id": 5,
     "category": "laptop",
-    "file": "laptop5.jpg",
+    "file": "laptop5_mini.jpg",
     "name": "HP Pavilion 15 Laptop, 11th Gen Intel Core i7-1165G7 Processor",
     "desc": "INSTANT GRATIFICATION – Experience a laptop with premium performance, so you can spend less time getting more done; it’s like a small PC that’s compact enough to go where you go with a long-lasting battery to power you through your day.",
     "price": 3000
@@ -42,7 +42,7 @@
   {
     "id": 6,
     "category": "laptop",
-    "file": "laptop6.jpg",
+    "file": "laptop6_mini.jpg",
     "name": "Microsoft Surface Pro 7",
     "desc": "EPIC ENTERTAINMENT – With audio by B&O, a larger screen-to-body ratio, and a 15.6-inch Full HD micro-edged screen to maximize your view, entertainment on your laptop feels like bringing the theater home (1).",
     "price": 4500
@@ -50,7 +50,7 @@
   {
     "id": 7,
     "category": "laptop",
-    "file": "laptop7.jpg",
+    "file": "laptop7_mini.jpg",
     "name": "Acer Chromebook Spin 311 Convertible Laptop, Intel Celeron N4020",
     "desc": "IMPRESSIVE GRAPHICS – The Intel Iris Xe Graphics gives you a new level of graphics performance with crisp, stunning visuals, plus the convenience of a thin and light laptop.",
     "price": 3456
@@ -58,7 +58,7 @@
   {
     "id": 8,
     "category": "laptop",
-    "file": "laptop8.jpg",
+    "file": "laptop8_mini.jpg",
     "name": "Acer Aspire 5 Slim Laptop, 15.6 inches Full HD IPS Display",
     "desc": "UNSTOPPABLE PERFORMANCE – Get things done fast with the 11th Generation Intel Core i7-1165G7 processor, which delivers instant responsiveness and best-in-class connectivity.",
     "price": 1220
@@ -66,7 +66,7 @@
   {
     "id": 9,
     "category": "laptop",
-    "file": "laptop9.jpg",
+    "file": "laptop9_mini.jpg",
     "name": "Acer Nitro 5 AN515-55-53E5 Gaming Laptop",
     "desc": "MEMORY AND STORAGE – Enjoy up to 15x faster performance than a traditional hard drive with 512 GB PCIe NVMe M.2 SSD storage (4) and experience improved multitasking with higher bandwidth thanks to 16 GB of RAM.",
     "price": 1370
@@ -74,7 +74,7 @@
   {
     "id": 10,
     "category": "laptop",
-    "file": "laptop10.jpg",
+    "file": "laptop10_mini.jpg",
     "name": "2021 Apple MacBook Pro",
     "desc": "WORK ON THE GO – Get work done on the go with a long battery life of up to 8 hours (5) while HP Fast Charge lets you go from 0 to 50% charge in approximately 45 minutes.",
     "price": 1999
@@ -82,7 +82,7 @@
   {
     "id": 11,
     "category": "laptop",
-    "file": "laptop11.jpg",
+    "file": "laptop11_mini.jpg",
     "name": "Acer Aspire 5 A515-56-36UT Slim Laptop",
     "desc": "OS AND WARRANTY – Do more with better peace of mind thanks to the HP 1-year limited hardware warranty and the seamlessly integrated Windows 10 Pro operating system (7); get ready for the Windows 11 upgrade, coming soon and at no additional cost.",
     "price": 3900
@@ -90,7 +90,7 @@
   {
     "id": 12,
     "category": "laptop",
-    "file": "laptop12.jpg",
+    "file": "laptop12_mini.jpg",
     "name": "MSI GL66 Gaming Laptop",
     "desc": "Visual Performance: The 15.6” 144hz display delivers true-to-life images with a high refresh rate so you can see every frame of the game.",
     "price": 2300
@@ -98,7 +98,7 @@
   {
     "id": 13,
     "category": "laptop",
-    "file": "laptop13.jpg",
+    "file": "laptop13_mini.jpg",
     "name": "ASUS TUF Dash 15 (2021) Ultra Slim Gaming Laptop",
     "desc": "NVIDIA GeForce RTX 3050 Ti 4GB GDDR6 up to 1585MHz at 60W (75W with Dynamic Boost 2.0).",
     "price": 2330
@@ -106,7 +106,7 @@
   {
     "id": 14,
     "category": "laptop",
-    "file": "laptop14.jpg",
+    "file": "laptop14_mini.jpg",
     "name": "2020 Apple MacBook Air Laptop: Apple M1 Chip",
     "desc": "Easy to Learn – If you already have an iPhone, MacBook Air feels familiar from the moment you turn it on. And it works perfectly with all your Apple devices. Use your iPad to extend the workspace of your Mac, answer texts and phone calls directly on your Mac, and more.",
     "price": 4200
@@ -114,7 +114,7 @@
   {
     "id": 15,
     "category": "laptop",
-    "file": "laptop15.jpg",
+    "file": "laptop15_mini.jpg",
     "name": "DERE Laptop with Fingerprint Unlock",
     "desc": "The laptop comes with convenient fingerprint reader. Unlock immediately in 0.5 seconds, eliminating the trouble of entering a password. Strengthen the protection of personal privacy and information security.",
     "price": 1290
@@ -122,7 +122,7 @@
   {
     "id": 16,
     "category": "laptop",
-    "file": "laptop16.jpg",
+    "file": "laptop16_mini.jpg",
     "name": "TECLAST Windows 10 Laptop 13.3 Inch Traditional Mini Computer Laptops",
     "desc": "Simply Compatible – All your existing apps work, including Adobe Creative Cloud, Microsoft 365, and Google Drive. Plus you can use your favorite iPhone and iPad apps directly on macOS. Altogether you’ll have access to the biggest collection of apps ever for Mac. All available on the App Store.",
     "price": 3000
@@ -130,7 +130,7 @@
   {
     "id": 17,
     "category": "laptop",
-    "file": "laptop17.jpg",
+    "file": "laptop17_mini.jpg",
     "name": "Acer Nitro 5 AN515-55-53E5 Gaming Laptop",
     "desc": "Why Mac – Easy to learn. Easy to set up. Astoundingly powerful. Intuitive. Packed with apps to use right out of the box. Mac is designed to let you work, play, and create like never before.",
     "price": 3400
@@ -138,7 +138,7 @@
   {
     "id": 18,
     "category": "laptop",
-    "file": "laptop18.jpg",
+    "file": "laptop18_mini.jpg",
     "name": "Acer Predator Helios 300 PH315-54-760S Gaming Laptop",
     "desc": "Stunning Display – With a 13.3” Retina display, images come alive with new levels of realism. Text is sharp and clear, and colors are more vibrant.",
     "price": 1200
@@ -146,7 +146,7 @@
   {
     "id": 19,
     "category": "laptop",
-    "file": "laptop19.jpg",
+    "file": "laptop19_mini.jpg",
     "name": "Acer Chromebook Spin 311 Convertible Laptop",
     "desc": "Superfast Memory – 8GB of unified memory makes your entire system speedy and responsive. That way it can support tasks like memory-hogging multitab browsing and opening a huge graphic file quickly and easily.",
     "price": 4040
@@ -154,7 +154,7 @@
   {
     "id": 20,
     "category": "laptop",
-    "file": "laptop20.jpg",
+    "file": "laptop20_mini.jpg",
     "name": "MSI Stealth 15M Gaming Laptop",
     "desc": "Built to connect, this notebook computer includes a variety of USB ports for effortless connectivity. Plus, stay in touch with the built-in camera. Bluetooth 4.2.",
     "price": 1200
@@ -162,7 +162,7 @@
   {
     "id": 21,
     "category": "laptop",
-    "file": "laptop21.jpg",
+    "file": "laptop21_mini.jpg",
     "name": "HP 15.6inch HD Laptop",
     "desc": "The Lenovo Chromebook C330 is easy to use, offers built-in virus protection and keeps going with long battery life. No setup needed – Just login with a Google account so emails, maps, documents, and photos stay with you via cloud storage.",
     "price": 2300
@@ -170,7 +170,7 @@
   {
     "id": 22,
     "category": "laptop",
-    "file": "laptop22.jpg",
+    "file": "laptop22_mini.jpg",
     "name": "Lenovo Chromebook C330 2-in-1 Convertible Laptop",
     "desc": "Sleek, stylish, and secure, this 360⁰ convertible laptop is less than 1-inch thin and about the weight of a hardback book, with an 11-inch touchscreen display that's perfect for day-to-day computing and multimedia, on or offline.",
     "price": 2500
@@ -178,7 +178,7 @@
   {
     "id": 23,
     "category": "laptop",
-    "file": "laptop23.jpg",
+    "file": "laptop23_mini.jpg",
     "name": "Lenovo Chromebook Flex 3",
     "desc": "Designed with 6mm narrow bezel and 14.1 inch, our 1920x1080 FHD display gives you vivid color and excellent clarity with 2.5D touch. You can also keep the luxury laptop in hand for it only weighs 1.3kg.",
     "price": 2310
@@ -186,7 +186,7 @@
   {
     "id": 24,
     "category": "laptop",
-    "file": "laptop24.jpg",
+    "file": "laptop24_mini.jpg",
     "name": "TECLAST Traditional Laptop Computers 14 inch",
     "desc": "Equipped with 45600mWh battery, TECLAST F7 plus3 windows 10 laptop computer makes all your entertainment completely captivating. Together with 2.4G+5G WiFi, Bluetooth4.2, USB3.0 port and mini-HDMI, this laptop supports to share your happy moment with big screen.",
     "price": 4000
@@ -194,7 +194,7 @@
   {
     "id": 25,
     "category": "laptop",
-    "file": "laptop25.jpg",
+    "file": "laptop25_mini.jpg",
     "name": "LincPlus 14-inch Laptop Intel Celeron",
     "desc": "The laptop built-in Internal Dual-band 2.4G+5G wifi stable connection,The professional after-sales team provides LincPlus P3 laptop with a 2-year full range of services, including technical support,operation guide,installation.",
     "price": 2009
@@ -202,7 +202,7 @@
   {
     "id": 26,
     "category": "laptop",
-    "file": "laptop26.jpg",
+    "file": "laptop26_mini.jpg",
     "name": "HD Windows 10 Professional Slim n Light Laptop",
     "desc": "Fusion5 has been honouring warranties since 2011. We have the upmost confidence in our product range of Laptops and Notebooks - so much so that we offer a full 12 month USA warranty period, applicable to our USA Service Centre.",
     "price": 2060
@@ -210,7 +210,7 @@
   {
     "id": 101,
     "category": "bike",
-    "file": "bike1.jpg",
+    "file": "bike1_mini.jpg",
     "name": "Specialized Turbo Levo SL Expert Carbon 2021",
     "desc": "The Turbo Levo SL is a new, lightweight breed of eMTB that harnesses the quick and lively ride of our Stumpjumper...and adds just enough power to introduce a whole new dimension of kick ass. The Turbo Levo SL Expert Carbon features a full carbon frame paired to full FOX suspension and a SRAM Eagle GX drivetrain. The Turbo Levo SL is effectively a Stumpjumper that lets you embark on ridiculously long adventures with no fear of bonking and helps you snag three laps of your favorite trail instead of just one. Looking for a ton of power and range? Check out our Turbo Levo and Kenevo models. Want a bike, on the other hand, that simply feels like you—a faster you, with the power to ride more trails, kind of you? That's Turbo Levo SL.By connecting with our Mission Control App, you can tune the SL 1.1 motor to your riding style, record rides, and monitor the battery. The motor even has a built-in power meter that transmits to any ANT+ head unit. Don't want to connect? No worries—the simple Turbo Connect Unit (TCU) on the top tube gives you all the control you need to just climb on and ride all day.",
     "price": 5949
@@ -218,7 +218,7 @@
   {
     "id": 102,
     "category": "bike",
-    "file": "bike2.jpg",
+    "file": "bike2_mini.jpg",
     "name": "Norco Sight VLT C3 27.5 2020 Electric Mountain Bike",
     "desc": "The Sight VLT C2 27.5 is an electric All-Mountain whip with amazing descending capability, sure-footed climbing and trail charging grip. By taking the ride characteristics of our most popular All-Mountain design and adding and Shimano STEPS E7000 e-assist and an integrated 500Wh in tube battery, the Sight VLT C2 27.5 opens up a whole new world of riding possibilities. Featuring modern All-Mountain geometry with e-MTB specific components and suspension kinematics for a fast, stable and playful ride, the Sight VLT will amplify your ride from bottom to top and top to bottom.",
     "price": 4399
@@ -226,7 +226,7 @@
   {
     "id": 103,
     "category": "bike",
-    "file": "bike3.jpg",
+    "file": "bike3_mini.jpg",
     "name": "Haibike HardSeven 5",
     "desc": "Tour or trail? Uphill or downhill? With the HardSeven 5, there is no need for tradeoffs because this is a versatile and agile eMTB. With 120mm travel, snappy disc brakes, nimble 27.5\" wheels and a powerful Bosch Performance Line motor with a sleek, integrated 500Wh battery you will have a huge amount of fun on and off the trail. Adventures - here we come!",
     "price": 1200
@@ -234,7 +234,7 @@
   {
     "id": 104,
     "category": "bike",
-    "file": "bike4.jpg",
+    "file": "bike4_mini.jpg",
     "name": "Specialized Turbo Tero 4.0",
     "desc": "The new Turbo Tero is an electric mountain bike equipped for everyday rides. A mountain bike that you can commute on. A commuter you can take touring. A touring bike that you can haul freight with. Whatever you need it to be, for wherever you want to go. A true do-it-all superhero, Tero combines adaptable utility with World Champion mountain bike DNA and category-leading electric pedal assist.",
     "price": 3600
@@ -242,7 +242,7 @@
   {
     "id": 105,
     "category": "bike",
-    "file": "bike5.jpg",
+    "file": "bike5_mini.jpg",
     "name": "Urban",
     "desc": "Urban is our most versatile E-bike for urban explorers to enjoy the city rides and adventures beyond the pavement roads.",
     "price": 2560
@@ -250,7 +250,7 @@
   {
     "id": 106,
     "category": "bike",
-    "file": "bike6.jpg",
+    "file": "bike6_mini.jpg",
     "name": "Specialized Tero 3.0 2022",
     "desc": "The new Turbo Tero is an electric mountain bike equipped for everyday rides. A mountainbike that you can commute on. A commuter you can take touring. A touring bike that youcan haul freight with. Whatever you need it to be, for wherever you want to go. A truedo-it-all superhero, Tero combines adaptable utility with World Champion mountain bikeDNA and category-leading electric pedal assist.",
     "price": 1400
@@ -258,7 +258,7 @@
   {
     "id": 107,
     "category": "bike",
-    "file": "bike7.jpg",
+    "file": "bike7_mini.jpg",
     "name": "Brand-X Road Bike",
     "desc": "With its strong and light aluminium frame that's complete with Shimano Tourney gearing, this road bike from Brand-X is built for reliability.",
     "price": 566
@@ -266,7 +266,7 @@
   {
     "id": 108,
     "category": "bike",
-    "file": "bike8.jpg",
+    "file": "bike8_mini.jpg",
     "name": "Specialized Kenevo SL Comp 2022",
     "desc": "Power up to trail riding’s next level and dominate any and all trail monsters—the Turbo Kenevo Super Light melds the legendary handling and all-around big trail prowess of the Enduro with our Super Light electric support to deliver indomitable capability, light weight, and power to conquer more and bigger trails.",
     "price": 1222
@@ -274,7 +274,7 @@
   {
     "id": 109,
     "category": "bike",
-    "file": "bike9.jpg",
+    "file": "bike9_mini.jpg",
     "name": "De Rosa GRX800 Gravel Bike 2021",
     "desc": "The De Rosa Gravel is optimised for fast, stable and agile off-road riding while also providing comfortable and efficient on-road performance. It features a full-carbon frameset, a Shimano GRX 800 groupset, hydraulic disc brakes and Fulcrum Rapid Red 5 wheels wrapped in Vredestein Aventura 38c tyres.",
     "price": 3000
@@ -282,7 +282,7 @@
   {
     "id": 110,
     "category": "bike",
-    "file": "bike10.jpg",
+    "file": "bike10_mini.jpg",
     "name": "Electric Mountain Bike",
     "desc": "An e-mountain bike with infinite capability. The shackles are off, go ride the unrideable. Again and again. Impressively precise. Uncommonly agile. With its low center of gravity, modern geometry and short chainstays, Moterra's handling is in a class of its own.\n\nBosch's powerful new Performance CX drive unit and a long-lasting PowerTube battery integrate cleanly into Moterra's burly carbon frame. The power and range to ride anything — in a beautiful package. Riders come in all sizes. Proportional Response is the only design that addresses this fact, tailoring the suspension layout by size so that every rider gets optimal traction, suppleness and control.",
     "price": 344
@@ -290,7 +290,7 @@
   {
     "id": 111,
     "category": "bike",
-    "file": "bike11.jpg",
+    "file": "bike11_mini.jpg",
     "name": "Vitus ZX-1 EVO CR Road Bike",
     "desc": "The Vitus ZX-1 EVO CR is engineered for fast speeds, agile handling, exceptional efficiency and long-distance racing dependability. It features a full-carbon aero-optimised frameset, a Shimano R7000 2x11-Speed groupset with hydraulic disc brakes. This road race bike rolls fast upon Reynolds AR 58/62 carbon wheels wrapped in Tubeless Ready Schwalbe One Performance tyres.",
     "price": 677
@@ -298,7 +298,7 @@
   {
     "id": 112,
     "category": "bike",
-    "file": "bike12.jpg",
+    "file": "bike12_mini.jpg",
     "name": "Specialized Kenevo Comp 2021 Electric Mountain Bike",
     "desc": "The Kenevo is the most capable eMTB you can find—complete with 180mm of front and rear suspension, the smoothest and most powerful motor available, and more miles per charge than ever before. Our Kenevo Comp model pairs all that technology with a smart mix of components that’ll withstand the most demanding conditions and riders. The new Kenevo gains a stiffer, lower-slung Sidearm-style chassis and more aggressive geometry. And like the new Enduro, the Kenevo features an axle path and suspension that give you the smoothest, fastest ride over the roughest possible terrain. It all adds up to a bike that provides you with a whole new level of confidence and control on the toughest trails.\n\nThe Kenevo’s Specialized 2.1 motor amplifies your pedaling input by a mind blowing 410%. And as for range, our 500-watt hour battery provides you with plenty of range. What’s more, our Mission Control App can handle battery management automatically, ensuring your battery will last as long as you need it to. More power. More miles per ride. More awesome.",
     "price": 3000
@@ -306,7 +306,7 @@
   {
     "id": 113,
     "category": "bike",
-    "file": "bike13.jpg",
+    "file": "bike13_mini.jpg",
     "name": "Cannondale Habit Neo 4+",
     "desc": "Press play: We took our most fun trail bike and put a motor in it. It’s play time. Where it thrives: Challenging trails, up and down hills. What it's built for: Traction, efficiency, handling.",
     "price": 1200
@@ -314,7 +314,7 @@
   {
     "id": 114,
     "category": "bike",
-    "file": "bike14.jpg",
+    "file": "bike14_mini.jpg",
     "name": "Specialized Turbo Levo Comp 29 202",
     "desc": "Specialized designed the Turbo Levo Comp to be a proper trail bike, first and foremost. It takes geo, kinematics, and design cues from our newest trail bikes, like the Stumpjumper, and adds industry-leading tech that gives you the power to ride more trails. The Turbo Levo is a fully-fledged progressive trail bike. We’ve lengthened the reach, kept the chainstays nice and short, and maintained a low center of gravity. Next, we slackened the head angle for more confident descents and steepened the seat angle to improve climbing efficiency. It’s dialed.",
     "price": 1600
@@ -322,7 +322,7 @@
   {
     "id": 115,
     "category": "bike",
-    "file": "bike15.jpg",
+    "file": "bike15_mini.jpg",
     "name": "Specialized Turbo Levo Comp 29 202",
     "desc": "Specialized designed the Turbo Levo Comp to be a proper trail bike, first and foremost. It takes geo, kinematics, and design cues from our newest trail bikes, like the Stumpjumper, and adds industry-leading tech that gives you the power to ride more trails. The Turbo Levo is a fully-fledged progressive trail bike. We’ve lengthened the reach, kept the chainstays nice and short, and maintained a low center of gravity. Next, we slackened the head angle for more confident descents and steepened the seat angle to improve climbing efficiency. It’s dialed.",
     "price": 1500
@@ -330,7 +330,7 @@
   {
     "id": 116,
     "category": "bike",
-    "file": "bike16.jpg",
+    "file": "bike16_mini.jpg",
     "name": "Specialized Turbo Levo SL Comp Carbon 2021 Electric Mountain Bike",
     "desc": "The Turbo Levo SL is a new, lightweight breed of eMTB that harnesses the quick and lively ride of our Stumpjumper...and adds just enough power to introduce a whole new dimension of kick ass. The Turbo Levo SL Comp Carbon features a full carbon frame, full FOX suspension and a SRAM Eagle NX drivetrain. The Turbo Levo SL is effectively a Stumpjumper that lets you embark on ridiculously long adventures with no fear of bonking and helps you snag three laps of your favorite trail instead of just one. Looking for a ton of power and range? Check out our Turbo Levo and Kenevo models. Want a bike, on the other hand, that simply feels like you—a faster you, with the power to ride more trails, kind of you? That's Turbo Levo SL.By connecting with our Mission Control App, you can tune the SL 1.1 motor to your riding style, record rides, and monitor the battery. The motor even has a built-in power meter that transmits to any ANT+ head unit. Don't want to connect? No worries—the simple Turbo Connect Unit (TCU) on the top tube gives you all the control you need to just climb on and ride all day. The Turbo Levo SL looks like a Stumpjumper and, out on the trail, feels like one too. That’s no mistake. We aimed to build a Stumpjumper with a bit more boost to it and that’s exactly what you get—a Sidearm chassis with just the right amount of front-to-rear stiffness and 150mm of smooth, custom-tuned FOX front and rear suspension. To top it all off, we constructed this Turbo Levo SL chassis entirely from our light-yet-strong FACT 11m carbon. The lightweight SL 1.1 motor doubles your effort with as much as 240 watts of silent and powerful assistance to your pedals. The motor’s responsive torque curve delivers power perfectly in-tune with your normal riding cadence and leaves no resistance when you’re riding without power assistance.",
     "price": 1300
@@ -338,7 +338,7 @@
   {
     "id": 117,
     "category": "bike",
-    "file": "bike17.jpg",
+    "file": "bike17_mini.jpg",
     "name": "Trek Powerfly FS 4 500 2022",
     "desc": "Powerfly FS 4 is a full suspension electric mountain bike built to tackle rugged trail adventures. The plush suspension set-up soaks up rough terrain, and the powerful Bosch electric drive system boosts your capacity to crush climbs and mile after mile of singletrack.",
     "price": 1200
@@ -346,7 +346,7 @@
   {
     "id": 118,
     "category": "bike",
-    "file": "bike18.jpg",
+    "file": "bike18_mini.jpg",
     "name": "Haibike HardSeven 4",
     "desc": "So you're looking for an agile hardtail eMTB with a powerful drive unit? The HardSeven 4 is equipped with a powerful Bosch Performance Line motor and always offers the right support level you need to suit the terrain. This eBike, equipped with 27.5 wheels, comes with a sophisticated selection of components and will always get you to your destination even after countless miles on the trail.",
     "price": 1000
@@ -354,7 +354,7 @@
   {
     "id": 119,
     "category": "bike",
-    "file": "bike19.jpg",
+    "file": "bike19_mini.jpg",
     "name": "Cannondale Habit Neo 4+",
     "desc": "Specialized Kenevo SL Expert Carbon 2022 Electric Mountain Bike",
     "price": 1220
@@ -362,7 +362,7 @@
   {
     "id": 120,
     "category": "bike",
-    "file": "bike20.jpg",
+    "file": "bike20_mini.jpg",
     "name": "Specialized Kenevo SL Expert Carbon 2022 Electric Mountain Bike",
     "desc": "Power up to trail riding’s next level and dominate any and all trail monsters—the Turbo Kenevo Super Light melds the legendary handling and all-around big trail prowess of the Enduro with our Super Light electric support to deliver indomitable capability light weight and power to conquer more and bigger trails.",
     "price": 1207
@@ -370,7 +370,7 @@
   {
     "id": 121,
     "category": "bike",
-    "file": "bike21.jpg",
+    "file": "bike21_mini.jpg",
     "name": "Vitus Razor Road Bike",
     "desc": "The Vitus Razor is a superb bike to get new riders up to speed into the world of road cycling and is also a great bike for training, weekend racing, seasonal sportive riding and casual group rides. It features a quality aluminium frame, carbon forks, a Shimano Claris drivetrain and powerful dual pivot caliper rim brakes. This bike provides excellent performance and style without breaking the bank.",
     "price": 2000
@@ -378,7 +378,7 @@
   {
     "id": 122,
     "category": "bike",
-    "file": "bike22.jpg",
+    "file": "bike22_mini.jpg",
     "name": "Vitus ZX-1 EVO CRS eTap AXS Road Bike",
     "desc": "Engineered for fast and agile performance suited to rapid group rides and long-distance tour events, the Vitus ZX-1 EVO CRS is a top performer. It features an aero full-carbon frameset that's equipped with a SRAM Force eTap wireless electronic groupset. The groupset shifts instantly and precisely though its 2x12-Speed gear range, and it includes hydraulic disc brakes for outstanding all-weather stopping power. Plus, this race bike rolls upon Tubeless Ready Reynolds AR58/62 DB Carbon wheels wrapped in Schwalbe ONE Performance Tubeless Easy (TLE) tyres.",
     "price": 1220
@@ -386,7 +386,7 @@
   {
     "id": 201,
     "category": "book",
-    "file": "book1.jpg",
+    "file": "book1_mini.jpg",
     "name": "100+ Life-Changing, Plant-Based Recipes: A Cookbook",
     "desc": "In her highly anticipated first cookbook, Charity lays out a plan for anyone who wants to eat less meat—whether they are looking to go completely vegan or just be a little bit more meat-free. Pulling inspiration from her Puerto Rican and Creole heritage as well as from the American South, where she lives with her family, Charity’s recipes are full of flavor. Think Smoky Jambalaya; hearty Jerk-Spiced Lentils with Coconut Rice & Mango Salsa; Jalapeño-Bae’con Corn Cakes with Chili-Lime Maple Syrup; and a molten, decadent Salted Caramel Apple Crisp.",
     "price": 20
@@ -394,7 +394,7 @@
   {
     "id": 202,
     "category": "book",
-    "file": "book2.jpg",
+    "file": "book2_mini.jpg",
     "name": "You Are More Than You Think You Are: Practical Enlightenment for Everyday Life",
     "desc": "Many of us think that we just aren’t enough. Not good enough, not pretty enough, not rich enough, and not happy enough. But just because we think something doesn’t mean it’s true. YOU ARE MORE THAN YOU THINK YOU ARE teaches you how to revise your belief system, fulfill your deepest dreams and desires, and create an epic, successful, and inspiring life.",
     "price": 30
@@ -402,7 +402,7 @@
   {
     "id": 203,
     "category": "book",
-    "file": "book3.jpg",
+    "file": "book3_mini.jpg",
     "name": "To Paradise: A Novel",
     "desc": "In an alternate version of 1893 America, New York is part of the Free States, where people may live and love whomever they please (or so it seems). The fragile young scion of a distinguished family resists betrothal to a worthy suitor, drawn to a charming music teacher of no means. In a 1993 Manhattan besieged by the AIDS epidemic, a young Hawaiian man lives with his much older, wealthier partner, hiding his troubled childhood and the fate of his father. And in 2093, in a world riven by plagues and governed by totalitarian rule, a powerful scientist’s damaged granddaughter tries to navigate life without him—and solve the mystery of her husband’s disappearances.",
     "price": 24
@@ -410,7 +410,7 @@
   {
     "id": 204,
     "category": "book",
-    "file": "book4.jpg",
+    "file": "book4_mini.jpg",
     "name": "A Flicker in the Dark: A Novel",
     "desc": "Now twenty years later, Chloe is a psychologist in Baton Rouge and getting ready for her wedding. While she finally has a fragile grasp on the happiness she’s worked so hard to achieve, she sometimes feels as out of control of her own life as the troubled teens who are her patients. So when a local teenage girl goes missing, and then another, that terrifying summer comes crashing back. Is she paranoid, seeing parallels from her past that aren't actually there, or for the second time in her life, is Chloe about to unmask a killer?",
     "price": 56
@@ -418,7 +418,7 @@
   {
     "id": 205,
     "category": "book",
-    "file": "book5.jpg",
+    "file": "book5_mini.jpg",
     "name": "Gangsters of Capitalism: Smedley Butler, the Marines, and the Making and Breaking of America's Empire",
     "desc": "Award-winning author Jonathan Myerson Katz traveled across the world―from China to Guantánamo, the mountains of Haiti to the Panama Canal―and pored over the personal letters of Butler, his fellow Marines, and his Quaker family on Philadelphia's Main Line. Along the way, Katz shows how the consequences of the Marines' actions are still very much alive: talking politics with a Sandinista commander in Nicaragua, getting a martial arts lesson from a devotee of the Boxer Rebellion in China, and getting cast as a P.O.W. extra in a Filipino movie about their American War. Tracing a path from the first wave of U.S. overseas expansionism to the rise of fascism in the 1930s to the crises of democracy in our own time, Gangsters of Capitalism tells an urgent story about a formative era most Americans have never learned about, but that the rest of the world cannot forget.",
     "price": 12
@@ -426,7 +426,7 @@
   {
     "id": 206,
     "category": "book",
-    "file": "book6.jpg",
+    "file": "book6_mini.jpg",
     "name": "Stolen Focus: Why You Can't Pay Attention--and How to Think Deeply Again",
     "desc": "We think our inability to focus is a personal failure to exert enough willpower over our devices. The truth is even more disturbing: our focus has been stolen by powerful external forces that have left us uniquely vulnerable to corporations determined to raid our attention for profit. Hari found that there are twelve deep causes of this crisis, from the decline of mind-wandering to rising pollution, all of which have robbed some of our attention. In Stolen Focus, he introduces readers to Silicon Valley dissidents who learned to hack human attention, and veterinarians who diagnose dogs with ADHD. He explores a favela in Rio de Janeiro where everyone lost their attention in a particularly surreal way, and an office in New Zealand that discovered a remarkable technique to restore workers’ productivity.",
     "price": 16
@@ -434,7 +434,7 @@
   {
     "id": 207,
     "category": "book",
-    "file": "book7.jpg",
+    "file": "book7_mini.jpg",
     "name": "Demon Slayer: Kimetsu no Yaiba--Stories of Water and Flame",
     "desc": "Savage demons devour unsuspecting humans in Taisho-era Japan. Armed with special swords, the Demon Slayer Corps fights to stop the devastation demons spread. Giyu Tomioka, the sole Water Hashira, and Kyojuro Rengoku, a high-ranking Kinoe, embark on missions to eliminate demons and prove their mettle as two of the fiercest Demon Slayers.",
     "price": 17
@@ -442,7 +442,7 @@
   {
     "id": 208,
     "category": "book",
-    "file": "book8.jpg",
+    "file": "book8_mini.jpg",
     "name": "Jujutsu Kaisen",
     "desc": "In a world where cursed spirits feed on unsuspecting humans, fragments of the legendary and feared demon Ryomen Sukuna were lost and scattered about. Should any demon consume Sukuna’s body parts, the power they gain could destroy the world as we know it. Fortunately, there exists a mysterious school of Jujutsu Sorcerers who exist to protect the precarious existence of the living from the supernatural!",
     "price": 11
@@ -450,7 +450,7 @@
   {
     "id": 209,
     "category": "book",
-    "file": "book9.jpg",
+    "file": "book9_mini.jpg",
     "name": "M Is for Mama: A Rebellion Against Mediocre Motherhood",
     "desc": "Motherhood is a challenge. Unfortunately, our worldly culture offers moms little in the way of real help. Mamas only connect to celebrate surviving another day and to share in their misery rather than rejoice in what God has done and to build each other up in hard times. There has a be a better way, a biblical way, for mamas to grow and thrive.    ",
     "price": 40
@@ -458,7 +458,7 @@
   {
     "id": 210,
     "category": "book",
-    "file": "book10.jpg",
+    "file": "book10_mini.jpg",
     "name": "Red-Handed: How American Elites Get Rich Helping China Win",
     "desc": "In Red-Handed, six-time New York Times bestselling investigator Peter Schweizer presents his most alarming findings to date by revealing the secret deals wealthy Americans have cut to help China build its military, technological, and economic might. Equally as astonishing, many of these elites quietly believe the Chinese dictatorial regime is superior to American democracy.",
     "price": 47
@@ -466,7 +466,7 @@
   {
     "id": 211,
     "category": "book",
-    "file": "book11.jpg",
+    "file": "book11_mini.jpg",
     "name": "Reminders of Him: A Novel",
     "desc": "After serving five years in prison for a tragic mistake, Kenna Rowan returns to the town where it all went wrong, hoping to reunite with her four-year-old daughter. But the bridges Kenna burned are proving impossible to rebuild. Everyone in her daughter’s life is determined to shut Kenna out, no matter how hard she works to prove herself.",
     "price": 56
@@ -474,7 +474,7 @@
   {
     "id": 212,
     "category": "book",
-    "file": "book12.jpg",
+    "file": "book12_mini.jpg",
     "name": "Enough Already: Learning to Love the Way I Am Today",
     "desc": "Behind the curtain of her happy on-screen persona, Valerie Bertinelli’s life has been no easy ride, especially when it comes to her own self-image and self-worth. She waged a war against herself for years, learning to equate her value to her appearance as a child star on One Day at a Time and punishing herself in order to fit into the unachievable Hollywood mold. She struggled to make her marriage to Eddie Van Halen — the true love of her life — work, despite all the rifts the rock-star lifestyle created between them. She then watched her son follow in his father’s footsteps, right up onto the stage of Van Halen concerts, and begin his own music career. And like so many women, she cared for her parents as their health declined and saw the roles of parent and child reverse. Through mourning the loss of her parents, discovering more about her family’s past, and realizing how short life really is when she and her son lost Eddie, Valerie finally said, “Enough already!” to a lifelong battle with the scale and found a new path forward to joy and connection. Despite hardships and the pressures of the media industry to be something she’s not, Valerie is, at last, accepting herself: she knows who she is, has discovered her self-worth, and has learned how to prioritize her health and happiness over her weight. With an intimate look into her insecurities, heartbreaks, losses, triumphs, and revelations, Enough Already is the story of Valerie’s sometimes humorous, sometimes raw, but always honest journey to love herself and find joy in the everyday, in family, and in the food and memories we share.",
     "price": 82
@@ -482,7 +482,7 @@
   {
     "id": 213,
     "category": "book",
-    "file": "book13.jpg",
+    "file": "book13_mini.jpg",
     "name": "Off with My Head: The Definitive Basic B*tch Handbook to Surviving Rock Bottom",
     "desc": "The year 2020 was going to be the best year of Stassi’s life. Besides getting engaged and feeling like she was on top of the world career-wise, she bought her first house and was planning her dream Italian wedding. The future showed so much freaking promise—until it all went to hell. Stassi may not be perfect—she may have made some (major) mistakes—but she does feel like she has some insight (and plenty of hilarious tales) about getting knocked up, called out, and learning from what went wrong.",
     "price": 46
@@ -490,7 +490,7 @@
   {
     "id": 214,
     "category": "book",
-    "file": "book14.jpg",
+    "file": "book14_mini.jpg",
     "name": "The Great Reset: Joe Biden and the Rise of Twenty-First-Century Fascism",
     "desc": "An international conspiracy between powerful bankers, business leaders, and government officials; closed-door meetings in the Swiss Alps; and calls for a radical transformation of every society on earth—the Great Reset sounds like it is one henchman-with-an-eyepatch away from being the plot for the next James Bond movie. ",
     "price": 32
@@ -498,7 +498,7 @@
   {
     "id": 215,
     "category": "book",
-    "file": "book15.jpg",
+    "file": "book15_mini.jpg",
     "name": "I'll Be There",
     "desc": "If you’ve ever asked yourself these questions, Amy Weatherly and Jess Johnston, founders of the widely popular “Sister, I Am with You,” are raising their hands to say, “Yeah, us too.” And they want to encourage, equip, and reassure you that you have what it takes to build the kind of friendships you want.",
     "price": 18
@@ -506,7 +506,7 @@
   {
     "id": 216,
     "category": "book",
-    "file": "book16.jpg",
+    "file": "book16_mini.jpg",
     "name": "The Lords of Easy Money: How the Federal Reserve Broke the American Economy",
     "desc": "The New York Times bestselling business journalist Christopher Leonard infiltrates one of America’s most mysterious institutions—the Federal Reserve—to show how its policies spearheaded by Chairman Jerome Powell over the past ten years have accelerated income inequality and put our country’s economic stability at risk.",
     "price": 41
@@ -514,7 +514,7 @@
   {
     "id": 301,
     "category": "washer",
-    "file": "washer1.jpg",
+    "file": "washer1_mini.jpg",
     "name": "LITM Upgraded Portable Washing Machine with Socks Laundry Bag",
     "desc": "It comes with a blue starry sky gift bag and a small socks laundry bag. English manual. It is a best gift to baby, child or your friends and relatives.",
     "price": 100
@@ -522,7 +522,7 @@
   {
     "id": 302,
     "category": "washer",
-    "file": "washer2.jpg",
+    "file": "washer2_mini.jpg",
     "name": "Portable Washing Machine",
     "desc": "Our mini portable washing machine is designed for delicate and small things. Its small load can save water and electricity, but cleaning large items may damage the machine. The drain basket of our mini washing machine can make your items without dripping and avoid hand-twisting, but it can't completely dry the clothes.",
     "price": 120
@@ -530,7 +530,7 @@
   {
     "id": 303,
     "category": "washer",
-    "file": "washer3.jpg",
+    "file": "washer3_mini.jpg",
     "name": "Amana NTW4516FW 3.5 Cu. Ft. White Top Load Washer",
     "desc": "This refurbished product is tested and certified to look and work like new. The refurbishing process includes functionality testing, basic cleaning, inspection, and repackaging. The product ships with all relevant accessories, and may arrive in a generic box.",
     "price": 220
@@ -538,7 +538,7 @@
   {
     "id": 304,
     "category": "washer",
-    "file": "washer4.jpg",
+    "file": "washer4_mini.jpg",
     "name": "Equator 1.6 cu.ft. Compact Washer with Winterize in White",
     "desc": "Automatic Water Level Sensor: Machine weighs clothes and selects the right amount of water for each load - No wastage of water.",
     "price": 280
@@ -546,7 +546,7 @@
   {
     "id": 305,
     "category": "washer",
-    "file": "washer5.jpg",
+    "file": "washer5_mini.jpg",
     "name": "Farberware Professional FCW10BSCWHA 1.0 Cu",
     "desc": "LOOKS GREAT: Premium metallic silver design with chrome decoration offers a sleek and elegant look plus the soft closing cover has transparent tempered glass so you can get a clear view of washing process.",
     "price": 500
@@ -554,7 +554,7 @@
   {
     "id": 306,
     "category": "washer",
-    "file": "washer6.jpg",
+    "file": "washer6_mini.jpg",
     "name": "VIVOHOME 2 in 1 Portable Compact Full Automatic",
     "desc": "MULTIFUNCTIONAL CONTROL PANEL - The VIVOHOME compact washer is equipped with a multifunctional control panel which is easier to use for everyone; This fully automatic washing machine has 8 laundry modes and 10 optional water levels; Users can switch washing procedures manually by pushing button according to their needs or types of clothing.",
     "price": 320
@@ -562,7 +562,7 @@
   {
     "id": 307,
     "category": "washer",
-    "file": "washer7.jpg",
+    "file": "washer7_mini.jpg",
     "name": "VIVOHOME Electric Portable 2 in 1 Twin",
     "desc": "DOUBLE FUNCTION - In order to save your precious time, the new semi-automatic VIVOHOME washing machine can wash and spin dry clothes at the same time; You can transfer the clothes to the spin dryer after the washing tub is finished; It’s a simple and affordable way to wash batches of clothes quickly.",
     "price": 440
@@ -570,7 +570,7 @@
   {
     "id": 308,
     "category": "washer",
-    "file": "washer8.jpg",
+    "file": "washer8_mini.jpg",
     "name": "Upgraded Version Pyle Portable Washer & Spin Dryer",
     "desc": "The portable washer dryer features a convenient top loading system Simply insert detergent and water into the portable washer dryer combo A power cord and drain hose are included.",
     "price": 520
@@ -578,7 +578,7 @@
   {
     "id": 309,
     "category": "washer",
-    "file": "washer9.jpg",
+    "file": "washer9_mini.jpg",
     "name": "Portable Laundry Washing Machine by BLACK+DECKER",
     "desc": "ENERGY EFFICIENT OPERATION – This compact washing machine is only for use with cold water. It has a built in lint-filter that does not need to be replaced - just clean it about once a month. It’s designed for high efficiency (HE) detergents only. Door Material-Glass.",
     "price": 290
@@ -586,7 +586,7 @@
   {
     "id": 310,
     "category": "washer",
-    "file": "washer10.jpg",
+    "file": "washer10_mini.jpg",
     "name": "Helohome Portable Washing Machine",
     "desc": "This Full-Automatic washing machine has 6 programs that are most commonly used, including Normal, Heavy, Delicate Quick, Bulky, and Spin Only. You can quickly start the machine the way you like. The washer also has 3 water temperatures and 3 water levels for you to choose from. It not only come with an LED display, which can show you exactly which process the machine is going on but also have a see-through lid, which allows you to see and monitor the water condition.",
     "price": 320
@@ -594,7 +594,7 @@
   {
     "id": 311,
     "category": "washer",
-    "file": "washer11.jpg",
+    "file": "washer11_mini.jpg",
     "name": "Think Gizmos - Portable Washing Machine with Drainage Pump",
     "desc": "WASH & SPIN TIMER: The wash cycle can run up to 15 minutes on either a soft or normal wash and the spin cycle can run up to 5 minutes which means the clothes can be washed for the time required.",
     "price": 433
@@ -602,7 +602,7 @@
   {
     "id": 312,
     "category": "washer",
-    "file": "washer12.jpg",
+    "file": "washer12_mini.jpg",
     "name": "BLACK+DECKER BPWM16W Portable Washer",
     "desc": "AUTO CYCLE PROGRAMS & WATER SETTINGS – Meet all your laundry needs with Normal, Heavy, Delicate, Quick, Bulky, & Spin Only cycles. Control the Soak, Wash, Rinse, & Spin cycles with the push of a button, and adjust the water level based on load size.",
     "price": 240
@@ -610,7 +610,7 @@
   {
     "id": 313,
     "category": "washer",
-    "file": "washer13.jpg",
+    "file": "washer13_mini.jpg",
     "name": "RCA RPW210 WASHER, 2.1 cu ft",
     "desc": "CONVENIENT AND EASY TO USE: The top-loading hole eases the process of loading your towels, clothes, bedding etc. It provides easy access to the stainless steel water basin.",
     "price": 399
@@ -618,7 +618,7 @@
   {
     "id": 314,
     "category": "washer",
-    "file": "washer14.jpg",
+    "file": "washer14_mini.jpg",
     "name": "COMFEE’ 1.6 Cu.ft Portable Washing Machine",
     "desc": "Easy to Use: - This portable washing machine has 6 most commonly used programs including Normal, Quick, Heavy, Bulky, Delicate, and Spin Only. You are allowed to quickly start the machine the way you like. You can also add extra rinse time by pressing the “Extra Rinse” button. The washer also has 3 water temperatures, meet your different laundry needs. And it comes with a clear lid that allows you to look over the status of clothing at any time.",
     "price": 299
@@ -626,7 +626,7 @@
   {
     "id": 315,
     "category": "washer",
-    "file": "washer15.jpg",
+    "file": "washer15_mini.jpg",
     "name": "LG Front Load Stackable Washer",
     "desc": "LG Front Load Stackable Washer and Dryer Set WM3700HVA-DLEX3700V (Graphite Steel).",
     "price": 299
@@ -634,7 +634,7 @@
   {
     "id": 401,
     "category": "phone",
-    "file": "phone1.jpg",
+    "file": "phone1_mini.jpg",
     "name": "Apple iPhone 11 Pro Max",
     "desc": "This Renewed Premium product is shipped and sold by Amazon and has been certified by Amazon to work and look like new. With at least 90% battery life, it comes in deluxe, Amazon-branded packaging and is backed by a one-year warranty and technical support. See terms here.",
     "price": 320
@@ -642,7 +642,7 @@
   {
     "id": 402,
     "category": "phone",
-    "file": "phone2.jpg",
+    "file": "phone2_mini.jpg",
     "name": "SAMSUNG Galaxy S20 FE 5G",
     "desc": "SINGLE-TAKE AI: One tap of the screen captures multiple images and videos all at once. Fast Charging compatible on wired and wireless. Wired charging compatible with QC2.0 and AFC. Wireless charging compatible with WPC.",
     "price": 200
@@ -650,7 +650,7 @@
   {
     "id": 403,
     "category": "phone",
-    "file": "phone3.jpg",
+    "file": "phone3_mini.jpg",
     "name": "Moto G Power",
     "desc": "Unlocked for the freedom to choose your carrier. Compatible with AT&T, Sprint, T-Mobile, and Verizon networks. Sim card not included. Customers may need to contact Sprint for activation on Sprint’s network. To use this Device on Verizon, first, provision your SIM through Verizon Wireless. Log in to your account on Verizon Wireless. Devices - activate or switch devices - activate.",
     "price": 300
