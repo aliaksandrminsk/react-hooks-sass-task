@@ -47,7 +47,7 @@ function getFormattedProductName(
   product: string,
   filter: string,
   price: number
-) {
+): string {
   if (is.string(filter) && filter.trim().length > 0) {
     product = product.replace(/\s/g, "&ensp;"); //Change space to special code of space.
     filter = filter.replace(/\s/g, "&ensp;"); //Change space to special code of space.
@@ -63,5 +63,5 @@ function getFormattedProductName(
     priceText = ` (${price}&nbsp;USD)`;
   }
 
-  return `<span className="products__item-text">${product}${priceText}</span>`;
+  return `<span class="products__item-text">${product}${priceText}</span>`;
 }

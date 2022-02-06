@@ -18,9 +18,9 @@ export const ResultOrder: React.FC = () => {
   };
 
   useEffect(() => {
-    const keys = new Array<string>();
+    const keys = new Set<string>();
     for (const item of cartItems) {
-      if (item.selected) keys.push(item.id);
+      if (item.selected) keys.add(item.id);
     }
     removeCartItems(keys);
   }, []);
