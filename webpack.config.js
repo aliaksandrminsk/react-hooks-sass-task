@@ -53,8 +53,11 @@ const plugins = () => {
     new CopyWebpackPlugin({
       patterns: [
         {
-          from: path.resolve(__dirname, "public/products"),
-          to: path.resolve(__dirname, "dist/products"),
+          from: path.resolve(__dirname, "public"),
+          to: path.resolve(__dirname, "dist"),
+          globOptions: {
+            ignore: ["**/index.html", "**/fonts", "**/ui"],
+          },
         },
       ],
     }),
