@@ -5,7 +5,7 @@
 5) https://www.youtube.com/watch?v=OEg8jm-NbQ0
 6) Sorting
 7) Change color of checkbox
-
+8) manifest
 
 
 
