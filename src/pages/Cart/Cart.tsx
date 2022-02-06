@@ -33,6 +33,7 @@ export const Cart = () => {
                 </div>
                 <div className="cart__column-image">
                   <img
+                    alt={cartItem.name}
                     src={cartItem.imageUrl}
                     onClick={() =>
                       openFancyBox(cartItem.imageUrl, cartItem.desc)
