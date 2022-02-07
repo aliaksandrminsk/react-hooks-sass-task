@@ -49,7 +49,7 @@ function getFormattedProductName(
   price: number
 ): string {
   if (is.string(filter) && filter.length > 0) {
-    filter = filter.replace(/[^A-Za-z0-9]/, "\\$&");
+    filter = filter.replace(/[^A-Za-z0-9]/g, "\\$&");
     const reg = new RegExp(filter, "gi");
     product = product.replace(
       reg,
