@@ -54,7 +54,7 @@ function getFormattedProductName(
     const reg = new RegExp(filter, "gi"); //set red color for filtered data
     product = product.replace(
       reg,
-      "<span class='products__item-filter'>$&</span>"
+      "<span class='productCard__title-filter'>$&</span>"
     );
   }
 
@@ -63,5 +63,5 @@ function getFormattedProductName(
     priceText = ` (${price}&nbsp;USD)`;
   }
 
-  return `<span class="products__item-text">${product}${priceText}</span>`;
+  return `${product}${priceText}`;
 }

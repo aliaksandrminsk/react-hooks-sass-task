@@ -19,8 +19,8 @@ export const ProductCard: React.FC<IProductCardProps> = ({
   isAdded,
 }) => {
   return (
-    <div className="productCard">
-      <div
+    <article className="productCard">
+      <h4
         className="productCard__title"
         dangerouslySetInnerHTML={{ __html: formattedName }}
       />
@@ -41,6 +41,6 @@ export const ProductCard: React.FC<IProductCardProps> = ({
           Add to cart
         </button>
       )}
-    </div>
+    </article>
   );
 };

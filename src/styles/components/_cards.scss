@@ -17,6 +17,11 @@
   &__title {
     padding: 3px;
     align-self: center;
+    font-weight: normal;
+    white-space: pre-wrap;
+    &-filter {
+      color: blue;
+    }
   }
 
   &__image {

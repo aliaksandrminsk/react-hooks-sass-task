@@ -1,7 +1,7 @@
 {
-  "name": "react-redux-bootstrap-task",
+  "name": "react-hooks-sass-task",
   "version": "1.0.0",
-  "description": "The package shows how to use Redux-Thunk along with TypeScript language.",
+  "description": "The package shows how to use React Hooks along with TypeScript language.",
   "private": true,
   "keywords": [
     "js",
@@ -49,7 +49,6 @@
     "@typescript-eslint/parser": "^5.10.1",
     "autoprefixer": "^10.4.2",
     "babel-loader": "^8.2.3",
-    "bootstrap": "^4.6.1",
     "clean-webpack-plugin": "^4.0.0",
     "copy-webpack-plugin": "^10.2.1",
     "cross-env": "^7.0.3",
