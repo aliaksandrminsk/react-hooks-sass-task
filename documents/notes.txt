@@ -1,9 +1,8 @@
-1) Change color of checkbox
-2) Packages in dependencies and devDependencies. Check more.
-3) Added HTML Semantic Elements
-4) added useMemo and useCallback
-5) https://www.youtube.com/watch?v=OEg8jm-NbQ0
-6) Sorting
+1) Packages in dependencies and devDependencies. Check more.
+2) Added HTML Semantic Elements
+3) added useMemo and useCallback
+4) https://www.youtube.com/watch?v=OEg8jm-NbQ0
+5) Sorting
 
 
 

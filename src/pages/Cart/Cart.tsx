@@ -21,15 +21,18 @@ export const Cart = () => {
             return (
               <Fragment key={cartItem.id}>
                 <div>
-                  <input
-                    type="checkbox"
-                    defaultChecked={cartItem.selected}
-                    onChange={() =>
-                      updateCartItemCount(cartItem.id, {
-                        selected: !cartItem.selected,
-                      })
-                    }
-                  />
+                  <label className="checkbox">
+                    <input
+                      type="checkbox"
+                      defaultChecked={cartItem.selected}
+                      onChange={() =>
+                        updateCartItemCount(cartItem.id, {
+                          selected: !cartItem.selected,
+                        })
+                      }
+                    />
+                    <span className="checkmark"></span>
+                  </label>
                 </div>
                 <div className="cart__column-image">
                   <img
