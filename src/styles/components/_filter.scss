@@ -1,7 +1,7 @@
 .filter {
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 
   padding-left: 3rem;
   padding-right: 3rem;
@@ -9,14 +9,8 @@
   width: 100%;
   max-width: 110rem;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
   @media ($mobileL) {
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
+    margin-bottom: 2rem;
   }
 
   &__input {
@@ -45,22 +39,6 @@
       box-shadow: $bigShadow;
       margin-right: 1rem;
       margin-bottom: 0;
-    }
-  }
-
-  &__button {
-    width: 10.8rem;
-    height: 41px;
-
-    font-size: 1.8rem;
-    font-weight: bold;
-
-    border-radius: 1px;
-    box-shadow: $smallShadow;
-    border: solid 1px black;
-
-    @media ($mobileL) {
-      box-shadow: $bigShadow;
     }
   }
 
