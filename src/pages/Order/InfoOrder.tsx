@@ -9,6 +9,8 @@ interface IFormValues {
   phone: string;
 }
 
+type Validator = (value: string) => string | undefined;
+
 export const InfoOrder: React.FC = () => {
   const { setUserInfo } = useContext(OrderContext);
 
@@ -33,8 +35,13 @@ export const InfoOrder: React.FC = () => {
     )}`;
   };
 
-  const nameValidator = (value: string) =>
-    value ? undefined : "Enter valid name";
+  const required = (value: string) => {
+    if (!value || value === "") {
+      return "This field is required";
+    }
+    return undefined;
+  };
+
   const emailValidator = (value: string) =>
     !is.email(value) ? "Please enter a valid email address" : undefined;
 
@@ -50,6 +57,14 @@ export const InfoOrder: React.FC = () => {
     return valid ? undefined : `Please enter a valid phone number`;
   };
 
+  const composeValidators =
+    (...validators: Array<Validator>) =>
+    (value: string) =>
+      validators.reduce<string | undefined>(
+        (error, validator) => error || validator(value),
+        undefined
+      );
+
   return (
     <section className="infoOrder">
       <h1 className="infoOrder__title">Placing Order (1/3)</h1>
@@ -58,7 +73,7 @@ export const InfoOrder: React.FC = () => {
         render={({ handleSubmit, valid, pristine }) => {
           return (
             <form onSubmit={handleSubmit} className="form">
-              <Field name="name" validate={nameValidator}>
+              <Field name="name" validate={required}>
                 {({ input, meta }) => (
                   <div className="form__field">
                     <label>Name:</label>
@@ -67,7 +82,10 @@ export const InfoOrder: React.FC = () => {
                   </div>
                 )}
               </Field>
-              <Field name="email" validate={emailValidator}>
+              <Field
+                name="email"
+                validate={composeValidators(required, emailValidator)}
+              >
                 {({ input, meta }) => (
                   <div className="form__field">
                     <label>Email:</label>
@@ -79,7 +97,7 @@ export const InfoOrder: React.FC = () => {
               <Field
                 name="phone"
                 format={formatPhoneNumber}
-                validate={phoneValidator}
+                validate={composeValidators(required, phoneValidator)}
               >
                 {({ input, meta }) => (
                   <div className="form__field">
