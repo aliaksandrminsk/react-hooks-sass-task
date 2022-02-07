@@ -48,8 +48,9 @@ function getFormattedProductName(
   filter: string,
   price: number
 ): string {
-  if (is.string(filter) && filter.trim().length > 0) {
-    const reg = new RegExp(filter, "gi"); //set red color for filtered data
+  if (is.string(filter) && filter.length > 0) {
+    filter = filter.replace(/[.+]/, "\\$&");
+    const reg = new RegExp(filter, "gi");
     product = product.replace(
       reg,
       "<span class='productCard__title-filter'>$&</span>"
