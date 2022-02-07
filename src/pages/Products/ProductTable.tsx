@@ -49,8 +49,8 @@ function getFormattedProductName(
   price: number
 ): string {
   if (is.string(filter) && filter.trim().length > 0) {
-    product = product.replace(/\s/g, "&ensp;"); //Change space to special code of space.
-    filter = filter.replace(/\s/g, "&ensp;"); //Change space to special code of space.
+    //product = product.replace(/\s/g, "&ensp;"); //Change space to special code of space.
+    //filter = filter.replace(/\s/g, "&ensp;"); //Change space to special code of space.
     const reg = new RegExp(filter, "gi"); //set red color for filtered data
     product = product.replace(
       reg,
