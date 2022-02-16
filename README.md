@@ -1,6 +1,6 @@
 # React-Hooks-Sass Example
 
-This project is an online store. It shows how to use React Hooks along with [TypeScript](https://www.typescriptlang.org/) language.
+This project is an online store. Technologies: React Hooks, TypeScript, Webpack and Sass.
 
 To run the package.
 
