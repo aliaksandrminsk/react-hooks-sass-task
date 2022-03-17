@@ -4,6 +4,7 @@ import { CartContext } from "./cartContext";
 import { cartReducer, ICartState } from "./cartReducer";
 import { ICartItem } from "./interfaces/ICartItem";
 import { IProduct } from "../product/interfaces/IProduct";
+import CartStorage from "./CartStorage";
 
 export const CartState: React.FC = ({ children }) => {
   const initialState: ICartState = {
@@ -11,6 +12,7 @@ export const CartState: React.FC = ({ children }) => {
   };
 
   const [state, dispatch] = useReducer(cartReducer, initialState);
+  const storage = new CartStorage();
 
   const addCartItem = (product: IProduct) => {
     const cartItem: ICartItem = {
@@ -24,7 +26,7 @@ export const CartState: React.FC = ({ children }) => {
     };
     const newCartItems = [...cartItems, cartItem];
 
-    localStorage.setItem("cart", JSON.stringify(newCartItems));
+    storage.saveData("cart", JSON.stringify(newCartItems));
     dispatch({
       type: ActionType.UPDATE_CART_ITEMS,
       cartItems: newCartItems,
@@ -51,7 +53,7 @@ export const CartState: React.FC = ({ children }) => {
         break;
       }
     }
-    localStorage.setItem("cart", JSON.stringify(newCartItems));
+    storage.saveData("cart", JSON.stringify(newCartItems));
     dispatch({
       type: ActionType.UPDATE_CART_ITEMS,
       cartItems: newCartItems,
@@ -67,7 +69,7 @@ export const CartState: React.FC = ({ children }) => {
       });
     });
 
-    localStorage.setItem("cart", JSON.stringify(newCartItems));
+    storage.saveData("cart", JSON.stringify(newCartItems));
     dispatch({
       type: ActionType.UPDATE_CART_ITEMS,
       cartItems: newCartItems,
@@ -92,7 +94,7 @@ export const CartState: React.FC = ({ children }) => {
   };
 
   useEffect(() => {
-    const savedCart = localStorage.getItem("cart");
+    const savedCart = storage.getData("cart");
     if (savedCart != null) {
       const cartItems: Array<ICartItem> = JSON.parse(savedCart);
       dispatch({
