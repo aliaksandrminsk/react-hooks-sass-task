@@ -2,7 +2,7 @@ import React, { useContext, useEffect } from "react";
 import { OrderContext } from "../../context/order/orderContext";
 import { CartContext } from "../../context/cart/cartContext";
 import { useNavigate } from "react-router-dom";
-import { LoadingOrder } from "./LoadingOrder";
+import LoadingOrder from "./LoadingOrder";
 
 const InfoOrder = React.lazy(() => import("./InfoOrder"));
 const CardOrder = React.lazy(() => import("./CardOrder"));
