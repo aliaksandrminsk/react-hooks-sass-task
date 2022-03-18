@@ -1,11 +1,13 @@
 import React, { useContext, useEffect } from "react";
 import { OrderContext } from "../../context/order/orderContext";
-import { InfoOrder } from "./InfoOrder";
-import { LocationOrder } from "./LocationOrder";
-import { CardOrder } from "./CardOrder";
-import { ResultOrder } from "./ResultOrder";
 import { CartContext } from "../../context/cart/cartContext";
 import { useNavigate } from "react-router-dom";
+import { LoadingOrder } from "./LoadingOrder";
+
+const InfoOrder = React.lazy(() => import("./InfoOrder"));
+const CardOrder = React.lazy(() => import("./CardOrder"));
+const LocationOrder = React.lazy(() => import("./LocationOrder"));
+const ResultOrder = React.lazy(() => import("./ResultOrder"));
 
 export const Order: React.FC = () => {
   const { userInfo, userCard, userLocation, deleteOrder } =
@@ -36,6 +38,7 @@ export const Order: React.FC = () => {
   } else {
     container = <ResultOrder />; //Showing result of order
   }
-
-  return container;
+  return (
+    <React.Suspense fallback={<LoadingOrder />}>{container}</React.Suspense>
+  );
 };

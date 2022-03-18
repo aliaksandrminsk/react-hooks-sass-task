@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 import { OrderContext } from "../../context/order/orderContext";
 import { YMaps, Map, Placemark } from "react-yandex-maps";
 
-export const LocationOrder: React.FC = () => {
+export default function LocationOrder() {
   const { setUserLocation } = useContext(OrderContext);
 
   const [state, setState] = useState<any>({
@@ -55,4 +55,4 @@ export const LocationOrder: React.FC = () => {
       </div>
     </section>
   );
-};
+}

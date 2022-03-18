@@ -3,7 +3,7 @@ import { OrderContext } from "../../context/order/orderContext";
 import { useNavigate } from "react-router-dom";
 import { CartContext } from "../../context/cart/cartContext";
 
-export const ResultOrder: React.FC = () => {
+export default function ResultOrder() {
   const { userInfo, userCard, userLocation } = useContext(OrderContext);
 
   const { cartItems, removeCartItems } = useContext(CartContext);
@@ -49,4 +49,4 @@ export const ResultOrder: React.FC = () => {
       </div>
     </section>
   );
-};
+}

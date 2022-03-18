@@ -11,7 +11,7 @@ interface IFormValues {
 
 type Validator = (value: string) => string | undefined;
 
-export const InfoOrder: React.FC = () => {
+export default function InfoOrder() {
   const { setUserInfo } = useContext(OrderContext);
 
   const onSubmit = (values: IFormValues) => {
@@ -128,4 +128,4 @@ export const InfoOrder: React.FC = () => {
       />
     </section>
   );
-};
+}

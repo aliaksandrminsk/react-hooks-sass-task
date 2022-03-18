@@ -15,7 +15,7 @@ interface IFormValues {
   expiry: string;
 }
 
-export const CardOrder: React.FC = () => {
+export default function CardOrder() {
   const { setUserCard } = useContext(OrderContext);
   const onSubmit = (values: IFormValues) => {
     setUserCard({ card: values.number });
@@ -144,4 +144,4 @@ export const CardOrder: React.FC = () => {
       />
     </section>
   );
-};
+}
