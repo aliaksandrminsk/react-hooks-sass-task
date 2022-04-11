@@ -14,6 +14,7 @@ import { Search } from "./Search";
 import { PagesNav } from "../../components/PagesNav/PagesNav";
 import { IProduct } from "../../context/product/interfaces/IProduct";
 import ErrorPage from "../ErrorPage/ErrorPage";
+import FilterButton from "./FilterButton";
 
 export const Products = () => {
   const SCREEN_SIZE_MOBILE_L = 425;
@@ -91,15 +92,7 @@ export const Products = () => {
 
   return (
     <Fragment>
-      <button
-        className="filterOpenBtn"
-        title="Open filter"
-        onClick={clickFilterButton}
-        type="button"
-        ref={filterOpenBtnRef}
-      >
-        +
-      </button>
+      <FilterButton onClick={clickFilterButton} ref={filterOpenBtnRef} />
 
       <section className="products">
         <Search
