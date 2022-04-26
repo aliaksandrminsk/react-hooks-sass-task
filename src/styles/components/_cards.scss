@@ -29,6 +29,11 @@
     img{
       cursor: pointer;
       border: solid 0.1rem grey;
+      transition: all 0.8s 0.2s;
+    }
+    img:hover {
+      transform: scale(1.06);
+      border: solid 0.3rem black;
     }
   }
 
