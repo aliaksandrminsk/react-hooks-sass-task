@@ -27,14 +27,20 @@ export const About = () => {
         Association for Retail Environments (A.R.E.) merged with Point of
         Purchase Advertising International (POPAI) to become Shop Environments
         Association. Established in 1936, POPAI was a not-for-profit association
-        for the in-store marketing industry. International in scope, its
-        membership was made up of leading retailers, CPGs, brand agencies,
-        producers and educators committed to relevant shopper marketing research
-        and education. A.R.E. was established in 1956 as the National
-        Association of Store Fixture Manufacturers. The association merged with
-        the National Association of Display Industries (NADI) in 2001 and
-        assumed administration of the Planning and Visual Education Partnership
-        (PAVE) in 2006.
+        for the in-store marketing industry.
+      </div>
+      <div className="about__img">
+        <img src="./ui/shop.jpg" width={900} />
+      </div>
+
+      <div className="about__text">
+        International in scope, its membership was made up of leading retailers,
+        CPGs, brand agencies, producers and educators committed to relevant
+        shopper marketing research and education. A.R.E. was established in 1956
+        as the National Association of Store Fixture Manufacturers. The
+        association merged with the National Association of Display Industries
+        (NADI) in 2001 and assumed administration of the Planning and Visual
+        Education Partnership (PAVE) in 2006.
       </div>
     </section>
   );

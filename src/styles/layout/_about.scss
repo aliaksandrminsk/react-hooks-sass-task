@@ -11,6 +11,16 @@
     margin-right: auto;
   }
 
+  &__img {
+    text-align: center;
+    img{
+      transition: all 0.8s 0.2s;
+    }
+    img:hover {
+      transform: scale(1.06);
+    }
+  }
+
   &__text {
     margin: 3rem;
     font-size: 1.4rem;
